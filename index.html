@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TunnelTech Europe — End-to-End Tunneling Solutions | TBM, Probing & Cutting Tools</title>
+<meta name="description" content="Turnkey underground & TBM solutions provider for Europe. Super-diameter TBMs, in-shield probing & drilling-grouting systems, and heavy-duty cutters from China's leading manufacturers.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230A1420'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23F5A623' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='9' fill='none' stroke='%232E6BE6' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='3' fill='%23E8EDF4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link href="https://miaoda.feishu.cn/fonts/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A1420; --ink2:#0F1E2E; --panel:#13263C; --panel2:#182F4A;
+  --steel:#2E6BE6; --steel-deep:#1D4FBF; --teal:#2BB3A3; --accent:#F5A623;
+  --line:rgba(255,255,255,.12); --line2:rgba(255,255,255,.22);
+  --text:#E8EDF4; --muted:#9FB0C3;
+  --nav-h:64px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow','Helvetica Neue',Arial,sans-serif;background:var(--ink);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+.display{font-family:'Barlow Condensed','Barlow Condensed','Arial Narrow',Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{width:min(1200px,92%);margin:0 auto}
+.grid-bg{background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px}
+
+/* ===== Nav ===== */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);background:rgba(10,20,32,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:background .3s}
+.nav-inner{display:flex;align-items:center;gap:24px;height:100%}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Barlow Condensed';font-weight:700;font-size:21px;letter-spacing:.5px;color:#fff}
+.logo svg{flex:none}
+.logo span b{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:2px;margin-left:auto}
+.nav-links a{padding:8px 13px;font-size:15px;font-weight:500;color:var(--muted);border-radius:4px;transition:color .2s,background .2s}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.nav-links a.active{color:#fff;background:rgba(46,107,230,.18)}
+.nav-cta{margin-left:10px;padding:9px 16px;font-weight:600;font-size:14px;color:#0A1420;background:var(--accent);border-radius:4px;transition:background .2s,transform .15s}
+.nav-cta:hover{background:#ffb43e;transform:translateY(-1px)}
+.nav-burger{display:none;margin-left:auto;background:none;border:1px solid var(--line2);border-radius:4px;color:#fff;width:42px;height:38px;cursor:pointer}
+@media(max-width:920px){
+  .nav-burger{display:block}
+  .nav-links{position:fixed;top:var(--nav-h);left:0;right:0;flex-direction:column;align-items:stretch;background:var(--ink2);border-bottom:1px solid var(--line);padding:10px 16px 16px;display:none;gap:2px}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:12px 10px;border-radius:6px}
+  .nav-cta{display:none}
+}
+
+/* ===== Shared layout ===== */
+.view{display:none;padding-top:var(--nav-h)}
+.view.active{display:block}
+.page-hero{position:relative;min-height:340px;display:flex;align-items:flex-end;overflow:hidden;border-bottom:1px solid var(--line)}
+.page-hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.page-hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,32,.55) 0%,rgba(10,20,32,.35) 40%,var(--ink) 100%)}
+.page-hero .inner{position:relative;z-index:2;padding:70px 0 46px;width:min(1200px,92%);margin:0 auto}
+.kicker{display:inline-block;font-family:'Barlow Condensed';font-weight:600;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);border:1px solid rgba(245,166,35,.4);padding:4px 10px;border-radius:3px;background:rgba(245,166,35,.08)}
+.page-hero h1{font-family:'Barlow Condensed';font-weight:700;font-size:clamp(40px,7vw,72px);line-height:.98;text-transform:uppercase;margin:16px 0 12px;color:#fff}
+.page-hero p.lead{max-width:720px;font-size:clamp(16px,2.2vw,19px);color:var(--muted)}
+.brand-strip{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:22px;padding:14px 16px;border:1px solid var(--line);border-radius:6px;background:rgba(255,255,255,.04);max-width:860px}
+.brand-strip .who{font-family:'Barlow Condensed';font-weight:600;font-size:17px;letter-spacing:.5px;color:#fff}
+.brand-strip .role{font-size:14px;color:var(--muted)}
+.section{padding:72px 0}
+.section.tight{padding:52px 0}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:34px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.sec-head .no{font-family:'Barlow Condensed';font-weight:700;font-size:15px;color:var(--accent);letter-spacing:2px}
+.sec-head h2{font-family:'Barlow Condensed';font-weight:700;font-size:clamp(28px,4vw,40px);text-transform:uppercase;letter-spacing:.4px}
+.sec-head .sub{margin-left:auto;font-size:14px;color:var(--muted);text-align:right;max-width:340px}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:960px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:transform .2s,border-color .2s}
+.card:hover{border-color:var(--line2);transform:translateY(-3px)}
+.card .imgbox{position:relative;overflow:hidden;aspect-ratio:16/10;background:#0d1a2b}
+.card .imgbox img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.card:hover .imgbox img{transform:scale(1.03)}
+.card .body{padding:18px 20px 20px}
+.card h3{font-family:'Barlow Condensed';font-weight:600;font-size:22px;letter-spacing:.3px;color:#fff;margin-bottom:6px}
+.card p{font-size:14.5px;color:var(--muted)}
+.tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;padding:3px 8px;border-radius:3px;margin-bottom:10px}
+.tag.blue{color:#8FB3FF;background:rgba(46,107,230,.15);border:1px solid rgba(46,107,230,.35)}
+.tag.teal{color:#5FD9C8;background:rgba(43,179,163,.13);border:1px solid rgba(43,179,163,.35)}
+.tag.orange{color:#FFC46B;background:rgba(245,166,35,.13);border:1px solid rgba(245,166,35,.35)}
+.btn{display:inline-block;padding:12px 22px;font-weight:600;font-size:15px;border-radius:4px;cursor:pointer;border:none;transition:background .2s,transform .15s}
+.btn.primary{background:var(--accent);color:#0A1420}
+.btn.primary:hover{background:#ffb43e;transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:#fff;border:1px solid var(--line2)}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.btn.solid{background:var(--steel);color:#fff}
+.btn.solid:hover{background:var(--steel-deep)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.feature-list{list-style:none;margin-top:12px}
+.feature-list li{position:relative;padding:6px 0 6px 26px;font-size:14.5px;color:var(--text);border-bottom:1px dashed rgba(255,255,255,.08)}
+.feature-list li:last-child{border-bottom:none}
+.feature-list li::before{content:'';position:absolute;left:4px;top:13px;width:10px;height:10px;border:2px solid var(--accent);transform:rotate(45deg)}
+.num{font-family:'Barlow Condensed';font-weight:700;line-height:1}
+
+/* ===== Home hero ===== */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(100deg,rgba(10,20,32,.94) 0%,rgba(10,20,32,.72) 42%,rgba(10,20,32,.28) 100%)}
+.hero .gridline{position:absolute;inset:0;opacity:.5}
+.hero .inner{position:relative;z-index:2;width:min(1200px,92%);margin:0 auto;padding:120px 0 80px}
+.hero h1{font-family:'Barlow Condensed';font-weight:700;font-size:clamp(46px,8vw,92px);line-height:.95;text-transform:uppercase;max-width:900px;color:#fff}
+.hero h1 .hl{color:var(--accent)}
+.hero .sub{max-width:640px;margin-top:18px;font-size:clamp(16px,2.4vw,20px);color:#C6D2E0}
+.hero .pos{display:inline-flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.hero .pos span{font-size:12.5px;font-weight:600;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);border:1px solid var(--line2);padding:6px 12px;border-radius:3px}
+.metrics{position:relative;z-index:2;border-top:1px solid var(--line);background:rgba(10,20,32,.72);backdrop-filter:blur(6px)}
+.metrics .inner{width:min(1200px,92%);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+.metric{background:var(--ink2);padding:26px 22px}
+.metric .num{font-size:42px;color:#fff}
+.metric .num em{font-style:normal;color:var(--accent)}
+.metric .lbl{font-size:13px;color:var(--muted);margin-top:4px;letter-spacing:.3px}
+@media(max-width:820px){.metrics .inner{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.metrics .inner{grid-template-columns:1fr}}
+
+/* ===== Pillars ===== */
+.pillar{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:26px 24px 24px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+.pillar:hover{transform:translateY(-4px);border-color:var(--line2)}
+.pillar .ic{width:46px;height:46px;border-radius:6px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.pillar .ic.blue{background:rgba(46,107,230,.16);border:1px solid rgba(46,107,230,.4)}
+.pillar .ic.teal{background:rgba(43,179,163,.14);border:1px solid rgba(43,179,163,.4)}
+.pillar .ic.orange{background:rgba(245,166,35,.14);border:1px solid rgba(245,166,35,.4)}
+.pillar h3{font-family:'Barlow Condensed';font-weight:600;font-size:24px;color:#fff;letter-spacing:.3px}
+.pillar p{font-size:14.5px;color:var(--muted);margin:8px 0 16px;flex:1}
+.pillar .go{font-size:14px;font-weight:600;color:var(--accent);display:inline-flex;align-items:center;gap:6px}
+
+/* ===== Footprint ===== */
+.foot-wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:34px;align-items:center}
+@media(max-width:860px){.foot-wrap{grid-template-columns:1fr}}
+.foot-legend{list-style:none;margin-top:18px}
+.foot-legend li{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.1);font-size:14.5px;color:var(--text)}
+.foot-legend li:last-child{border:none}
+.foot-legend b{font-family:'Barlow Condensed';color:var(--accent);font-size:15px;letter-spacing:.5px;min-width:150px}
+.foot-legend span{color:var(--muted);font-size:13.5px}
+
+/* ===== Tables ===== */
+table.spec{width:100%;border-collapse:collapse;table-layout:fixed;font-size:14px}
+table.spec th,table.spec td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+table.spec th{background:var(--panel2);font-family:'Barlow Condensed';font-weight:600;font-size:14px;letter-spacing:.5px;color:#fff;text-transform:uppercase}
+table.spec td{color:var(--text);background:rgba(255,255,255,.02)}
+.matrix-note{font-size:13px;color:var(--muted);margin-top:10px}
+
+/* ===== Timeline ===== */
+.tl{display:grid;grid-template-columns:110px 26px 1fr;gap:0;row-gap:0;margin-top:10px}
+.tl .t{font-family:'Barlow Condensed';font-weight:600;font-size:15px;color:var(--accent);text-align:right;padding:14px 0;letter-spacing:.5px}
+.tl .m{position:relative;justify-self:center}
+.tl .m::before{content:'';position:absolute;top:-14px;bottom:-14px;left:50%;width:2px;background:var(--line2);transform:translateX(-50%)}
+.tl .dot{position:relative;z-index:1;width:14px;height:14px;margin-top:20px;background:var(--accent);transform:rotate(45deg);border-radius:2px}
+.tl .c{padding:14px 0 14px 10px}
+.tl .c h4{font-size:16.5px;font-weight:600;color:#fff}
+.tl .c p{font-size:14px;color:var(--muted);margin-top:3px}
+
+/* ===== Contact ===== */
+.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:34px}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:26px}
+.form .full{grid-column:1/-1}
+.form label{display:block;font-size:13px;font-weight:600;letter-spacing:.4px;color:var(--muted);margin-bottom:6px}
+.form input,.form select,.form textarea{width:100%;background:var(--ink2);border:1px solid var(--line2);border-radius:4px;color:var(--text);padding:11px 13px;font-size:14.5px;font-family:inherit}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--steel)}
+.form textarea{min-height:110px;resize:vertical}
+.form select option{background:var(--ink2);color:var(--text)}
+.form .btn{grid-column:1/-1}
+.info-box{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:26px}
+.info-box h3{font-family:'Barlow Condensed';font-size:22px;color:#fff;margin-bottom:14px}
+.info-box .row{display:flex;gap:12px;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,.1);font-size:14.5px}
+.info-box .row:last-child{border:none}
+.info-box .row b{font-family:'Barlow Condensed';font-weight:600;color:var(--accent);min-width:110px;letter-spacing:.5px}
+
+/* ===== CTA band ===== */
+.cta-band{position:relative;overflow:hidden;border-top:1px solid var(--line)}
+.cta-band img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cta-band .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,20,32,.93),rgba(10,20,32,.66))}
+.cta-band .inner{position:relative;z-index:2;width:min(1200px,92%);margin:0 auto;padding:64px 0;display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.cta-band h2{font-family:'Barlow Condensed';font-weight:700;font-size:clamp(28px,4vw,44px);text-transform:uppercase;color:#fff;max-width:640px}
+.cta-band p{color:var(--muted);margin-top:8px;max-width:560px}
+
+/* ===== Footer ===== */
+footer{border-top:1px solid var(--line);background:var(--ink2)}
+.foot-grid{width:min(1200px,92%);margin:0 auto;padding:44px 0 30px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+@media(max-width:860px){.foot-grid{grid-template-columns:1fr}}
+footer h4{font-family:'Barlow Condensed';font-size:17px;letter-spacing:1px;color:#fff;text-transform:uppercase;margin-bottom:12px}
+footer p,footer li{font-size:14px;color:var(--muted)}
+footer ul{list-style:none}
+footer li{padding:4px 0}
+footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--line);padding:16px 0;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:13px;color:var(--muted)}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--panel2);border:1px solid var(--line2);color:var(--text);padding:13px 22px;border-radius:6px;font-size:14.5px;opacity:0;pointer-events:none;transition:all .3s;z-index:200;box-shadow:0 8px 30px rgba(0,0,0,.4)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#home" class="logo" data-nav="home">
+      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="24" fill="none" stroke="#2E6BE6" stroke-width="6"/><circle cx="32" cy="32" r="11" fill="none" stroke="#F5A623" stroke-width="5"/><circle cx="32" cy="32" r="3.5" fill="#E8EDF4"/></svg>
+      <span>TUNNELTECH <b>EUROPE</b></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#machinery" data-nav="machinery">Machinery</a>
+      <a href="#probing" data-nav="probing">Probing &amp; Drilling</a>
+      <a href="#cutters" data-nav="cutters">Cutters &amp; Seals</a>
+      <a href="#services" data-nav="services">Services</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+      <a href="#contact" class="nav-cta">Request a Quote</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="toggleNav()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== VIEW: HOME ===== -->
+<section class="view active" id="view-home">
+  <div class="hero">
+    <img class="bg" src="assets/hero-tbm.jpg" alt="Super-diameter TBM cutterhead in the open air">
+    <div class="shade"></div>
+    <div class="gridline grid-bg"></div>
+    <div class="inner">
+      <span class="kicker">Turnkey Underground &amp; TBM Solutions Provider</span>
+      <h1>End-to-End Tunneling<br>Excellence: <span class="hl">From Super-Diameter TBMs</span> to Smart In-Shield Probing &amp; Heavy-Duty Cutting Tools.</h1>
+      <p class="sub">One European partner for the entire tunneling value chain — engineering, manufacturing, remanufacturing, field support and consumables, delivered by China's leading equipment makers.</p>
+      <div class="pos">
+        <span>European Partner</span>
+        <span>CE Marking</span>
+        <span>ISO 9001 · 14001 · 45001</span>
+        <span>Global Projects</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn primary" href="#contact">Book a Technical Consultation</a>
+        <a class="btn ghost" href="#machinery">Explore the Product Lines</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="metrics">
+    <div class="inner">
+      <div class="metric"><div class="num"><span data-count="30">0</span><em>+</em></div><div class="lbl">Underground engineering world records</div></div>
+      <div class="metric"><div class="num"><span data-count="0.8">0</span><em>–18.4&nbsp;m</em></div><div class="lbl">Full-face TBM coverage capability</div></div>
+      <div class="metric"><div class="num"><span data-count="3">0</span><em>&nbsp;ISO</em></div><div class="lbl">CE marking &amp; ISO 9001 / 14001 / 45001</div></div>
+      <div class="metric"><div class="num"><span data-count="8.01">0</span><em>&nbsp;m</em></div><div class="lbl">Domestically developed super-large main bearing</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">01</span><h2>Three Product Pillars, One Partner</h2><span class="sub">Machines · Intelligent probing · Consumables</span></div>
+      <div class="grid g3">
+        <a class="pillar" href="#machinery">
+          <div class="ic blue"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6E9BFF" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg></div>
+          <h3>Heavy Tunneling Machinery</h3>
+          <p>Super-diameter SPB &amp; EPB TBMs, hard-rock dual-mode systems and vertical shaft boring machines — from CCCC Tianhe, a subsidiary of China Communications Construction.</p>
+          <span class="go">Explore machinery</span>
+        </a>
+        <a class="pillar" href="#probing">
+          <div class="ic teal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5FD9C8" stroke-width="1.7"><path d="M4 20l4-9 4 3 4-8"/><path d="M3 3h18"/><path d="M3 21h18"/></svg></div>
+          <h3>In-TBM Probing &amp; Drilling-Grouting</h3>
+          <p>TBM-mounted advance drilling, water-hammer probing, bolting and MWD geological prediction from China Railway Southwest Research Institute — CE-certified rigs for European rock conditions.</p>
+          <span class="go">Explore probing systems</span>
+        </a>
+        <a class="pillar" href="#cutters">
+          <div class="ic orange"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFC46B" stroke-width="1.7"><path d="M12 3l2.6 7.2L22 12l-7.4 1.8L12 21l-2.6-7.2L2 12l7.4-1.8z"/></svg></div>
+          <h3>Engineered Cutters &amp; High-Pressure Seals</h3>
+          <p>7–21 inch roller cutters, premium metallurgy, tailskin sealing brushes and containerized on-site tool workshops from Shandong Tianyou — engineered to the strata, delivered to your jobsite.</p>
+          <span class="go">Explore cutters</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tight" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">02</span><h2>Global Footprint</h2><span class="sub">From Chinese mega-projects to international rail corridors</span></div>
+      <div class="foot-wrap">
+        <div class="footmap card" style="padding:14px">
+          <svg viewBox="0 0 800 380" style="width:100%;height:auto" role="img" aria-label="Schematic global footprint map">
+            <rect width="800" height="380" fill="#0F1E2E"/>
+            <g fill="none" stroke="rgba(255,255,255,.14)" stroke-width="1">
+              <path d="M60 90 Q 130 70 210 95 T 360 100"/>
+              <path d="M60 150 Q 150 130 260 145 T 420 150"/>
+              <path d="M50 220 Q 160 205 300 215 T 470 220"/>
+              <path d="M80 290 Q 180 275 300 285 T 470 290"/>
+              <path d="M600 110 Q 660 100 730 115"/>
+              <path d="M610 170 Q 680 160 745 172"/>
+              <path d="M620 240 Q 690 230 750 240"/>
+            </g>
+            <g fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1.4">
+              <path d="M60 150 Q 130 130 210 150"/>
+              <path d="M50 220 Q 160 205 260 218"/>
+              <path d="M600 170 Q 660 158 730 170"/>
+            </g>
+            <circle cx="230" cy="205" r="7" fill="#F5A623"/>
+            <circle cx="230" cy="205" r="14" fill="none" stroke="#F5A623" stroke-opacity=".45"/>
+            <circle cx="520" cy="270" r="7" fill="#2BB3A3"/>
+            <circle cx="520" cy="270" r="14" fill="none" stroke="#2BB3A3" stroke-opacity=".45"/>
+            <circle cx="560" cy="255" r="7" fill="#2BB3A3"/>
+            <circle cx="560" cy="255" r="14" fill="none" stroke="#2BB3A3" stroke-opacity=".45"/>
+            <circle cx="655" cy="195" r="7" fill="#2E6BE6"/>
+            <circle cx="655" cy="195" r="14" fill="none" stroke="#2E6BE6" stroke-opacity=".45"/>
+            <g font-family="'Barlow Condensed',Arial" font-size="14" font-weight="600">
+              <text x="230" y="185" fill="#FFC46B" text-anchor="middle">CHINA</text>
+              <text x="520" y="300" fill="#5FD9C8" text-anchor="middle">MALAYSIA · ECRL</text>
+              <text x="560" y="228" fill="#5FD9C8" text-anchor="middle">INDONESIA · JAKARTA–BANDUNG HSR</text>
+              <text x="655" y="225" fill="#8FB3FF" text-anchor="middle">EUROPE · PARTNERSHIP</text>
+            </g>
+          </svg>
+          <p style="font-size:12px;color:var(--muted);margin-top:6px">Schematic illustration — project locations are indicative.</p>
+        </div>
+        <div>
+          <ul class="foot-legend">
+            <li><b>Malaysia · ECRL</b><span>Hard-rock TBM drives (Genting section)</span></li>
+            <li><b>Indonesia · Jakarta–Bandung HSR</b><span>High-speed rail tunneling systems</span></li>
+            <li><b>China · Tianshan Shengli Tunnel</b><span>Hard-rock &amp; vertical shaft TBM records</span></li>
+            <li><b>China · Nanjing Heyan Road Crossing</b><span>Super-diameter river-crossing TBM</span></li>
+            <li><b>China · Beijing East 6th Ring</b><span>16 m-class urban expressway shield</span></li>
+            <li><b>Europe</b><span>Channel &amp; local partner network for sales, spares and service</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-band">
+    <img class="bg" src="assets/tech-tunnel.jpg" alt="">
+    <div class="shade"></div>
+    <div class="inner">
+      <div>
+        <h2>One Partner. Three Manufacturing Pillars. Zero Compromise.</h2>
+        <p>Get a single technical interface for TBMs, in-shield probing equipment and cutter consumables — with European-based support behind every delivery.</p>
+      </div>
+      <div class="cta-row" style="margin:0">
+        <a class="btn primary" href="#contact">Start a Project Inquiry</a>
+        <a class="btn ghost" href="#services">See Services &amp; Compliance</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIEW: MACHINERY ===== -->
+<section class="view" id="view-machinery">
+  <div class="page-hero">
+    <img class="bg" src="assets/tbm-dual.jpg" alt="Twin TBM cutterheads in factory acceptance">
+    <div class="shade"></div>
+    <div class="inner">
+      <span class="kicker">01 · Heavy Tunneling Machinery</span>
+      <h1>TBM &amp; Specialized<br>Engineering Equipment</h1>
+      <p class="lead">Full-face tunnel boring machines from 0.8 m to 18.4 m — slurry pressure balance, earth pressure balance, hard-rock, dual-mode, vertical shaft and offshore drilling systems.</p>
+      <div class="brand-strip">
+        <span class="who">CCCC TIANHE</span>
+        <span class="role">CCCC Tianhe Mechanical Equipment Manufacturing Co., Ltd. — a subsidiary of China Communications Construction (CCCC), one of the world's largest infrastructure groups. Full-chain: R&amp;D, design, manufacturing, consulting, tunneling, maintenance.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">2.1</span><h2>Super-Large-Diameter SPB &amp; EPB TBMs</h2><span class="sub">14 m – 16 m+ class for river crossings and urban corridors</span></div>
+      <div class="grid g2">
+        <div>
+          <div class="card">
+            <div class="imgbox"><img src="assets/tbm-cutterhead.jpg" alt="CCCC Tianhe TBM cutterhead with disc cutters"></div>
+            <div class="body">
+              <span class="tag blue">Super-Large Diameter</span>
+              <h3>Slurry &amp; Earth Pressure Balance TBMs</h3>
+              <p>Flagship machines for record-breaking drives, including the Hai-Tai Yangtze River Tunnel ("Cangyuan") and Beijing East 6th Ring Expressway ("Yunhe").</p>
+              <ul class="feature-list">
+                <li>Atmospheric cutterhead intervention capability</li>
+                <li>Autonomous cruise navigation &amp; digital guidance</li>
+                <li>Fiber-optic real-time cutter wear monitoring</li>
+                <li>High-pressure slurry circuits for deep river crossings</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div class="imgbox"><img src="assets/tbm-workshop.jpg" alt="TBM cutterhead under assembly in CCCC Tianhe workshop"></div>
+            <div class="body">
+              <span class="tag blue">Built In-House</span>
+              <h3>Design, Manufacture &amp; Test Under One Roof</h3>
+              <p>In-house main bearing and key-component manufacturing with full assembly and pressure-testing capability, backed by a full-chain service organization.</p>
+              <ul class="feature-list">
+                <li>Domestically developed 8.01 m super-large main bearing</li>
+                <li>Factory acceptance testing before shipment</li>
+                <li>Lifecycle condition monitoring &amp; fleet management</li>
+                <li>Consulting, tunneling and infrastructure services</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tight" style="background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">2.2</span><h2>Hard Rock &amp; Complex Strata TBMs</h2><span class="sub">Dual-mode systems for squeezing ground and rockburst risk</span></div>
+      <div class="grid g2">
+        <div class="card">
+          <div class="imgbox"><img src="assets/tbm-hardrock.jpg" alt="Hard-rock TBM cutterhead for complex strata"></div>
+          <div class="body">
+            <span class="tag orange">DTSES Dual-Mode</span>
+            <h3>Squeezing Ground &amp; Rockburst Management</h3>
+            <p>DTSES switchable excavation-supports mode combining extruded-concrete and steel-segment lining, developed for large-deformation and strong-rockburst tunnels.</p>
+            <ul class="feature-list">
+              <li>Switchable support modes without standstill</li>
+              <li>Extreme-curvature &amp; steep-gradient capability (50 m radius "Mozi" machine)</li>
+              <li>High UCS and highly abrasive rock tooling</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/tbm-dual.jpg" alt="Wide dual cutterhead acceptance scene"></div>
+          <div class="body">
+            <span class="tag orange">Complex Strata</span>
+            <h3>Mountain, Mixed &amp; Long-Distance Drives</h3>
+            <p>Machines engineered for alpine-style conditions: Tianshan Shengli Tunnel, G219 Xinjiang and cross-country rail corridors with mixed face and fault zones.</p>
+            <ul class="feature-list">
+              <li>Custom cutterhead designs per geology</li>
+              <li>Proven record-setting mountain drives</li>
+              <li>Remote monitoring &amp; predictive maintenance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">2.3</span><h2>Shaft Boring &amp; Vertical Excavation</h2><span class="sub">Vertical shaft machines and offshore drilling systems</span></div>
+      <div class="grid g3">
+        <div class="card">
+          <div class="imgbox"><img src="assets/tbm-cutterhead.jpg" alt="Vertical shaft TBM"></div>
+          <div class="body">
+            <span class="tag blue">VSM</span>
+            <h3>Hard-Rock Vertical Shaft Boring</h3>
+            <p>Vertical shaft machines (VSM) including the world's first pressure-drilling vertical boring machine "Shouchuang" used at Tianshan Shengli Tunnel, and "Shudun No.1" for expressway vertical shafts.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/offshore-platform.jpg" alt="Offshore engineering platform"></div>
+          <div class="body">
+            <span class="tag teal">Offshore</span>
+            <h3>Marine &amp; Offshore Works</h3>
+            <p>Specialized offshore platforms and subsea tunneling support equipment proven in marine environments from plains to high-altitude regions.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/drillship.jpg" alt="Deep cement mixing and drilling vessel"></div>
+          <div class="body">
+            <span class="tag teal">DCM</span>
+            <h3>Deep Cement Mixing &amp; Rescue TBMs</h3>
+            <p>Deep cement mixing (DCM) vessels and emergency-rescue TBMs expand the product envelope beyond conventional tunneling.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a class="btn solid" href="#contact">Ask for Machine Specifications</a>
+        <a class="btn ghost" href="#services">Remanufacturing &amp; Lifecycle Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIEW: PROBING ===== -->
+<section class="view" id="view-probing">
+  <div class="page-hero">
+    <img class="bg" src="assets/probing-machine.jpg" alt="TBM-mounted advance drilling and grouting machine">
+    <div class="shade"></div>
+    <div class="inner">
+      <span class="kicker">02 · In-TBM Probing &amp; Drilling Solutions</span>
+      <h1>Smart In-Shield<br>Geological Probing</h1>
+      <p class="lead">TBM-mounted advance drilling, water-hammer probing, anchoring and MWD prediction — built to de-risk the ground ahead of the cutterhead and to automate the hardest jobs inside the shield.</p>
+      <div class="brand-strip">
+        <span class="who">CHINA RAILWAY SOUTHWEST RESEARCH INSTITUTE</span>
+        <span class="role">A research institute of the China Railway group, developing tunnel machinery since 1973 — brand "Suike Drilling: drilling through mountains and rivers, building dreams for the future."</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">3.1</span><h2>Advance Drilling &amp; Grouting Rigs</h2><span class="sub">SR-HC / SR-BD series</span></div>
+      <div class="grid g2">
+        <div class="card">
+          <div class="imgbox"><img src="assets/probing-rig.jpg" alt="SR series drilling rig detail"></div>
+          <div class="body">
+            <span class="tag teal">Drilling &amp; Grouting</span>
+            <h3>SR-HC / SR-BD Integrated Machines</h3>
+            <ul class="feature-list">
+              <li>Low rear overhang — fits tight shield geometries</li>
+              <li>Anti-sticking &amp; anti-misfire drilling control</li>
+              <li>Wireless remote operation (radio control)</li>
+              <li>All-direction high-pressure grouting</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/probing-panel.jpg" alt="Control panel of the drilling rig"></div>
+          <div class="body">
+            <span class="tag teal">Automation</span>
+            <h3>One Operator, Full Sequence</h3>
+            <p>Rod handling, drilling, grouting and parameter logging from a single control station — fewer people in the shield, safer and faster cycles between TBM advances.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tight" style="background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">3.2</span><h2>WR Series Water Hammer Advance Drills</h2><span class="sub">Engineered for European hard rock</span></div>
+      <div class="grid g2">
+        <div class="card">
+          <div class="imgbox"><img src="assets/probing-valve.jpg" alt="Water hammer drill components"></div>
+          <div class="body">
+            <span class="tag orange">Water Hammer</span>
+            <h3>Deep, Straight, Fast</h3>
+            <ul class="feature-list">
+              <li>CE-certified drill package</li>
+              <li>Eurodrill power head &amp; Wassara water hammer</li>
+              <li>Drilling depth 200 – 250 m</li>
+              <li>Hole deviation &lt; 3%</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/probing-remote.jpg" alt="Wireless remote control for drilling rig"></div>
+          <div class="body">
+            <span class="tag orange">Remote Operation</span>
+            <h3>Operator Safety in High-Risk Sections</h3>
+            <p>Wireless remote control keeps operators clear of falling rock and high-pressure zones while the machine handles the advance-probe cycle inside the shield.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">3.3</span><h2>Anchoring, Bolting &amp; Combined Systems</h2><span class="sub">TB-HC / TB-RD / ZMG series</span></div>
+      <div class="grid g3">
+        <div class="card">
+          <div class="body">
+            <span class="tag teal">Bolting</span>
+            <h3>TB-HC / TB-RD Rock Bolt Rigs</h3>
+            <p>TBM-mounted anchor drilling machines that automate drill, feed, grout and pre-tension cycles in narrow, high-risk shield compartments.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <span class="tag teal">Combined</span>
+            <h3>ZMG Drill–Anchor–Grout Machines</h3>
+            <p>Integrated drill-anchor-grout machines combine advance probing, anchoring and grouting in one carrier to shorten support cycles.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <span class="tag teal">Full Series</span>
+            <h3>Six Product Series</h3>
+            <p>SR-HC · SR-BD · WR · TB-HC · TB-RD · ZMG — a complete TBM-mounted portfolio matched to your geology and shield layout.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tight" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">3.4</span><h2>MWD Intelligent Geological Prediction</h2><span class="sub">Measurement while drilling</span></div>
+      <div class="grid g2">
+        <div class="card">
+          <div class="body">
+            <span class="tag orange">MWD</span>
+            <h3>See the Ground Before You Cut It</h3>
+            <ul class="feature-list">
+              <li>Drilling parameters (thrust, torque, flushing pressure) streamed in real time</li>
+              <li>Machine-learning interpretation of rock mass parameters ahead of the face</li>
+              <li>Early warning for faults, water inflow and weak zones</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <span class="tag orange">Decision Support</span>
+            <h3>From Data to Decisions</h3>
+            <p>Turn raw drilling telemetry into actionable geology maps for the crew — plan grouting, adjust TBM parameters and avoid standstill risk.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a class="btn solid" href="#contact">Configure a Probing Package</a>
+        <a class="btn ghost" href="#machinery">Back to TBM Machinery</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIEW: CUTTERS ===== -->
+<section class="view" id="view-cutters">
+  <div class="page-hero">
+    <img class="bg" src="assets/cutter-hero.jpg" alt="TBM cutter tools and brush seals on a shield machine">
+    <div class="shade"></div>
+    <div class="inner">
+      <span class="kicker">03 · Cutters &amp; Consumables</span>
+      <h1>Roller Cutters, Metallurgy<br>&amp; High-Pressure Seals</h1>
+      <p class="lead">Nothing can stop our TBM cutters — every kind of drilling cutter and brush seal, engineered to the strata and backed by on-site containerized tool workshops.</p>
+      <div class="brand-strip">
+        <span class="who">SHANDONG TIANYOU</span>
+        <span class="role">Shandong Tianyou Tunnel Engineering Equipment Co., Ltd. — manufacturing TBM cutters and tailskin brushes since 2008, 159 staff, 22 patents, ISO 9001 / 14001 / 45001, joint R&amp;D with Nankai University.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">4.1</span><h2>Heavy-Duty Roller Cutters · 7 – 21 inch</h2><span class="sub">Full series for every cutterhead position</span></div>
+      <div class="grid g3">
+        <div class="card">
+          <div class="imgbox"><img src="assets/cutter-roller-blue.jpg" alt="Single roller cutter"></div>
+          <div class="body">
+            <span class="tag orange">Standard</span>
+            <h3>Single &amp; Twin Roller Cutters</h3>
+            <p>7–21 inch single and twin disc cutters covering face, gauge and center positions of mainstream TBM cutterheads.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/cutter-roller-brass.jpg" alt="Triple roller cutter with tungsten carbide inserts"></div>
+          <div class="body">
+            <span class="tag orange">TCI</span>
+            <h3>Triple &amp; Tungsten-Carbide-Insert Cutters</h3>
+            <p>Triple-roller and TCI (carbide insert) cutters for overcutting, abrasive sandstone and highly abrasive strata.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/cutter-roller-blue.jpg" alt="Specialized roller cutters"></div>
+          <div class="body">
+            <span class="tag orange">Special</span>
+            <h3>Twin, Eccentric &amp; Raise-Boring Cutters</h3>
+            <p>Twin, eccentric and raise-boring disc cutters, plus custom geometries for non-standard cutterheads.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tight" style="background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">4.2</span><h2>Extreme-Duty Cutters</h2><span class="sub">Pressure · abrasion · load · intelligence</span></div>
+      <div class="grid g2">
+        <div class="card">
+          <div class="body">
+            <span class="tag orange">High Pressure</span>
+            <h3>High-Pressure Bearing Cutters</h3>
+            <p>Designed for high-water-pressure environments with bearing capacity above 1.0 MPa — proven in subsea and deep river-crossing drives.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <span class="tag orange">Extreme Hard Rock</span>
+            <h3>High-Load &amp; High-Wear Cutters</h3>
+            <p>Ultra-heavy-duty cutters with load capacity above 40 tons for extremely hard rock, plus TCI alloy rings for abrasive sandstones (&lt; 70 MPa).</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <span class="tag orange">Intelligence</span>
+            <h3>Wear-Detection Built-In Cutters</h3>
+            <p>Rotation- and wear-detection cutters that eliminate false signals of conventional pressure wear detection — fewer blind cutterhead interventions.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <span class="tag orange">Strata Tuning</span>
+            <h3>G1 / G2 / G4 Cutter Ring Materials</h3>
+            <p>Three steel grades — strong wear resistance (G1), conventional (G2), high toughness (G4) — matched to full-face hard rock, all strata and mixed ground.</p>
+          </div>
+        </div>
+      </div>
+      <div class="matrix-note" style="margin-top:18px">
+        Cutter rings use custom "Great Wall Special Steel": electric-furnace melting, ladle refining, vacuum degassing and ESR re-melting (P &lt; 0.015%, S &lt; 0.005%) — far below the national high-quality mold-steel requirement of 0.03%.
+      </div>
+      <table class="spec" style="margin-top:16px">
+        <colgroup><col style="width:16%"><col style="width:16%"><col style="width:16%"><col style="width:16%"><col style="width:18%"><col style="width:18%"></colgroup>
+        <thead><tr><th>Grade</th><th>Cr</th><th>C</th><th>Hardness HRC</th><th>Smelting</th><th>Best For</th></tr></thead>
+        <tbody>
+          <tr><td>DG-1 (G1)</td><td>8%</td><td>1%</td><td>60–62</td><td>LF+VD + ESR</td><td>Full-face hard rock</td></tr>
+          <tr><td>DG-2 (G2)</td><td>5%</td><td>0.5%</td><td>57–59</td><td>LF+VD + ESR</td><td>All strata</td></tr>
+          <tr><td>DG-4 (G4)</td><td>5%</td><td>0.4%</td><td>55–57</td><td>LF+VD + ESR</td><td>Mixed strata, high toughness</td></tr>
+        </tbody>
+      </table>
+      <p class="matrix-note">Heat treatment: vacuum-furnace gas quenching + multiple high-temperature tempering (G2/G4 ≥ 3 cycles, G1 ≥ 4 cycles) + deep cryogenic treatment; circumferential hardness spread within 2 HRC.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">4.3</span><h2>Tailskin Brushes &amp; Seals</h2><span class="sub">Shield sealing that keeps the machine moving</span></div>
+      <div class="grid g2">
+        <div class="card">
+          <div class="imgbox"><img src="assets/brush-seal.jpg" alt="Tailskin sealing brush"></div>
+          <div class="body">
+            <span class="tag teal">Sealing</span>
+            <h3>Tailskin Sealing Brushes</h3>
+            <p>High-pressure tailskin sealing brushes and steel-plate brushes engineered for slurry and EPB shields, with in-house brush-wire and heat-treatment manufacturing.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/container-workshop.jpg" alt="Containerized tool repair workshop"></div>
+          <div class="body">
+            <span class="tag teal">Mobile Workshop</span>
+            <h3>Containerized On-Site Tool Workshop</h3>
+            <p>Standard 20/40 ft containers outfitted with hydraulic press, high-frequency heaters, welders, bearing cleaning carts and KBK lifting — air-freighted or shipped directly to your European jobsite.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tight" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">4.4</span><h2>Field-Proven Service</h2><span class="sub">Engineers where the work is</span></div>
+      <div class="grid g2">
+        <div class="card">
+          <div class="imgbox"><img src="assets/india-workshop.jpg" alt="Tianyou maintenance workshop in India"></div>
+          <div class="body">
+            <span class="tag teal">Global Evidence</span>
+            <h3>India Maintenance Workshop &amp; Jobsite Support</h3>
+            <p>Established overseas maintenance workshops and jobsite engineering — the same model can be deployed across Europe.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <span class="tag orange">Engineering First</span>
+            <h3>Strata-Based Tool Selection</h3>
+            <p>Engineer teams design high-efficiency cutter tools per geological condition to cut contractors' construction cost, with full tool maintenance equipment and engineers on call.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a class="btn solid" href="#contact">Request a Cutter Proposal</a>
+        <a class="btn ghost" href="#services">Consumables &amp; Spare Parts Service</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIEW: SERVICES ===== -->
+<section class="view" id="view-services">
+  <div class="page-hero">
+    <img class="bg" src="assets/fleet-globe.jpg" alt="TBM fleet and global projects visual">
+    <div class="shade"></div>
+    <div class="inner">
+      <span class="kicker">04 · Services &amp; Compliance</span>
+      <h1>European Localization,<br>Remanufacturing &amp; Compliance</h1>
+      <p class="lead">Beyond hardware — lifecycle engineering, decarbonization through remanufacturing, 24/7 field support, and full compliance documentation for European projects.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">5.1</span><h2>Remanufacturing &amp; Decarbonization</h2><span class="sub">Second-life TBMs, first-life performance</span></div>
+      <div class="grid g3">
+        <div class="card">
+          <div class="body">
+            <span class="tag teal">ESG</span>
+            <h3>Green Building &amp; ESG Alignment</h3>
+            <p>Remanufactured machines support European green-construction and ESG targets — embodied carbon is retained, new-build emissions avoided.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <span class="tag teal">Cost</span>
+            <h3>30 – 50% Procurement Savings</h3>
+            <p>Restore used TBMs to near-new performance at 30–50% below new-machine procurement cost, with warranty-backed acceptance.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <span class="tag teal">Quality</span>
+            <h3>New-Performance Acceptance</h3>
+            <p>Full teardown, re-engineering, main-bearing replacement and factory acceptance testing before delivery to the European site.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tight" style="background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">5.2</span><h2>Global Field Support &amp; Training</h2><span class="sub">24/7, wherever the shield is</span></div>
+      <div class="grid g2">
+        <div class="card">
+          <div class="body">
+            <span class="tag blue">24/7</span>
+            <h3>Remote &amp; On-Site Response</h3>
+            <ul class="feature-list">
+              <li>24/7 remote diagnostics &amp; engineer hotline</li>
+              <li>Fast spares dispatch with customs handling</li>
+              <li>Deployable containerized tool workshops</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <span class="tag blue">Training</span>
+            <h3>Operator &amp; Maintenance Training</h3>
+            <ul class="feature-list">
+              <li>On-site technical consultants during TBM assembly &amp; launch</li>
+              <li>Cutter management &amp; tool-changing training for crews</li>
+              <li>MWD &amp; probing system operator programs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">5.3</span><h2>Compliance &amp; Certifications</h2><span class="sub">Documentation your EPC expects</span></div>
+      <div class="grid g3">
+        <div class="card"><div class="body"><span class="tag orange">CE Marking</span><h3>CE</h3><p>Machinery Directive documentation available for the European market.</p></div></div>
+        <div class="card"><div class="body"><span class="tag orange">Quality</span><h3>ISO 9001 · 14001 · 45001</h3><p>Quality, environment and occupational health &amp; safety management systems.</p></div></div>
+        <div class="card"><div class="body"><span class="tag orange">Product</span><h3>National Certified Products</h3><p>Products certified by the China Quality Inspection Association as national authority-tested, standard-compliant.</p></div></div>
+      </div>
+      <div class="cta-row" style="margin-top:30px">
+        <a class="btn primary" href="#contact">Request Full Documentation Set</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tight" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">5.4</span><h2>How We Work With You</h2><span class="sub">One accountable interface, end to end</span></div>
+      <div class="tl">
+        <div class="t">STEP 01</div><div class="m"><span class="dot"></span></div><div class="c"><h4>Inquiry &amp; Site Data</h4><p>Share tunnel geometry, geology (UCS, water, faults) and schedule — one technical interface for all three product lines.</p></div>
+        <div class="t">STEP 02</div><div class="m"><span class="dot"></span></div><div class="c"><h4>Engineering &amp; Proposal</h4><p>Machines, probing packages and cutter matrices engineered to your strata, with commercial proposal and lead times.</p></div>
+        <div class="t">STEP 03</div><div class="m"><span class="dot"></span></div><div class="c"><h4>Manufacturing / Remanufacturing</h4><p>Factory acceptance testing, compliance documentation and third-party inspection on request.</p></div>
+        <div class="t">STEP 04</div><div class="m"><span class="dot"></span></div><div class="c"><h4>Delivery &amp; Customs</h4><p>Sea/air freight, customs coordination and site handover with containerized workshop options.</p></div>
+        <div class="t">STEP 05</div><div class="m"><span class="dot"></span></div><div class="c"><h4>Field Support &amp; Consumables</h4><p>24/7 support, training, spare cutters and brushes stocked for rapid European dispatch.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIEW: CONTACT ===== -->
+<section class="view" id="view-contact">
+  <div class="page-hero">
+    <img class="bg" src="assets/tech-tunnel.jpg" alt="">
+    <div class="shade"></div>
+    <div class="inner">
+      <span class="kicker">05 · Contact &amp; RFQ</span>
+      <h1>Project Inquiry &amp;<br>Technical Quote Request</h1>
+      <p class="lead">Tell us about your tunnel — we will route your inquiry to the right engineering team and come back with a structured technical response.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <div class="info-box">
+            <h3>TunnelTech Europe</h3>
+            <div class="row"><b>Coverage</b><span>TBMs &amp; shaft machines · in-shield probing &amp; grouting · roller cutters &amp; seals · remanufacturing &amp; field service</span></div>
+            <div class="row"><b>Manufacturers</b><span>CCCC Tianhe · China Railway Southwest Research Institute · Shandong Tianyou</span></div>
+            <div class="row"><b>Base</b><span>European partner network with direct factory access in China</span></div>
+            <div class="row"><b>Response</b><span>Technical proposal within 5 working days of a complete inquiry</span></div>
+            <p style="margin-top:16px;font-size:13.5px;color:var(--muted)">Form fields marked with * are required. Submitting this demo form opens your mail client with the request pre-filled — replace the recipient with your sales inbox before launch.</p>
+          </div>
+        </div>
+        <form class="form" id="rfqForm" onsubmit="return submitRFQ(event)">
+          <div class="full"><label for="f-company">Company *</label><input id="f-company" name="company" required placeholder="Contractor / EPC / Operator"></div>
+          <div><label for="f-name">Contact Name *</label><input id="f-name" name="name" required placeholder="Full name"></div>
+          <div><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required placeholder="you@company.com"></div>
+          <div><label for="f-country">Country *</label><input id="f-country" name="country" required placeholder="e.g. Germany"></div>
+          <div><label for="f-cat">Equipment Category *</label>
+            <select id="f-cat" name="category" required>
+              <option value="">Select…</option>
+              <option>TBM / Shield Machine (new or remanufactured)</option>
+              <option>In-TBM Probing, Drilling &amp; Grouting Rigs</option>
+              <option>Roller Cutters, Brushes &amp; Consumables</option>
+              <option>Containerized Tool Workshop</option>
+              <option>Field Service &amp; Training</option>
+            </select>
+          </div>
+          <div><label for="f-diam">Tunnel Inner Diameter *</label><input id="f-diam" name="diameter" required placeholder="e.g. 8.5 m"></div>
+          <div><label for="f-ucs">Ground / UCS *</label><input id="f-ucs" name="ucs" required placeholder="e.g. granite, 150 MPa"></div>
+          <div><label for="f-length">Expected Drive Length</label><input id="f-length" name="length" placeholder="e.g. 6 km"></div>
+          <div class="full"><label for="f-msg">Project Notes</label><textarea id="f-msg" name="message" placeholder="Fault zones, water ingress, schedule, existing machines…"></textarea></div>
+          <button type="submit" class="btn primary">Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <h4>TunnelTech Europe</h4>
+      <p>Turnkey underground &amp; TBM solutions provider — European partner for advanced tunneling engineering. One interface for machines, probing systems, consumables and lifecycle services.</p>
+    </div>
+    <div>
+      <h4>Manufacturing Partners</h4>
+      <ul>
+        <li>CCCC Tianhe — TBM &amp; shaft machinery</li>
+        <li>China Railway Southwest Research Institute — probing &amp; drilling systems</li>
+        <li>Shandong Tianyou — cutters, seals &amp; workshops</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#machinery">TBM Machinery</a></li>
+        <li><a href="#probing">Probing &amp; Drilling</a></li>
+        <li><a href="#cutters">Cutters &amp; Seals</a></li>
+        <li><a href="#services">Services &amp; Compliance</a></li>
+        <li><a href="#contact">Request a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom">
+    <span>© 2026 TunnelTech Europe — demo website. Content based on public capability materials of CCCC Tianhe, China Railway Southwest Research Institute and Shandong Tianyou.</span>
+    <span>CE · ISO 9001/14001/45001</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  'use strict';
+  var views = ['home','machinery','probing','cutters','services','contact'];
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[data-nav]'));
+
+  function show(name){
+    if(views.indexOf(name) === -1) name = 'home';
+    views.forEach(function(v){
+      var el = document.getElementById('view-' + v);
+      if(el) el.classList.toggle('active', v === name);
+    });
+    navLinks.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('data-nav') === name);
+    });
+    document.getElementById('navLinks').classList.remove('open');
+    if(name !== 'home') window.scrollTo(0,0);
+  }
+
+  function route(){
+    var h = location.hash.replace('#','') || 'home';
+    show(h);
+  }
+  window.addEventListener('hashchange', route);
+
+  /* toggle mobile nav */
+  window.toggleNav = function(){
+    document.getElementById('navLinks').classList.toggle('open');
+  };
+
+  /* close nav when a link inside is clicked */
+  navLinks.forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('navLinks').classList.remove('open'); });
+  });
+
+  /* count-up metrics on home view */
+  function isVisible(el){
+    var r = el.getBoundingClientRect();
+    return r.top < window.innerHeight * 0.92 && r.bottom > 0;
+  }
+  function animateCount(el){
+    if(el.dataset.done) return;
+    el.dataset.done = '1';
+    var target = parseFloat(el.getAttribute('data-count'));
+    var isDec = target % 1 !== 0;
+    var dur = 1100, t0 = null;
+    function frame(ts){
+      if(!t0) t0 = ts;
+      var p = Math.min((ts - t0)/dur, 1);
+      var val = target * p;
+      el.textContent = isDec ? val.toFixed(2) : Math.round(val);
+      if(p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  var counters = Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
+  function checkCounters(){
+    counters.forEach(function(el){ if(isVisible(el)) animateCount(el); });
+  }
+  window.addEventListener('scroll', checkCounters, {passive:true});
+  window.addEventListener('load', function(){ route(); setTimeout(checkCounters, 300); });
+
+  /* toast */
+  var toastEl = document.getElementById('toast'), toastTimer = null;
+  window.toast = function(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 4200);
+  };
+
+  /* RFQ form -> compose mailto with prefilled body */
+  window.submitRFQ = function(ev){
+    ev.preventDefault();
+    var g = function(id){ return (document.getElementById(id).value || '').trim(); };
+    var body = [
+      'New RFQ from tunneling-solutions demo website',
+      '-----------------------------------------------',
+      'Company: ' + g('f-company'),
+      'Contact: ' + g('f-name'),
+      'Email: ' + g('f-email'),
+      'Country: ' + g('f-country'),
+      'Category: ' + g('f-cat'),
+      'Tunnel ID: ' + g('f-diam'),
+      'Ground / UCS: ' + g('f-ucs'),
+      'Drive length: ' + g('f-length'),
+      'Notes: ' + (g('f-msg') || '—')
+    ].join('\n');
+    try{
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(body);
+        toast('Request captured — details copied to clipboard. Open your mail client and paste to send.');
+      } else {
+        toast('Request captured — please send the composed request via your mail client.');
+      }
+    }catch(e){ toast('Request captured — please send the composed request via your mail client.'); }
+    setTimeout(function(){
+      try{ location.href = 'mailto:?subject=TunnelTech%20Europe%20RFQ%20—%20' + encodeURIComponent(g('f-company')) + '&body=' + encodeURIComponent(body); }catch(e){}
+    }, 350);
+    return false;
+  };
+
+  /* initial route */
+  route();
+})();
+</script>
+</body>
+</html>
