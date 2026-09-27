@@ -32,21 +32,21 @@ img{display:block;max-width:100%}
 .logo svg{flex:none}
 .logo span b{color:var(--accent)}
 .nav-links{display:flex;align-items:center;gap:2px;margin-left:auto}
-.nav-links a{padding:8px 13px;font-size:15px;font-weight:500;color:var(--muted);border-radius:4px;transition:color .2s,background .2s}
+.nav-links a{padding:8px 9px;font-size:13.5px;font-weight:500;color:var(--muted);border-radius:4px;transition:color .2s,background .2s;white-space:nowrap}
 .nav-links a:hover{color:#fff;background:rgba(255,255,255,.06)}
 .nav-links a.active{color:#fff;background:rgba(46,107,230,.18)}
-.nav-cta{margin-left:10px;padding:9px 16px;font-weight:600;font-size:14px;color:#0A1420;background:var(--accent);border-radius:4px;transition:background .2s,transform .15s}
+.nav-cta{margin-left:10px;padding:9px 14px;font-weight:600;font-size:13px;color:#0A1420;background:var(--accent);border-radius:4px;transition:background .2s,transform .15s;white-space:nowrap}
 .nav-cta:hover{background:#ffb43e;transform:translateY(-1px)}
 .nav-burger{display:none;margin-left:auto;background:none;border:1px solid var(--line2);border-radius:4px;color:#fff;width:42px;height:38px;cursor:pointer}
 .lang-sw{display:flex;align-items:center;gap:2px;margin-left:12px;border:1px solid var(--line2);border-radius:4px;overflow:hidden;background:rgba(255,255,255,.04);flex:none}
-.lang-sw button{background:transparent;color:var(--muted);border:none;padding:6px 10px;font-size:12.5px;font-weight:600;letter-spacing:.3px;cursor:pointer;transition:color .2s,background .2s;font-family:inherit}
+.lang-sw button{background:transparent;color:var(--muted);border:none;padding:5px 8px;font-size:12.5px;font-weight:600;letter-spacing:.3px;cursor:pointer;transition:color .2s,background .2s;font-family:inherit}
 .lang-sw button:hover{color:#fff}
 .lang-sw button.active{color:#0A1420;background:var(--accent)}
-@media(max-width:920px){
+@media(max-width:1100px){
   .nav-burger{display:block}
   .nav-links{position:fixed;top:var(--nav-h);left:0;right:0;flex-direction:column;align-items:stretch;background:var(--ink2);border-bottom:1px solid var(--line);padding:10px 16px 16px;display:none;gap:2px}
   .nav-links.open{display:flex}
-  .nav-links a{padding:12px 10px;border-radius:6px}
+  .nav-links a{padding:12px 10px;border-radius:6px;font-size:15px}
   .nav-cta{display:none}
   .lang-sw{margin-left:auto}
 }
@@ -103,24 +103,23 @@ img{display:block;max-width:100%}
 .num{font-family:'Barlow Condensed';font-weight:700;line-height:1}
 
 /* ===== Home hero ===== */
-.hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden}
+.hero{position:relative;min-height:min(72vh,620px);display:flex;align-items:center;overflow:hidden}
 .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%}
 .hero .shade{position:absolute;inset:0;background:linear-gradient(100deg,rgba(10,20,32,.94) 0%,rgba(10,20,32,.72) 42%,rgba(10,20,32,.28) 100%)}
 .hero .gridline{position:absolute;inset:0;opacity:.5}
-.hero .inner{position:relative;z-index:2;width:min(1200px,92%);margin:0 auto;padding:120px 0 80px}
-.hero h1{font-family:'Barlow Condensed';font-weight:700;font-size:clamp(46px,8vw,92px);line-height:.95;text-transform:uppercase;max-width:900px;color:#fff}
+.hero .inner{position:relative;z-index:2;width:min(1200px,92%);margin:0 auto;padding:88px 0 52px}
+.hero h1{font-family:'Barlow Condensed';font-weight:700;font-size:clamp(38px,6vw,72px);line-height:.95;text-transform:uppercase;max-width:900px;color:#fff}
 .hero h1 .hl{color:var(--accent)}
 .hero .sub{max-width:640px;margin-top:18px;font-size:clamp(16px,2.4vw,20px);color:#C6D2E0}
 .hero .pos{display:inline-flex;flex-wrap:wrap;gap:8px;margin-top:24px}
 .hero .pos span{font-size:12.5px;font-weight:600;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);border:1px solid var(--line2);padding:6px 12px;border-radius:3px}
 .metrics{position:relative;z-index:2;border-top:1px solid var(--line);background:rgba(10,20,32,.72);backdrop-filter:blur(6px)}
 .metrics .inner{width:min(1200px,92%);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
-.metric{background:var(--ink2);padding:26px 22px}
-.metric .num{font-size:42px;color:#fff}
+.metric{background:var(--ink2);padding:18px 16px}
+.metric .num{font-size:32px;color:#fff}
 .metric .num em{font-style:normal;color:var(--accent)}
-.metric .lbl{font-size:13px;color:var(--muted);margin-top:4px;letter-spacing:.3px}
+.metric .lbl{font-size:12.5px;color:var(--muted);margin-top:3px;letter-spacing:.3px}
 @media(max-width:820px){.metrics .inner{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:420px){.metrics .inner{grid-template-columns:1fr}}
 
 /* ===== Pillars ===== */
 .pillar{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:26px 24px 24px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
@@ -953,11 +952,11 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
   var I18N = {
     nav_home:{en:'Home',de:'Startseite',zh:'首页'},
     nav_machinery:{en:'Machinery',de:'Maschinen',zh:'装备'},
-    nav_probing:{en:'Probing & Drilling',de:'Erkundung & Bohren',zh:'探测与钻探'},
+    nav_probing:{en:'Probing & Drilling',de:'Erkundung',zh:'探测与钻探'},
     nav_cutters:{en:'Cutters & Seals',de:'Meißel & Dichtungen',zh:'刀具与密封'},
     nav_services:{en:'Services',de:'Services',zh:'服务'},
     nav_contact:{en:'Contact',de:'Kontakt',zh:'联系'},
-    nav_quote:{en:'Request a Quote',de:'Angebot anfordern',zh:'获取报价'},
+    nav_quote:{en:'Request a Quote',de:'Angebot',zh:'获取报价'},
 
     hero_kicker:{en:'Turnkey Underground & TBM Solutions Provider',de:'Turnkey-Partner für Untergrund- & TBM-Lösungen',zh:'全链条地下工程与TBM解决方案提供商'},
     hero_title:{en:'End-to-End Tunneling<br>Excellence: <span class="hl">From Super-Diameter TBMs</span> to Smart In-Shield Probing &amp; Heavy-Duty Cutting Tools.',de:'Tunnelbau von Anfang bis Ende<br>Exzellenz: <span class="hl">Von Superdurchmesser-TBM</span> bis zu intelligenter Schild-Erkundung &amp; Hochleistungs-Meisseln.',zh:'端到端隧道掘进<br>卓越工程：<span class="hl">从超大直径盾构机</span>到机载智能超前探测与重型切削刀具'},
