@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TunnelTech Europe — End-to-End Tunneling Solutions | TBM, Probing & Cutting Tools</title>
-<meta name="description" content="Turnkey underground & TBM solutions provider for Europe. Super-diameter TBMs, in-TBM advance probing & drilling-grouting systems, and heavy-duty cutters from China's leading manufacturers.">
+<meta name="description" content="Turnkey underground & TBM solutions provider for Europe. Super-diameter TBMs, in-TBM advance probe drilling & pre-excavation grouting systems, and heavy-duty cutters from China's leading manufacturers.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230A1420'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23F5A623' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='9' fill='none' stroke='%232E6BE6' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='3' fill='%23E8EDF4'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://miaoda.feishu.cn">
 <link href="https://miaoda.feishu.cn/fonts/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
@@ -154,6 +154,18 @@ table.spec th,table.spec td{border:1px solid var(--line);padding:10px 12px;text-
 table.spec th{background:var(--panel2);font-family:'Barlow Condensed';font-weight:600;font-size:14px;letter-spacing:.5px;color:#fff;text-transform:uppercase}
 table.spec td{color:var(--text);background:rgba(255,255,255,.02)}
 .matrix-note{font-size:13px;color:var(--muted);margin-top:10px}
+.spec-title{font-size:19px;color:#fff;margin:0 0 14px;font-weight:600}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.spec-table{width:100%;border-collapse:collapse;font-size:13.5px}
+.spec-table th,.spec-table td{padding:10px 12px;border:1px solid var(--line2);text-align:left;white-space:nowrap}
+.spec-table th{background:var(--ink2);color:var(--steel);font-size:12px;letter-spacing:.4px;font-weight:600}
+.spec-table td{color:var(--text)}
+.spec-table tbody tr:nth-child(even) td{background:rgba(255,255,255,.025)}
+.spec-table td:first-child{color:var(--accent);font-weight:700}
+.qc-band{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.qc-item{flex:1 1 260px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+.qc-item b{display:block;color:var(--accent);font-size:14.5px;font-weight:700;letter-spacing:.3px}
+.qc-item span{display:block;color:var(--muted);font-size:13.5px;margin-top:4px}
 
 /* ===== Timeline ===== */
 .tl{display:grid;grid-template-columns:110px 26px 1fr;gap:0;row-gap:0;margin-top:10px}
@@ -497,7 +509,7 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
       <p class="lead" data-i18n="pr_lead">TBM-mounted advance drilling, water-hammer probing, anchoring and MWD prediction — built to de-risk the ground ahead of the cutterhead and to automate the hardest jobs inside the shield.</p>
       <div class="brand-strip">
         <span class="who">CHINA RAILWAY SOUTHWEST RESEARCH INSTITUTE</span>
-        <span class="role" data-i18n="pr_brand">A research institute of the China Railway group, developing tunnel machinery since 1973 — brand "Suike Drilling: drilling through mountains and rivers, building dreams for the future."</span>
+        <span class="role" data-i18n="pr_brand">A research institute of the China Railway group, developing tunnel machinery since 1973 — brand "Suike Drilling: boring through mountains, building the future."</span>
       </div>
     </div>
   </div>
@@ -513,7 +525,7 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
             <h3 data-i18n="pr31_h1">SR-HC / SR-BD Integrated Machines</h3>
             <ul class="feature-list">
               <li data-i18n="pr31_f1">Ultra-compact rear overhang — fits tight shield geometries</li>
-              <li data-i18n="pr31_f2">Anti-jamming &amp; anti-blank-firing protection</li>
+              <li data-i18n="pr31_f2">Anti-jamming &amp; blank firing protection</li>
               <li data-i18n="pr31_f3">Wireless remote operation (radio control)</li>
               <li data-i18n="pr31_f4">All-direction high-pressure grouting</li>
             </ul>
@@ -556,6 +568,34 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
             <p data-i18n="pr32_d1">Wireless remote control keeps operators clear of falling rock and high-pressure zones while the machine handles the advance-probe cycle inside the shield.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tight" style="background:var(--ink2);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <h3 class="spec-title" data-i18n="pr32_spec_t">WR Series Specification Matrix</h3>
+      <div class="table-scroll">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th data-i18n="pr32_h_model">Model</th>
+              <th data-i18n="pr32_h_depth">Max Depth</th>
+              <th data-i18n="pr32_h_hole">Hole Diameter</th>
+              <th data-i18n="pr32_h_speed">Rotation Speed</th>
+              <th data-i18n="pr32_h_torque">Torque</th>
+              <th data-i18n="pr32_h_press">Water Pressure</th>
+              <th data-i18n="pr32_h_power">Power Pack</th>
+              <th data-i18n="pr32_h_hammer">Hammer / Head</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>WR-WD50</td><td>&lt; 80 m</td><td>D60 / D64</td><td>150 rpm</td><td>292 Nm</td><td>50 – 170 bar</td><td>55 kW</td><td>Wassara / Eurodrill</td></tr>
+            <tr><td>WR-WD70</td><td>&lt; 200 m</td><td>D82 / D89</td><td>596 rpm</td><td>4,420 Nm</td><td>60 – 180 bar</td><td>110 kW</td><td>Wassara / Eurodrill</td></tr>
+            <tr><td>WR-WD80</td><td>&lt; 200 m</td><td>D95 / D102</td><td>596 rpm</td><td>4,420 Nm</td><td>60 – 180 bar</td><td>110 kW</td><td>Wassara / Eurodrill</td></tr>
+            <tr><td>WR-WD100</td><td>&lt; 250 m</td><td>D115 / D127</td><td>390 rpm</td><td>6,600 Nm</td><td>60 – 180 bar</td><td>130 kW</td><td>Wassara / Eurodrill</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -627,7 +667,7 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     <div class="shade"></div>
     <div class="inner">
       <span class="kicker" data-i18n="cu_kicker">03 · Cutters &amp; Consumables</span>
-      <h1 data-i18n-html="cu_title">Roller Cutters, Metallurgy<br>&amp; High-Pressure Seals</h1>
+      <h1 data-i18n-html="cu_title">Disc Cutters, Metallurgy<br>&amp; High-Pressure Seals</h1>
       <p class="lead" data-i18n="cu_lead">Nothing can stop our TBM cutters — every kind of drilling cutter and brush seal, engineered to the strata and backed by on-site containerized tool workshops.</p>
       <div class="brand-strip">
         <span class="who">SHANDONG TIANYOU</span>
@@ -638,13 +678,13 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
 
   <div class="section">
     <div class="wrap">
-      <div class="sec-head"><span class="no">4.1</span><h2 data-i18n="cu41_title">Heavy-Duty Roller Cutters · 7 – 21 inch</h2><span class="sub" data-i18n="cu41_sub">Full series for every cutterhead position</span></div>
+      <div class="sec-head"><span class="no">4.1</span><h2 data-i18n="cu41_title">Heavy-Duty Disc Cutters · 7 – 21 inch</h2><span class="sub" data-i18n="cu41_sub">Full series for every cutterhead position</span></div>
       <div class="grid g3">
         <div class="card">
           <div class="imgbox"><img src="assets/cutter-roller-blue.jpg" alt="Single roller cutter"></div>
           <div class="body">
             <span class="tag orange" data-i18n="cu41_tag1">Standard</span>
-            <h3 data-i18n="cu41_h1">Single &amp; Twin Roller Cutters</h3>
+            <h3 data-i18n="cu41_h1">Single &amp; Twin Disc Cutters</h3>
             <p data-i18n="cu41_d1">7–21 inch single and twin disc cutters covering face, gauge and center positions of mainstream TBM cutterheads.</p>
           </div>
         </div>
@@ -683,13 +723,13 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
           <div class="body">
             <span class="tag orange" data-i18n="cu42_tag2">Extreme Hard Rock</span>
             <h3 data-i18n="cu42_h2">High-Load &amp; High-Wear Cutters</h3>
-            <p data-i18n="cu42_d2">Ultra-heavy-duty cutters with load capacity above 40 tons for extremely hard rock, plus TCI alloy rings for abrasive sandstones (&lt; 70 MPa).</p>
+            <p data-i18n="cu42_d2">Ultra-heavy-duty cutters with rated load > 400 kN (approx. 40 metric tons) for extremely hard rock (UCS > 200 MPa), plus TCI alloy rings for abrasive sandstones (&lt; 70 MPa).</p>
           </div>
         </div>
         <div class="card">
           <div class="body">
             <span class="tag orange" data-i18n="cu42_tag3">Intelligence</span>
-            <h3 data-i18n="cu42_h3">Wear-Detection Built-In Cutters</h3>
+            <h3 data-i18n="cu42_h3">Instrumented Smart Cutters</h3>
             <p data-i18n="cu42_d3">Rotation- and wear-detection cutters that eliminate false signals of conventional pressure wear detection — fewer blind cutterhead interventions.</p>
           </div>
         </div>
@@ -702,7 +742,7 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
         </div>
       </div>
       <div class="matrix-note" style="margin-top:18px" data-i18n="cu42_note">
-        Cutter rings use custom "Great Wall Special Steel": electric-furnace melting, ladle refining, vacuum degassing and ESR re-melting (P &lt; 0.015%, S &lt; 0.005%) — far below the national high-quality mold-steel requirement of 0.03%.
+        Cutter rings use custom "Great Wall Special Steel": electric-furnace melting, ladle refining, vacuum degassing and electroslag remelting (ESR) (P &lt; 0.015%, S &lt; 0.005%) — far below the national high-quality mold-steel requirement of 0.03%.
       </div>
       <table class="spec" style="margin-top:16px">
         <colgroup><col style="width:16%"><col style="width:16%"><col style="width:16%"><col style="width:16%"><col style="width:18%"><col style="width:18%"></colgroup>
@@ -713,13 +753,17 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
           <tr><td>DG-4 (G4)</td><td>5%</td><td>0.4%</td><td>55–57</td><td>LF+VD + ESR</td><td data-i18n="tbl_g4">Mixed strata, high toughness</td></tr>
         </tbody>
       </table>
-      <p class="matrix-note" data-i18n="cu42_ht">Heat treatment: vacuum-furnace gas quenching + multiple high-temperature tempering (G2/G4 ≥ 3 cycles, G1 ≥ 4 cycles) + deep cryogenic treatment; circumferential hardness spread within 2 HRC.</p>
+      <p class="matrix-note" data-i18n="cu42_ht">Heat treatment: vacuum-furnace gas quenching + multiple high-temperature tempering (G2/G4 ≥ 3 cycles, G1 ≥ 4 cycles) + deep cryogenic treatment; circumferential hardness variation ≤ 2 HRC.</p>
+      <div class="qc-band">
+        <div class="qc-item"><b data-i18n="cu42_qc_f1h">Air Tightness Test</b><span data-i18n="cu42_qc_f1d">&ge; 0.7 MPa after assembly of cutter ring and hub</span></div>
+        <div class="qc-item"><b data-i18n="cu42_qc_f2h">Break-In Test</b><span data-i18n="cu42_qc_f2d">&ge; 30 min at 50 rpm &mdash; bearing temperature rise &le; 40 &deg;C</span></div>
+      </div>
     </div>
   </div>
 
   <div class="section">
     <div class="wrap">
-      <div class="sec-head"><span class="no">4.3</span><h2 data-i18n="cu43_title">Tailskin Brushes &amp; Seals</h2><span class="sub" data-i18n="cu43_sub">Shield sealing that keeps the machine moving</span></div>
+      <div class="sec-head"><span class="no">4.3</span><h2 data-i18n="cu43_title">Tailskin Wire Brushes &amp; Seals</h2><span class="sub" data-i18n="cu43_sub">Shield sealing that keeps the machine moving</span></div>
       <div class="grid g2">
         <div class="card">
           <div class="imgbox"><img src="assets/brush-seal.jpg" alt="Tailskin sealing brush"></div>
@@ -757,7 +801,7 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
           <div class="body">
             <span class="tag orange" data-i18n="cu44_tag2">Engineering First</span>
             <h3 data-i18n="cu44_h2">Strata-Based Tool Selection</h3>
-            <p data-i18n="cu44_d2">Engineer teams design high-efficiency cutter tools per geological condition to cut contractors' construction cost, with full tool maintenance equipment and engineers on call.</p>
+            <p data-i18n="cu44_d2">Engineer teams design high-performance cutting tools per geological condition to cut contractors' construction cost, with full tool maintenance equipment and engineers on call.</p>
           </div>
         </div>
       </div>
@@ -991,8 +1035,8 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     nav_contact:{en:'Contact',de:'Kontakt',zh:'联系'},
     nav_quote:{en:'Request a Quote',de:'Angebot',zh:'获取报价'},
 
-    hero_kicker:{en:'Turnkey Underground & TBM Solutions Provider',de:'Turnkey-Partner für Untergrund- & TBM-Lösungen',zh:'全链条地下工程与TBM解决方案提供商'},
-    hero_title:{en:'End-to-End Tunneling<br>Excellence: From <span class="hl">Super-Diameter TBMs</span> to <span class="hl">Smart In-TBM Advance Probing</span> &amp; <span class="hl">Heavy-Duty Cutting Tools</span>.',de:'Tunnelbau von Anfang bis Ende<br>Exzellenz: Von <span class="hl">Superdurchmesser-TBM</span> bis zu <span class="hl">intelligenter Vorauserkundung im Schild</span> &amp; <span class="hl">Hochleistungs-Meisseln</span>.',zh:'端到端隧道掘进<br>全断面隧道掘进综合解决方案：集聚 <span class="hl">超大直径TBM整机</span>、<span class="hl">机载智能超前钻注探系统</span> 与 <span class="hl">高端耐磨刀具矩阵</span>'},
+    hero_kicker:{en:'Turnkey Underground & TBM Solutions Provider',de:'Turnkey-Partner für den Untertagebau & TBM-Lösungen',zh:'全链条地下工程与TBM解决方案提供商'},
+    hero_title:{en:'End-to-End Tunneling<br>Excellence: From <span class="hl">Super-Diameter TBMs</span> to <span class="hl">Smart In-TBM Advance Probing</span> &amp; <span class="hl">Heavy-Duty Cutting Tools</span>.',de:'Tunnelbau von Anfang bis Ende<br>Exzellenz: Von <span class="hl">Großdurchmesser-TBM</span> bis zu <span class="hl">intelligenter Vorauserkundung im Schild</span> &amp; <span class="hl">Hochleistungs-Meißeln</span>.',zh:'端到端隧道掘进<br>全断面隧道掘进综合解决方案：集成 <span class="hl">超大直径TBM整机</span>、<span class="hl">机载智能超前钻注探系统</span> 与 <span class="hl">高端耐磨刀具矩阵</span>'},
     hero_sub:{en:'One European partner for the entire tunneling value chain — engineering, manufacturing, remanufacturing, field support and consumables, delivered by China\u2019s leading equipment makers.',de:'Ein europäischer Partner für die gesamte Tunnelbau-Wertschöpfungskette — Engineering, Fertigung, Remanufacturing, Vor-Ort-Service und Verschleißteile, geliefert von Chinas führenden Maschinenherstellern.',zh:'面向欧洲客户的一站式合作伙伴，覆盖隧道工程全价值链——设计、制造、再制造、现场服务与耗材，由中国的领先装备制造商提供。'},
     hero_pos1:{en:'European Partner',de:'Europäischer Partner',zh:'欧洲合作伙伴'},
     hero_pos2:{en:'CE Marking',de:'CE-Kennzeichnung',zh:'CE认证'},
@@ -1002,19 +1046,19 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     hero_cta2:{en:'Explore the Product Lines',de:'Produktlinien entdecken',zh:'探索产品线'},
 
     m1:{en:'Underground engineering world records',de:'Weltrekorde im unterirdischen Tunnelbau',zh:'地下工程世界纪录'},
-    m2:{en:'Full-face TBM coverage capability',de:'Vollflächige TBM-Abdeckung',zh:'全断面掘进机覆盖能力'},
+    m2:{en:'Full-face TBM coverage capability',de:'Vollschnitt-TBM-Abdeckung',zh:'全断面掘进机覆盖能力'},
     m3:{en:'CE marking & ISO 9001 / 14001 / 45001',de:'CE-Kennzeichnung & ISO 9001 / 14001 / 45001',zh:'CE认证与ISO 9001 / 14001 / 45001'},
     m4:{en:'Proprietary super-large main bearing',de:'Eigenentwickeltes Super-Hauptlager',zh:'自主超大主轴承研发'},
 
     pillars_title:{en:'Three Product Pillars, One Partner',de:'Drei Produktsäulen, ein Partner',zh:'三大业务支柱，一个合作伙伴'},
     pillars_sub:{en:'Machines · Intelligent probing · Consumables',de:'Maschinen · Intelligente Erkundung · Verschleißteile',zh:'整机装备 · 智能探测 · 耗材刀具'},
     p1_t:{en:'Heavy Tunneling Machinery',de:'Schwere Tunnelbaumaschinen',zh:'重型隧道掘进装备'},
-    p1_d:{en:'Super-diameter SPB & EPB TBMs, hard-rock dual-mode systems and vertical shaft boring machines — from CCCC Tianhe, a subsidiary of China Communications Construction.',de:'Superdurchmesser-SPB- & EPB-TBM, Dual-Mode-Systeme für Hartgestein und Schachtbohrmaschinen — von CCCC Tianhe, einer Tochtergesellschaft der China Communications Construction.',zh:'超大直径泥水/土压盾构机、硬岩双模式掘进系统与竖井掘进机——来自中交天和（中国交建旗下）。'},
+    p1_d:{en:'Super-diameter SPB & EPB TBMs, hard-rock dual-mode systems and vertical shaft boring machines — from CCCC Tianhe, a subsidiary of China Communications Construction.',de:'Großdurchmesser-Mixschilde (SPB) & Erddruckschilde (EPB), umstellbare Dual-Mode-TBM für Hartgestein und Schachtbohrmaschinen — von CCCC Tianhe, einer Tochtergesellschaft der China Communications Construction.',zh:'超大直径泥水/土压盾构机、硬岩双模式掘进系统与竖井掘进机——来自中交天和（中国交建旗下）。'},
     p1_go:{en:'Explore machinery',de:'Maschinen entdecken',zh:'了解整机装备'},
-    p2_t:{en:'In-TBM Probing & Drilling-Grouting',de:'Erkundung & Bohr-Injektion im Schild',zh:'机载超前探测与钻注系统'},
+    p2_t:{en:'In-TBM Probe Drilling & Grouting',de:'Vorausbohr- & Injektionstechnik im Schild',zh:'机载超前探测与钻注系统'},
     p2_d:{en:'TBM-mounted advance drilling, water-hammer probing, bolting and MWD geological prediction from China Railway Southwest Research Institute — CE-certified rigs for European rock conditions.',de:'TBM-gestützte Vorausbohrungen, Wasserhammer-Erkundung, Ankerbohren und MWD-Geologieprognose vom China Railway Southwest Research Institute — CE-zertifizierte Geräte für europäische Gebirgsverhältnisse.',zh:'中铁西南院出品的TBM搭载式超前钻探、水锤探测、锚杆钻机与MWD地质预报系统——为欧洲岩层条件提供CE认证设备。'},
     p2_go:{en:'Explore probing systems',de:'Erkundungssysteme entdecken',zh:'了解探测系统'},
-    p3_t:{en:'Engineered Cutters & High-Pressure Seals',de:'Technisch optimierte Meißel & Hochdruck-Dichtungen',zh:'工程化滚刀与高压密封'},
+    p3_t:{en:'Engineered Cutters & High-Pressure Seals',de:'Konstruierte Rollenmeißel & Hochdruck-Schildschwanzdichtungen',zh:'工程化滚刀与高压密封'},
     p3_d:{en:'7–21 inch roller cutters, premium metallurgy, tailskin wire brushes & seals and containerized on-site tool workshops from Shandong Tianyou — engineered to the strata, delivered to your jobsite.',de:'7–21-Zoll-Rollenmeißel, Premium-Metallurgie, Schildschwanz-Drahtbürsten & Dichtungen und containerisierte Vor-Ort-Werkstätten von Shandong Tianyou — abgestimmt auf das Gebirge, geliefert an Ihre Baustelle.',zh:'山东天佑的7–21英寸滚刀、高端冶金材料、盾尾钢丝刷与密封及集装箱式现场刀具维保工坊——针对地层定制，直达您的工地。'},
     p3_go:{en:'Explore cutters',de:'Meißel entdecken',zh:'了解刀具'},
 
@@ -1032,7 +1076,7 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     f3_t:{en:'China · Tianshan Shengli Tunnel',de:'China · Tianshan-Shengli-Tunnel',zh:'中国 · 天山胜利隧道'},
     f3_d:{en:'Hard-rock & vertical shaft TBM records',de:'Rekorde bei Hartgestein- & Schacht-TBM',zh:'硬岩与竖井TBM纪录'},
     f4_t:{en:'China · Nanjing Heyan Road Crossing',de:'China · Nanjing Heyan-Straßenquerung',zh:'中国 · 南京和燕路过江通道'},
-    f4_d:{en:'Super-diameter river-crossing TBM',de:'Superdurchmesser-Flussquerungs-TBM',zh:'超大直径过江盾构'},
+    f4_d:{en:'Super-diameter river-crossing TBM',de:'Großdurchmesser-Flussquerungs-TBM',zh:'超大直径过江盾构'},
     f5_t:{en:'China · Beijing East 6th Ring',de:'China · Beijing 6. Ring Ost',zh:'中国 · 北京东六环'},
     f5_d:{en:'16 m-class urban expressway shield',de:'16-m-Klasse-Stadtautobahnschild',zh:'16米级城市快速路盾构'},
     f6_t:{en:'Europe',de:'Europa',zh:'欧洲'},
@@ -1045,11 +1089,11 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
 
     ma_kicker:{en:'01 · Heavy Tunneling Machinery',de:'01 · Schwere Tunnelbaumaschinen',zh:'01 · 重型隧道掘进装备'},
     ma_title:{en:'TBM &amp; Specialized<br>Engineering Equipment',de:'Vortriebstechnik &amp;<br>Großmaschinen',zh:'TBM与特种<br>工程装备'},
-    ma_lead:{en:'Full-face tunnel boring machines from 0.8 m to 18.4 m — slurry pressure balance, earth pressure balance, hard-rock, dual-mode, vertical shaft and offshore drilling systems.',de:'Vollflächige Tunnelbohrmaschinen von 0,8 m bis 18,4 m — Flüssigkeits- und Erddruckschilde, Hartgesteins-, Dual-Mode-, Vertikalschacht- und Offshore-Bohrsysteme.',zh:'0.8m至18.4m全断面隧道掘进机——泥水平衡、土压平衡、硬岩、双模式、竖井掘进与海上钻探系统。'},
+    ma_lead:{en:'Full-face tunnel boring machines from 0.8 m to 18.4 m — slurry pressure balance, earth pressure balance, hard-rock, dual-mode, vertical shaft and offshore drilling systems.',de:'Vollschnitt-Tunnelbohrmaschinen von 0,8 m bis 18,4 m — Flüssigkeits- und Erddruckschilde, Hartgesteins-, Dual-Mode-, Vertikalschacht- und Offshore-Bohrsysteme.',zh:'0.8m至18.4m全断面掘进机——泥水盾构（SPB）、土压平衡盾构（EPB）、硬岩掘进机（TBM）、双模式、竖井掘进与海上钻探系统。'},
     ma_brand:{en:'CCCC Tianhe Mechanical Equipment Manufacturing Co., Ltd. — a subsidiary of China Communications Construction (CCCC), one of the world\u2019s largest infrastructure groups. Full-chain: R&D, design, manufacturing, consulting, tunneling, maintenance.',de:'CCCC Tianhe Mechanical Equipment Manufacturing Co., Ltd. — Tochtergesellschaft der China Communications Construction (CCCC), einer der größten Infrastruktur-Konzerne der Welt. Komplette Kette: F&E, Design, Fertigung, Beratung, Tunnelbau, Wartung.',zh:'中交天和机械设备制造有限公司——中国交通建设集团（CCCC）旗下子公司，全球最大基础设施集团之一。定位：超大直径盾构整机、复杂硬岩双模TBM及深立井掘进装备研发智造基地。全链条能力：研发、设计、制造、咨询、施工、维保。'},
-    ma21_title:{en:'Super-Large-Diameter SPB & EPB TBMs',de:'SPB- & EPB-TBM mit Superdurchmesser',zh:'超大直径泥水/土压盾构机'},
+    ma21_title:{en:'Super-Large-Diameter SPB & EPB TBMs',de:'Großdurchmesser-Mixschilde (SPB) & Erddruckschilde (EPB)',zh:'超大直径泥水/土压盾构机'},
     ma21_sub:{en:'14 m – 16 m+ class for river crossings and urban corridors',de:'14-m–16-m+-Klasse für Flussquerungen und Stadtkorridore',zh:'14m–16m+级，用于过江通道与城市廊道'},
-    ma21_tag1:{en:'Super-Large Diameter',de:'Superdurchmesser',zh:'超大直径'},
+    ma21_tag1:{en:'Super-Large Diameter',de:'Großdurchmesser',zh:'超大直径'},
     ma21_h1:{en:'Slurry & Earth Pressure Balance TBMs',de:'Flüssigkeits- & Erddruck-Schildmaschinen',zh:'泥水与土压平衡盾构机'},
     ma21_d1:{en:'Flagship machines for record-breaking drives, including the Hai-Tai Yangtze River Tunnel ("Cangyuan") and Beijing East 6th Ring Expressway ("Yunhe").',de:'Flaggschiff-Maschinen für Rekordvortriebe, u. a. Hai-Tai-Yangtse-Tunnel („Cangyuan“) und die Stadtautobahn Beijing 6. Ring Ost („Yunhe“).',zh:'创纪录掘进的旗舰机型，包括海太长江隧道"沧渊号"与北京东六环改造工程"运河号"。'},
     ma21_f1:{en:'Atmospheric cutterhead intervention capability',de:'Werkzeugwechsel unter atmosphärischem Druck',zh:'常压刀盘换刀能力'},
@@ -1064,8 +1108,8 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     ma21_f7:{en:'Lifecycle condition monitoring & fleet management',de:'Lebenszyklus-Zustandsüberwachung & Flottenmanagement',zh:'全生命周期状态监测与机队管理'},
     ma21_f8:{en:'Consulting, tunneling and infrastructure services',de:'Beratungs-, Tunnelbau- & Infrastrukturdienstleistungen',zh:'咨询、施工与基础设施服务'},
     ma22_title:{en:'Hard Rock & Complex Strata TBMs',de:'TBM für Hartgestein & komplexe Gebirgsverhältnisse',zh:'硬岩与复杂地层TBM'},
-    ma22_sub:{en:'Dual-mode systems for squeezing ground and rockburst risk',de:'Dual-Mode-Systeme für druckhaftes Gebirge und Bergschlagrisiko',zh:'应对挤压性围岩与岩爆风险的双模式系统'},
-    ma22_tag1:{en:'DTSES Dual-Mode',de:'DTSES Dual-Mode',zh:'DTSES双模式'},
+    ma22_sub:{en:'Dual-mode systems for squeezing ground and rockburst risk',de:'Umstellbare Dual-Mode-TBM für druckhaftes Gebirge und Bergschlagrisiko',zh:'应对挤压性围岩与岩爆风险的双模式系统'},
+    ma22_tag1:{en:'DTSES Dual-Mode',de:'Umstellbare Dual-Mode-TBM',zh:'DTSES双模式'},
     ma22_h1:{en:'Squeezing Ground & Rockburst Management',de:'Beherrschung von druckhaftem Gebirge & Bergschlag',zh:'挤压围岩与岩爆管理'},
     ma22_d1:{en:'DTSES switchable excavation-supports mode combining extruded-concrete and steel-segment lining, developed for large-deformation and strong-rockburst tunnels.',de:'Umschaltbarer DTSES-Ausbau-Modus mit Spritzbeton- und Stahlsegment-Ausbau, entwickelt für Tunnel mit großen Verformungen und starkem Bergschlag.',zh:'DTSES可切换掘进支护模式，结合挤压混凝土与钢管片衬砌，专为大变形与强岩爆隧道研制。'},
     ma22_f1:{en:'Switchable support modes without standstill',de:'Umschaltbare Ausbaumodi ohne Stillstand',zh:'不停机切换支护模式'},
@@ -1094,13 +1138,13 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     pr_kicker:{en:'02 · In-TBM Probing & Drilling Solutions',de:'02 · Erkundungs- & Bohrlösungen im Schild',zh:'02 · 机载钻注探解决方案'},
     pr_title:{en:'Smart In-TBM<br>Advance Probing',de:'Intelligente Vorauserkundung<br>im TBM-Schild',zh:'机载智能<br>超前钻注探'},
     pr_lead:{en:'TBM-mounted advance drilling, water-hammer probing, anchoring and MWD prediction — built to de-risk the ground ahead of the cutterhead and to automate the hardest jobs inside the shield.',de:'TBM-gestützte Vorausbohrungen, Wasserhammer-Erkundung, Ankerbohren und MWD-Prognose — entwickelt, um das Gebirge vor dem Schneidrad zu entschärfen und die härtesten Arbeiten im Schild zu automatisieren.',zh:'TBM搭载式超前钻探、水锤探测、锚杆钻装与MWD预报——降低刀盘前方地质风险，自动化处理盾构舱内最艰难的作业。'},
-    pr_brand:{en:'A research institute of the China Railway group, developing tunnel machinery since 1973 — brand "Suike Drilling: drilling through mountains and rivers, building dreams for the future."',de:'Ein Forschungsinstitut der China Railway Group, das seit 1973 Tunnelbaumaschinen entwickelt — Marke „Suike Drilling: Durch Berge und Flüsse bohren, Zukunftsträume bauen.“',zh:'中国中铁旗下研究院所，自1973年起研发隧道装备——TBM机载超前钻注探一体机、欧标CE认证水锤钻机及数字化随钻测量（MWD）创新源。品牌"遂科钻探：穿山越岭，筑梦未来"。'},
+    pr_brand:{en:'A research institute of the China Railway group, developing tunnel machinery since 1973 — brand "Suike Drilling: drilling through mountains and rivers, building dreams for the future."',de:'Ein Forschungsinstitut der China Railway Group, das seit 1973 Tunnelbaumaschinen entwickelt — Marke „Suike Drilling: Durch Berge bohren, Zukunft bauen.“',zh:'中国中铁旗下研究院所，自1973年起研发隧道装备——TBM机载超前钻注探一体机、欧标CE认证水锤钻机及数字化随钻测量（MWD）创新源。品牌"隧科钻机（Suike Drilling）：钻透山川，筑梦未来"。'},
     pr31_title:{en:'Advance Drilling & Grouting Rigs',de:'Vorausbohr- & Injektionsgeräte',zh:'超前钻注一体机'},
     pr31_sub:{en:'SR-HC / SR-BD series',de:'Serie SR-HC / SR-BD',zh:'SR-HC / SR-BD系列'},
     pr31_tag1:{en:'Drilling & Grouting',de:'Bohren & Injizieren',zh:'钻注一体'},
     pr31_h1:{en:'SR-HC / SR-BD Integrated Machines',de:'Integrierte Maschinen SR-HC / SR-BD',zh:'SR-HC / SR-BD一体化钻机'},
     pr31_f1:{en:'Ultra-compact rear overhang — fits tight shield geometries',de:'Extrem kompakter hinterer Überhang — passt in enge Schildgeometrien',zh:'超紧凑后悬距——适配狭小盾构空间'},
-    pr31_f2:{en:'Anti-jamming & anti-blank-firing protection',de:'Klemmschutz- & Leerhub-Schutz (Anti-Blank-Firing)',zh:'防卡钻与防空打保护'},
+    pr31_f2:{en:'Anti-jamming & blank firing protection',de:'Schutz gegen Festbohren & Leerschläge',zh:'防卡钻与防空打保护'},
     pr31_f3:{en:'Wireless remote operation (radio control)',de:'Drahtlose Fernbedienung (Funksteuerung)',zh:'无线遥控操作（无线电控制）'},
     pr31_f4:{en:'All-direction high-pressure grouting',de:'Hochdruck-Injektion in alle Richtungen',zh:'全方位高压注浆'},
     pr31_tag2:{en:'Automation',de:'Automatisierung',zh:'自动化'},
@@ -1112,8 +1156,21 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     pr32_h1:{en:'Deep, Straight, Fast',de:'Tief, gerade, schnell',zh:'深孔、笔直、快速'},
     pr32_f1:{en:'CE-certified drill package',de:'CE-zertifiziertes Bohrpaket',zh:'CE认证钻机套件'},
     pr32_f2:{en:'Eurodrill power head & Wassara water hammer',de:'Eurodrill-Antriebskopf & Wassara-Wasserhammer',zh:'Eurodrill动力头与Wassara水锤'},
-    pr32_f3:{en:'Drilling depth 200 – 250 m',de:'Bohrtiefe 200 – 250 m',zh:'钻孔深度200–250米'},
+    pr32_f3:{en:'Drilling depth up to 80 – 250 m (model dependent)',de:'Bohrtiefe bis 80 – 250 m (modellabhängig)',zh:'钻孔深度最高80–250米（视型号而定）'},
     pr32_f4:{en:'Hole deviation < 3%',de:'Abweichung der Bohrung < 3%',zh:'成孔偏斜率<3%'},
+    pr32_spec_t:{en:'WR Series Specification Matrix',de:'WR-Serie – Technische Daten',zh:'WR系列技术参数表'},
+    pr32_h_model:{en:'Model',de:'Modell',zh:'型号'},
+    pr32_h_depth:{en:'Max Depth',de:'Max. Tiefe',zh:'最大孔深'},
+    pr32_h_hole:{en:'Hole Diameter',de:'Bohrlochdurchmesser',zh:'孔径'},
+    pr32_h_speed:{en:'Rotation Speed',de:'Drehzahl',zh:'转速'},
+    pr32_h_torque:{en:'Torque',de:'Drehmoment',zh:'扭矩'},
+    pr32_h_press:{en:'Water Pressure',de:'Wasserdruck',zh:'水压'},
+    pr32_h_power:{en:'Power Pack',de:'Antriebspaket',zh:'动力包'},
+    pr32_h_hammer:{en:'Hammer / Head',de:'Hammer / Antriebskopf',zh:'水锤 / 动力头'},
+    cu42_qc_f1h:{en:'Air Tightness Test',de:'Druckdichtheitsprüfung',zh:'气密性试验'},
+    cu42_qc_f1d:{en:'≥ 0.7 MPa after assembly of cutter ring and hub',de:'≥ 0,7 MPa nach Montage von Meißelring und Nabe',zh:'刀圈与轮毂装配后压力试验 ≥ 0.7 MPa'},
+    cu42_qc_f2h:{en:'Break-In Test',de:'Einlaufversuch',zh:'跑合测试'},
+    cu42_qc_f2d:{en:'≥ 30 min at 50 rpm — bearing temperature rise ≤ 40 °C',de:'≥ 30 min bei 50 min⁻¹ — Lagertemperaturanstieg ≤ 40 °C',zh:'50 rpm 下 ≥ 30 分钟——轴承温升 ≤ 40 °C'},
     pr32_tag2:{en:'Remote Operation',de:'Fernbedienung',zh:'远程操控'},
     pr32_h2:{en:'Operator Safety in High-Risk Sections',de:'Bedienersicherheit in Hochrisiko-Abschnitten',zh:'高风险区段操作人员安全'},
     pr32_d1:{en:'Wireless remote control keeps operators clear of falling rock and high-pressure zones while the machine handles the advance-probe cycle inside the shield.',de:'Drahtlose Fernsteuerung hält Bediener fern von Steinfall- und Hochdruckzonen, während die Maschine den Vorauserkundungszyklus im Schild übernimmt.',zh:'无线遥控让操作人员远离落石与高压区域，机器在盾构舱内自主完成超前探测循环。'},
@@ -1128,7 +1185,7 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     pr33_tag3:{en:'Full Series',de:'Komplette Serie',zh:'全系列'},
     pr33_h3:{en:'Six Product Series',de:'Sechs Produktserien',zh:'六大产品系列'},
     pr33_d3:{en:'SR-HC · SR-BD · WR · TB-HC · TB-RD · ZMG — a complete TBM-mounted portfolio matched to your geology and shield layout.',de:'SR-HC · SR-BD · WR · TB-HC · TB-RD · ZMG — ein vollständiges TBM-gestütztes Portfolio, abgestimmt auf Ihre Geologie und Schildkonfiguration.',zh:'SR-HC · SR-BD · WR · TB-HC · TB-RD · ZMG——完整的机载产品组合，适配您的地质与盾构布局。'},
-    pr34_title:{en:'MWD Intelligent Geological Prediction',de:'Ortsbrust-Vorauserkundung &amp; MWD-Gesteinsanalyse',zh:'MWD智能地质预报'},
+    pr34_title:{en:'MWD Intelligent Geological Prediction',de:'MWD-basierte Gebirgsprognose an der Ortsbrust',zh:'MWD智能地质预报'},
     pr34_sub:{en:'Measurement while drilling',de:'Messung während des Bohrens',zh:'随钻测量'},
     pr34_tag1:{en:'MWD',de:'MWD',zh:'MWD'},
     pr34_h1:{en:'See the Ground Before You Cut It',de:'Das Gebirge sehen, bevor Sie es anschneiden',zh:'掘进之前，先看清前方地质'},
@@ -1142,35 +1199,35 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     pr34_btn2:{en:'Back to TBM Machinery',de:'Zurück zu TBM-Maschinen',zh:'返回TBM装备'},
 
     cu_kicker:{en:'03 · Cutters & Consumables',de:'03 · Meißel & Verschleißteile',zh:'03 · 刀具与耗材'},
-    cu_title:{en:'Roller Cutters, Metallurgy<br>&amp; High-Pressure Seals',de:'Rollenmeißel, Metallurgie<br>&amp; Hochdruck-Dichtungen',zh:'滚刀刀具、冶金材料<br>与高压密封'},
+    cu_title:{en:'Disc Cutters, Metallurgy<br>&amp; High-Pressure Seals',de:'Rollenmeißel, Metallurgie<br>&amp; Hochdruck-Dichtungen',zh:'滚刀刀具、冶金材料<br>与高压密封'},
     cu_lead:{en:'Nothing can stop our TBM cutters — every kind of drilling cutter and brush seal, engineered to the strata and backed by on-site containerized tool workshops.',de:'Nichts hält unsere TBM-Meißel auf — jede Art von Bohrmeißel und Bürstendichtung, abgestimmt auf das Gebirge und gestützt durch containerisierte Vor-Ort-Werkstätten.',zh:'我们的TBM刀具无往不利——全系列切削刀具与刷式密封，针对地层定制，并有现场集装箱式刀具维保工坊支撑。'},
     cu_brand:{en:'Shandong Tianyou Tunnel Engineering Equipment Co., Ltd. — manufacturing TBM cutters and tailskin brushes since 2008, 159 staff, 22 patents, ISO 9001 / 14001 / 45001, joint R&D with Nankai University.',de:'Shandong Tianyou Tunnel Engineering Equipment Co., Ltd. — fertigt TBM-Meißel und Schildschwanzbürsten seit 2008, 159 Mitarbeiter, 22 Patente, ISO 9001 / 14001 / 45001, gemeinsame F&E mit der Nankai-Universität.',zh:'山东天佑隧道工程设备有限公司——自2008年起制造TBM滚刀与盾尾刷。定位：7~21英寸全系列滚刀、电渣重熔（ESR）模具钢冶金工艺与移动集装箱式刀具维保体系。159名员工，22项专利，ISO 9001/14001/45001认证，与南开大学联合研发。'},
-    cu41_title:{en:'Heavy-Duty Roller Cutters · 7 – 21 inch',de:'Hochleistungs-Rollenmeißel · 7 – 21 Zoll',zh:'重型滚刀 · 7–21英寸'},
+    cu41_title:{en:'Heavy-Duty Disc Cutters · 7 – 21 inch',de:'Hochleistungs-Rollenmeißel · 7 – 21 Zoll',zh:'重型滚刀 · 7–21英寸'},
     cu41_sub:{en:'Full series for every cutterhead position',de:'Komplette Serie für jede Schneidradposition',zh:'覆盖刀盘各位置的全系列'},
     cu41_tag1:{en:'Standard',de:'Standard',zh:'标准型'},
-    cu41_h1:{en:'Single & Twin Roller Cutters',de:'Einzel- & Doppel-Rollenmeißel',zh:'单刃与双刃滚刀'},
-    cu41_d1:{en:'7–21 inch single and twin disc cutters covering face, gauge and center positions of mainstream TBM cutterheads.',de:'7–21-Zoll-Einzel- und Doppel-Diskmeißel für Flächen-, Kaliber- und Zentrumspositionen gängiger TBM-Schneidräder.',zh:'7–21英寸单刃与双刃盘形滚刀，覆盖主流TBM刀盘的正面、边缘与中心位置。'},
+    cu41_h1:{en:'Single & Twin Disc Cutters',de:'Einzel- & Doppel-Scheibenmeißel',zh:'单刃与双刃盘形滚刀'},
+    cu41_d1:{en:'7–21 inch single and twin disc cutters covering face, gauge and center positions of mainstream TBM cutterheads.',de:'7–21-Zoll-Einzel- und Doppel-Scheibenmeißel für Flächen-, Kaliber- und Zentrumspositionen gängiger TBM-Schneidräder.',zh:'7–21英寸单刃与双刃盘形滚刀，覆盖主流TBM刀盘的正面、边缘与中心位置。'},
     cu41_tag2:{en:'TCI',de:'TCI',zh:'TCI合金齿'},
     cu41_h2:{en:'Triple & Tungsten-Carbide-Insert Cutters',de:'Dreifach- & Hartmetallbestückte Meißel',zh:'三刃与硬质合金齿（TCI）滚刀'},
     cu41_d2:{en:'Triple-roller and TCI (carbide insert) cutters for overcutting, abrasive sandstone and highly abrasive strata.',de:'Dreifach-Rollen- und TCI-Meißel (Hartmetall-Einsätze) für Überbohren, abrasiven Sandstein und stark abrasive Gebirgsverhältnisse.',zh:'三刃与TCI（硬质合金镶齿）滚刀，用于超挖、磨蚀性砂岩与高磨蚀地层。'},
     cu41_tag3:{en:'Special',de:'Spezial',zh:'特种型'},
     cu41_h3:{en:'Twin, Eccentric & Raise-Boring Cutters',de:'Zwillings-, Exzenter- & Raise-Boring-Meißel',zh:'双联、偏心与反井钻滚刀'},
-    cu41_d3:{en:'Twin, eccentric and raise-boring disc cutters, plus custom geometries for non-standard cutterheads.',de:'Zwillings-, Exzenter- und Raise-Boring-Diskmeißel sowie kundenspezifische Geometrien für nicht standardisierte Schneidräder.',zh:'双联、偏心与反井钻盘形滚刀，并为非标刀盘提供定制几何设计。'},
-    cu42_title:{en:'Extreme-Duty Cutters',de:'Extrem-Meissel',zh:'极端工况刀具'},
+    cu41_d3:{en:'Twin, eccentric and raise-boring disc cutters, plus custom geometries for non-standard cutterheads.',de:'Zwillings-, Exzenter- und Raise-Boring-Scheibenmeißel sowie kundenspezifische Geometrien für nicht standardisierte Schneidräder.',zh:'双联、偏心与反井钻盘形滚刀，并为非标刀盘提供定制几何设计。'},
+    cu42_title:{en:'Extreme-Duty Cutters',de:'Extrem-Meißel',zh:'极端工况刀具'},
     cu42_sub:{en:'Pressure · abrasion · load · intelligence',de:'Druck · Abrasion · Last · Intelligenz',zh:'高压 · 高磨 · 重载 · 智能'},
     cu42_tag1:{en:'High Pressure',de:'Hochdruck',zh:'高压环境'},
     cu42_h1:{en:'High-Pressure Bearing Cutters',de:'Meißel mit Hochdruck-Lagerung',zh:'高水压承压滚刀'},
     cu42_d1:{en:'Designed for high-water-pressure environments with bearing capacity above 1.0 MPa — proven in subsea and deep river-crossing drives.',de:'Konzipiert für Umgebungen mit hohem Wasserdruck und einer Lagerkapazität über 1,0 MPa — bewährt bei Unterwasser- und tiefen Flussquerungs-Vortrieben.',zh:'为高水压环境设计，承载能力超过1.0 MPa——在海底与深水过江掘进中经过验证。'},
     cu42_tag2:{en:'Extreme Hard Rock',de:'Extremes Hartgestein',zh:'极硬岩'},
     cu42_h2:{en:'High-Load & High-Wear Cutters',de:'Hochlast- & Hochverschleiß-Meißel',zh:'高载荷高耐磨滚刀'},
-    cu42_d2:{en:'Ultra-heavy-duty cutters with load capacity above 40 tons for extremely hard rock, plus TCI alloy rings for abrasive sandstones (< 70 MPa).',de:'Ultra-schwere Meißel mit einer Lastkapazität über 40 t für extrem hartes Gestein, plus TCI-Legierungsringe für abrasiven Sandstein (< 70 MPa).',zh:'针对极硬岩的重载滚刀，承载能力超过40吨；另有用于磨蚀性砂岩（<70 MPa）的TCI合金齿圈。'},
+    cu42_d2:{en:'Ultra-heavy-duty cutters with rated load > 400 kN (approx. 40 metric tons) for extremely hard rock (UCS > 200 MPa), plus TCI alloy rings for abrasive sandstones (< 70 MPa).',de:'Ultra-schwere Meißel mit Nenn-Meißellast > 400 kN (ca. 40 t) für extrem hartes Gestein (UCS > 200 MPa), plus TCI-Legierungsringe für abrasiven Sandstein (< 70 MPa).',zh:'超重型滚刀额定承载力 > 400 kN（约40吨），适配极硬岩（UCS > 200 MPa）；另有TCI合金齿圈应对磨蚀性砂岩（< 70 MPa）。'},
     cu42_tag3:{en:'Intelligence',de:'Intelligenz',zh:'智能监测'},
-    cu42_h3:{en:'Wear-Detection Built-In Cutters',de:'Meißel mit integrierter Verschleißerkennung',zh:'内置磨损检测滚刀'},
-    cu42_d3:{en:'Rotation- and wear-detection cutters that eliminate false signals of conventional pressure wear detection — fewer blind cutterhead interventions.',de:'Rotations- und Verschleißerkennungs-Meissel, die Fehlsignale der herkömmlichen Druck-Verschleißerkennung eliminieren — weniger blinde Schneidrad-Interventionen.',zh:'旋转与磨损检测型滚刀，消除传统压力式磨损检测的误报信号——减少盲目的刀盘干预。'},
+    cu42_h3:{en:'Instrumented Smart Cutters',de:'Instrumentierte Smart-Meißel',zh:'智能传感滚刀（实时磨损监测）'},
+    cu42_d3:{en:'Rotation- and wear-detection cutters that eliminate false signals of conventional pressure wear detection — fewer blind cutterhead interventions.',de:'Rotations- und Verschleißerkennungs-Meißel, die Fehlsignale der herkömmlichen Druck-Verschleißerkennung eliminieren — weniger blinde Schneidrad-Interventionen.',zh:'旋转与磨损检测型滚刀，消除传统压力式磨损检测的误报信号——减少盲目的刀盘干预。'},
     cu42_tag4:{en:'Strata Tuning',de:'Gebirgsabstimmung',zh:'地层匹配'},
     cu42_h4:{en:'G1 / G2 / G4 Cutter Ring Materials',de:'Meißelring-Werkstoffe G1 / G2 / G4',zh:'G1 / G2 / G4刀圈材料'},
     cu42_d4:{en:'Three steel grades — strong wear resistance (G1), conventional (G2), high toughness (G4) — matched to full-face hard rock, all strata and mixed ground.',de:'Drei Stahlsorten — hohe Verschleißfestigkeit (G1), konventionell (G2), hohe Zähigkeit (G4) — abgestimmt auf Vollausbruch-Hartgestein, alle Gebirgsarten und Mischboden.',zh:'三种钢级——高耐磨（G1）、常规（G2）、高韧性（G4）——分别匹配全断面硬岩、各类地层与混合地层。'},
-    cu42_note:{en:'Cutter rings use custom "Great Wall Special Steel": electric-furnace melting, ladle refining, vacuum degassing and ESR re-melting (P < 0.015%, S < 0.005%) — far below the national high-quality mold-steel requirement of 0.03%.',de:'Meißelringe aus kundenspezifischem „Great Wall Special Steel“: Elektroofen-Schmelzen, Pfannenmetallurgie, Vakuumentgasung und ESR-Umschmelzen (P < 0,015 %, S < 0,005 %) — deutlich unter der nationalen Anforderung von 0,03 % für hochwertigen Werkzeugstahl.',zh:'刀圈采用定制"长城特钢"：电炉熔炼、钢包精炼、真空脱气与电渣重熔（P<0.015%，S<0.005%）——远低于国标优质模具钢0.03%的要求。'},
+    cu42_note:{en:'Cutter rings use custom "Great Wall Special Steel": electric-furnace melting, ladle refining, vacuum degassing and electroslag remelting (ESR) (P < 0.015%, S < 0.005%) — far below the national high-quality mold-steel requirement of 0.03%.',de:'Meißelringe aus kundenspezifischem „Great Wall Special Steel“: Elektroofen-Schmelzen, Pfannenmetallurgie, Vakuumentgasung und Elektroschlacke-Umschmelzen (ESR) (P < 0,015 %, S < 0,005 %) — deutlich unter der nationalen Anforderung von 0,03 % für hochwertigen Werkzeugstahl.',zh:'刀圈采用定制"长城特钢"：电炉熔炼、钢包精炼、真空脱气与电渣重熔（P<0.015%，S<0.005%）——远低于国标优质模具钢0.03%的要求。'},
     tbl_grade:{en:'Grade',de:'Sorte',zh:'牌号'},
     tbl_hard:{en:'Hardness HRC',de:'Härte HRC',zh:'硬度HRC'},
     tbl_smelt:{en:'Smelting',de:'Erschmelzung',zh:'冶炼工艺'},
@@ -1178,8 +1235,8 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     tbl_g1:{en:'Full-face hard rock',de:'Vollausbruch-Hartgestein',zh:'全断面硬岩'},
     tbl_g2:{en:'All strata',de:'Alle Gebirgsarten',zh:'各类地层'},
     tbl_g4:{en:'Mixed strata, high toughness',de:'Mischgebirge, hohe Zähigkeit',zh:'混合地层，高韧性'},
-    cu42_ht:{en:'Heat treatment: vacuum-furnace gas quenching + multiple high-temperature tempering (G2/G4 ≥ 3 cycles, G1 ≥ 4 cycles) + deep cryogenic treatment; circumferential hardness spread within 2 HRC.',de:'Wärmebehandlung: Gasabschreckung im Vakuumofen + mehrfaches Hochtemperatur-Anlassen (G2/G4 ≥ 3 Zyklen, G1 ≥ 4 Zyklen) + Tiefkühlbehandlung; Härtestreuung am Umfang innerhalb 2 HRC.',zh:'热处理：真空炉气淬 + 多次高温回火（G2/G4≥3次，G1≥4次）+ 深冷处理；圆周硬度极差在2 HRC以内。'},
-    cu43_title:{en:'Tailskin Brushes & Seals',de:'Schildschwanz-Bürsten & Dichtungen',zh:'盾尾刷与密封'},
+    cu42_ht:{en:'Heat treatment: vacuum-furnace gas quenching + multiple high-temperature tempering (G2/G4 ≥ 3 cycles, G1 ≥ 4 cycles) + deep cryogenic treatment; circumferential hardness variation ≤ 2 HRC.',de:'Wärmebehandlung: Gasabschreckung im Vakuumofen + mehrfaches Hochtemperatur-Anlassen (G2/G4 ≥ 3 Zyklen, G1 ≥ 4 Zyklen) + Tiefkühlbehandlung; Härteabweichung am Umfang ≤ 2 HRC.',zh:'热处理：真空炉气淬 + 多次高温回火（G2/G4≥3次，G1≥4次）+ 深冷处理；圆周硬度偏差 ≤ 2 HRC。'},
+    cu43_title:{en:'Tailskin Wire Brushes & Seals',de:'Schildschwanz-Bürsten & Dichtungen',zh:'盾尾刷与密封'},
     cu43_sub:{en:'Shield sealing that keeps the machine moving',de:'Schilddichtung, die die Maschine am Laufen hält',zh:'让盾构机持续掘进的密封系统'},
     cu43_tag1:{en:'Sealing',de:'Dichtung',zh:'密封'},
     cu43_h1:{en:'Tailskin Wire Brushes & Seals',de:'Schildschwanz-Drahtbürsten & Dichtungen',zh:'盾尾钢丝刷与密封'},
@@ -1194,7 +1251,7 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     cu44_d1:{en:'Established overseas maintenance workshops and jobsite engineering — the same model can be deployed across Europe.',de:'Etablierte Übersee-Wartungswerkstätten und Baustellen-Engineering — dasselbe Modell kann in ganz Europa eingesetzt werden.',zh:'已建立海外维保车间与现场工程服务——同一模式可复制到欧洲各地。'},
     cu44_tag2:{en:'Engineering First',de:'Engineering zuerst',zh:'工程优先'},
     cu44_h2:{en:'Strata-Based Tool Selection',de:'Gebirgsbasierte Werkzeugauswahl',zh:'基于地层的刀具选型'},
-    cu44_d2:{en:'Engineer teams design high-efficiency cutter tools per geological condition to cut contractors\u2019 construction cost, with full tool maintenance equipment and engineers on call.',de:'Ingenieurteams entwickeln hocheffiziente Schneidwerkzeuge je nach geologischer Bedingung, um die Baukosten der Auftragnehmer zu senken — mit kompletter Werkzeugwartungsausrüstung und erreichbaren Ingenieuren.',zh:'工程师团队按地质条件设计高效刀具，帮助承包商降低施工成本，配备全套刀具维保设备与随叫随到的工程师。'},
+    cu44_d2:{en:'Engineer teams design high-performance cutting tools per geological condition to cut contractors\u2019 construction cost, with full tool maintenance equipment and engineers on call.',de:'Ingenieurteams entwickeln leistungsstarke Schneidwerkzeuge je nach geologischer Bedingung, um die Baukosten der Auftragnehmer zu senken — mit kompletter Werkzeugwartungsausrüstung und erreichbaren Ingenieuren.',zh:'工程师团队按地质条件设计高性能切削刀具，帮助承包商降低施工成本，配备全套刀具维保设备与随叫随到的工程师。'},
     cu44_btn1:{en:'Request a Cutter Proposal',de:'Meißel-Angebot anfordern',zh:'索取刀具方案'},
     cu44_btn2:{en:'Consumables & Spare Parts Service',de:'Verschleiß- & Ersatzteilservice',zh:'耗材与备件服务'},
 
@@ -1305,7 +1362,7 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     f_submit:{en:'Submit Inquiry',de:'Anfrage senden',zh:'提交咨询'},
 
     ft_h1:{en:'TunnelTech Europe',de:'TunnelTech Europe',zh:'TunnelTech Europe'},
-    ft_d1:{en:'Turnkey underground & TBM solutions provider — European partner for advanced tunneling engineering. One interface for machines, probing systems, consumables and lifecycle services.',de:'Turnkey-Partner für Untergrund- & TBM-Lösungen — europäischer Partner für modernes Tunnel-Engineering. Eine Schnittstelle für Maschinen, Erkundungssysteme, Verschleißteile und Lebenszyklus-Services.',zh:'全链条地下工程与TBM解决方案提供商——欧洲先进的隧道工程技术合作伙伴。整机、探测系统、耗材与生命周期服务统一对接。'},
+    ft_d1:{en:'Turnkey underground & TBM solutions provider — European partner for advanced tunneling engineering. One interface for machines, probing systems, consumables and lifecycle services.',de:'Turnkey-Partner für den Untertagebau & TBM-Lösungen — europäischer Partner für modernes Tunnel-Engineering. Eine Schnittstelle für Maschinen, Erkundungssysteme, Verschleißteile und Lebenszyklus-Services.',zh:'全链条地下工程与TBM解决方案提供商——欧洲先进的隧道工程技术合作伙伴。整机、探测系统、耗材与生命周期服务统一对接。'},
     ft_h2:{en:'Manufacturing Partners',de:'Fertigungspartner',zh:'制造合作伙伴'},
     ft_p1:{en:'CCCC Tianhe — TBM & shaft machinery',de:'CCCC Tianhe — TBM- & Schachtmaschinen',zh:'中交天和——TBM与竖井装备'},
     ft_p2:{en:'China Railway Southwest Research Institute — probing & drilling systems',de:'China Railway Southwest Research Institute — Erkundungs- & Bohrsysteme',zh:'中铁西南院——探测与钻探系统'},
@@ -1319,7 +1376,7 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     ft_b1:{en:'© 2026 TunnelTech Europe — demo website. Content based on public capability materials of CCCC Tianhe, China Railway Southwest Research Institute and Shandong Tianyou.',de:'© 2026 TunnelTech Europe — Demo-Website. Inhalte basierend auf öffentlichen Leistungsbeschreibungen von CCCC Tianhe, China Railway Southwest Research Institute und Shandong Tianyou.',zh:'© 2026 TunnelTech Europe —— 演示网站。内容基于中交天和、中铁西南院与山东天佑的公开能力资料。'},
 
     doc_title:{en:'TunnelTech Europe — End-to-End Tunneling Solutions | TBM, Probing & Cutting Tools',de:'TunnelTech Europe — Tunnelbau-Lösungen von Anfang bis Ende | TBM, Erkundung & Schneidwerkzeuge',zh:'TunnelTech Europe —— 端到端隧道解决方案 | TBM、探测与切削刀具'},
-    doc_desc:{en:'Turnkey underground & TBM solutions provider for Europe. Super-diameter TBMs, in-TBM advance probing & drilling-grouting systems, and heavy-duty cutters from China\u2019s leading manufacturers.',de:'Turnkey-Partner für Untergrund- & TBM-Lösungen in Europa. Superdurchmesser-TBM, Vorauserkundungs- & Bohr-Injektionssysteme und Hochleistungs-Meissel von Chinas führenden Herstellern.',zh:'面向欧洲的全链条地下工程与TBM解决方案提供商。来自中国领先制造商的超大直径盾构机、机载超前钻注探系统与重型滚刀。'},
+    doc_desc:{en:'Turnkey underground & TBM solutions provider for Europe. Super-diameter TBMs, in-TBM advance probe drilling & pre-excavation grouting systems, and heavy-duty cutters from China\u2019s leading manufacturers.',de:'Turnkey-Partner für den Untertagebau & TBM-Lösungen in Europa. Großdurchmesser-TBM, Vorauserkundungs- & Bohr-Injektionssysteme und Hochleistungs-Meißel von Chinas führenden Herstellern.',zh:'面向欧洲的全链条地下工程与TBM解决方案提供商。来自中国领先制造商的超大直径盾构机、机载超前钻注探系统与重型滚刀。'},
     t_copied:{en:'Request captured — details copied to clipboard. Open your mail client and paste to send.',de:'Anfrage erfasst — Details in die Zwischenablage kopiert. Öffnen Sie Ihr Mailprogramm und fügen Sie sie zum Senden ein.',zh:'咨询已记录——详情已复制到剪贴板，打开邮件客户端粘贴即可发送。'},
     t_manual:{en:'Request captured — please send the composed request via your mail client.',de:'Anfrage erfasst — bitte senden Sie die zusammengestellte Anfrage über Ihr Mailprogramm.',zh:'咨询已记录——请通过邮件客户端发送已生成的请求。'}
   };
