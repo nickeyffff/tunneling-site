@@ -214,6 +214,20 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--panel2);border:1px solid var(--line2);color:var(--text);padding:13px 22px;border-radius:6px;font-size:14.5px;opacity:0;pointer-events:none;transition:all .3s;z-index:200;box-shadow:0 8px 30px rgba(0,0,0,.4)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+@media(max-width:760px){
+  .hero{min-height:auto}
+  .hero .inner{padding:52px 0 28px}
+  .hero h1{font-size:clamp(34px,9.5vw,50px);line-height:1.02;max-width:100%}
+  .hero .sub{margin-top:14px;font-size:16.5px;line-height:1.55;max-width:100%}
+  .hero .kicker{font-size:11px;padding:6px 10px}
+  .hero .pos{margin-top:18px;gap:6px}
+  .hero .pos span{font-size:10.5px;padding:5px 10px;letter-spacing:1.2px}
+  .hero .cta-row{flex-direction:column;gap:10px;margin-top:20px}
+  .hero .cta-row .btn{width:100%;text-align:center}
+  .metrics{padding:22px 0}
+  .metrics .metric .num{font-size:30px}
+}
 </style>
 </head>
 <body>
@@ -253,8 +267,8 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     <div class="gridline grid-bg"></div>
     <div class="inner">
       <span class="kicker" data-i18n="hero_kicker">Turnkey Underground &amp; TBM Solutions Provider</span>
-      <h1 data-i18n-html="hero_title">End-to-End Tunneling<br>Excellence: From <span class="hl">Super-Diameter TBMs</span> to <span class="hl">Smart In-TBM Advance Probing</span> &amp; <span class="hl">Heavy-Duty Cutting Tools</span>.</h1>
-      <p class="sub" data-i18n="hero_sub">One European partner for the entire tunneling value chain — engineering, manufacturing, remanufacturing, field support and consumables, delivered by China's leading equipment makers.</p>
+      <h1 data-i18n="hero_title">End-to-End Tunneling</h1>
+      <p class="sub" data-i18n-html="hero_sub">From <span class="hl">Super-Diameter TBMs</span> to <span class="hl">Smart In-TBM Advance Probing</span> &amp; <span class="hl">Heavy-Duty Cutting Tools</span>.</p>
       <div class="pos">
         <span data-i18n="hero_pos1">European Partner</span>
         <span data-i18n="hero_pos2">CE Marking</span>
@@ -1036,8 +1050,8 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
     nav_quote:{en:'Request a Quote',de:'Angebot',zh:'获取报价'},
 
     hero_kicker:{en:'Turnkey Underground & TBM Solutions Provider',de:'Turnkey-Partner für den Untertagebau & TBM-Lösungen',zh:'全链条地下工程与TBM解决方案提供商'},
-    hero_title:{en:'End-to-End Tunneling<br>Excellence: From <span class="hl">Super-Diameter TBMs</span> to <span class="hl">Smart In-TBM Advance Probing</span> &amp; <span class="hl">Heavy-Duty Cutting Tools</span>.',de:'Tunnelbau von Anfang bis Ende<br>Exzellenz: Von <span class="hl">Großdurchmesser-TBM</span> bis zu <span class="hl">intelligenter Vorauserkundung im Schild</span> &amp; <span class="hl">Hochleistungs-Meißeln</span>.',zh:'端到端隧道掘进<br>全断面隧道掘进综合解决方案：集成 <span class="hl">超大直径TBM整机</span>、<span class="hl">机载智能超前钻注探系统</span> 与 <span class="hl">高端耐磨刀具矩阵</span>'},
-    hero_sub:{en:'One European partner for the entire tunneling value chain — engineering, manufacturing, remanufacturing, field support and consumables, delivered by China\u2019s leading equipment makers.',de:'Ein europäischer Partner für die gesamte Tunnelbau-Wertschöpfungskette — Engineering, Fertigung, Remanufacturing, Vor-Ort-Service und Verschleißteile, geliefert von Chinas führenden Maschinenherstellern.',zh:'面向欧洲客户的一站式合作伙伴，覆盖隧道工程全价值链——设计、制造、再制造、现场服务与耗材，由中国的领先装备制造商提供。'},
+    hero_title:{en:'End-to-End Tunneling',de:'Tunnelbau aus einer Hand',zh:'端到端隧道掘进'},
+    hero_sub:{en:'From <span class="hl">Super-Diameter TBMs</span> to <span class="hl">Smart In-TBM Advance Probing</span> &amp; <span class="hl">Heavy-Duty Cutting Tools</span>.',de:'Von <span class="hl">Großdurchmesser-TBM</span> über <span class="hl">intelligente Vorauserkundung im Schild</span> bis zu <span class="hl">Hochleistungs-Meißeln</span>.',zh:'从<span class="hl">超大直径盾构机</span>到<span class="hl">机载智能超前探测</span>与<span class="hl">重型切削刀具</span>。'},
     hero_pos1:{en:'European Partner',de:'Europäischer Partner',zh:'欧洲合作伙伴'},
     hero_pos2:{en:'CE Marking',de:'CE-Kennzeichnung',zh:'CE认证'},
     hero_pos3:{en:'ISO 9001 · 14001 · 45001',de:'ISO 9001 · 14001 · 45001',zh:'ISO 9001 · 14001 · 45001'},
