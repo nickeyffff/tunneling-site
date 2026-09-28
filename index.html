@@ -18,7 +18,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Barlow','Helvetica Neue','PingFang SC','Microsoft YaHei','Noto Sans CJK SC',Arial,sans-serif;background:var(--ink);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiasedoverflow-x:hidden;max-width:100vw;}
+body{font-family:'Barlow','Helvetica Neue','PingFang SC','Microsoft YaHei','Noto Sans CJK SC',Arial,sans-serif;background:var(--ink);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw;}
 .display{font-family:'Barlow Condensed','Barlow Condensed','Arial Narrow',Arial,sans-serif}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
@@ -232,6 +232,58 @@ footer .bottom{width:min(1200px,92%);margin:0 auto;border-top:1px solid var(--li
   .metrics{padding:22px 0}
   .metrics .metric .num{font-size:30px}
 }
+
+/* ===== Herrenknecht-style override ===== */
+:root{
+  --font-sans:'Barlow','Helvetica Neue','Inter','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+  --font-display:'Barlow','Helvetica Neue','Inter',system-ui,sans-serif;
+}
+body{font-family:var(--font-sans);letter-spacing:.01em}
+.display,.hero h1,.logo{font-family:var(--font-display);text-transform:none;letter-spacing:-.01em}
+.hero h1{font-weight:600;line-height:1.08;font-size:clamp(34px,5vw,64px)}
+.hero .kicker{background:none;border:none;padding:0;font-size:12px;letter-spacing:2px;color:var(--accent);text-transform:uppercase;font-weight:600}
+.grid-bg{display:none}
+.hero{min-height:auto;padding:120px 0 80px}
+.hero .inner{padding:0}
+.hero .shade{background:linear-gradient(180deg,rgba(10,20,32,.55) 0%,rgba(10,20,32,.85) 100%)}
+.card{background:transparent;border:1px solid var(--line);border-radius:0;box-shadow:none;overflow:hidden;transition:border-color .2s}
+.card:hover{border-color:var(--line2)}
+.card .body{padding:22px 24px}
+.card h3{font-weight:600;letter-spacing:-.005em}
+.tag{font-weight:600;letter-spacing:1.5px;padding:4px 10px;border-radius:0;font-size:11px}
+.btn{border-radius:0;font-weight:600;letter-spacing:.02em;padding:13px 26px;transition:all .2s}
+.btn.primary{background:var(--accent);color:#0A1420;border:none}
+.btn.primary:hover{background:#ffb43e}
+.btn.ghost{background:transparent;border:1px solid var(--line2);color:var(--text)}
+.btn.ghost:hover{border-color:var(--text)}
+.sec-head h2{font-weight:600;letter-spacing:-.01em}
+.sec-head .no{font-family:var(--font-sans);color:var(--accent);font-weight:600;letter-spacing:2px}
+.section{padding:80px 0}
+.metrics{background:var(--ink2);padding:40px 0}
+.metrics .metric .num{font-family:var(--font-display);font-weight:600;letter-spacing:-.01em}
+.metrics .metric .lbl{color:var(--muted);font-size:13.5px}
+.nav{background:rgba(10,20,32,.92)}
+.nav-links a{border-radius:0;padding:8px 12px}
+.nav-links a.active{background:none;color:var(--accent)}
+.nav-links a.active::before{content:"";display:inline-block;width:6px;height:6px;background:var(--accent);border-radius:50%;margin-right:7px;vertical-align:middle}
+.nav-cta{border-radius:0}
+.lang-sw{border-radius:0}
+.footer{padding:48px 0;border-top:1px solid var(--line)}
+.spec-table th{font-weight:600;letter-spacing:.3px;text-transform:uppercase;font-size:11px}
+.qc-item{border-radius:0}
+@media(max-width:760px){
+  .section{padding:56px 0}
+  .hero{padding:90px 0 50px}
+}
+
+/* Herrenknecht refinements v2 */
+.sec-head h2{text-transform:none;font-weight:600}
+.card{background:var(--panel)}
+.card .imgbox{border-radius:0}
+.btn.primary{letter-spacing:.02em}
+.nav-cta{font-size:12px;padding:8px 12px}
+.hero h1{margin-top:14px}
+.hero .sub{font-weight:400;color:#C6D2E0;max-width:680px}
 </style>
 </head>
 <body>
