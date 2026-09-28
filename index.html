@@ -376,69 +376,37 @@ body{font-family:var(--font-sans);letter-spacing:.01em}
   <div class="section tight" style="padding-top:0">
     <div class="wrap">
       <div class="sec-head"><span class="no">02</span><h2 data-i18n="foot_title">Global Footprint</h2><span class="sub" data-i18n="foot_sub">From Chinese mega-projects to international rail corridors</span></div>
-      <div class="foot-wrap">
+      <div class="foot-wrap" style="grid-template-columns:1fr;gap:20px;">
         <div class="footmap card" style="padding:14px">
-          <svg viewBox="0 0 1000 500" style="width:100%;height:auto" role="img" aria-label="Global footprint map — accurate equirectangular projection">
-          <rect width="1000" height="500" fill="#0F1E2E"/>
-          <!-- simplified continents, equirectangular projection lon -180..180 x 85..-60 lat -->
-          <g fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.18)" stroke-width="1" stroke-linejoin="round">
-            <!-- North America -->
-            <path d="M50,130 L80,90 L140,70 L220,75 L280,95 L310,130 L300,170 L270,200 L230,220 L190,230 L160,210 L140,180 L110,170 L80,150 Z"/>
-            <!-- Greenland -->
-            <path d="M375,60 L410,45 L440,60 L430,95 L395,105 L375,90 Z"/>
-            <!-- South America -->
-            <path d="M260,260 L300,250 L330,270 L340,310 L330,360 L310,410 L290,440 L275,420 L265,370 L255,320 L250,285 Z"/>
-            <!-- Europe -->
-            <path d="M470,130 L500,110 L540,105 L580,115 L590,140 L570,165 L530,170 L495,160 L475,150 Z"/>
-            <!-- Africa -->
-            <path d="M470,180 L520,175 L570,185 L595,220 L590,260 L570,300 L545,340 L520,350 L500,320 L490,270 L475,220 Z"/>
-            <!-- Middle East / Arabia -->
-            <path d="M595,175 L630,175 L655,195 L650,225 L625,235 L605,215 Z"/>
-            <!-- Russia / North Asia -->
-            <path d="M580,80 L650,70 L750,65 L850,70 L950,85 L980,110 L960,135 L880,140 L780,135 L680,130 L600,120 L575,105 Z"/>
-            <!-- Central Asia -->
-            <path d="M650,140 L720,135 L760,150 L750,180 L700,190 L660,175 Z"/>
-            <!-- China / East Asia -->
-            <path d="M720,160 L780,150 L840,155 L875,175 L870,205 L840,225 L790,225 L750,210 L720,190 Z"/>
-            <!-- Japan -->
-            <path d="M885,165 L900,155 L910,180 L900,200 L888,190 Z"/>
-            <!-- Mainland SE Asia -->
-            <path d="M755,230 L790,225 L815,245 L810,275 L785,285 L765,270 Z"/>
-            <!-- Indonesia archipelago -->
-            <path d="M780,290 L820,295 L850,305 L840,315 L800,315 L775,305 Z"/>
-            <!-- Philippines -->
-            <path d="M850,240 L865,245 L868,270 L855,275 Z"/>
-            <!-- Australia -->
-            <path d="M820,340 L880,335 L925,355 L920,390 L880,405 L830,395 L815,370 Z"/>
-          </g>
-          <!-- project points by lat/lon: x=(lon+180)/360*1000, y=(85-lat)/145*500 -->
-          <g>
-            <!-- China HQ (Shanghai 121.5E, 31.2N) -->
-            <circle cx="838" cy="186" r="10" fill="#F5A623"/>
-            <circle cx="838" cy="186" r="20" fill="none" stroke="#F5A623" stroke-opacity=".4" stroke-width="1.5"/>
-            <!-- Europe partner (Germany 10E, 51N) -->
-            <circle cx="528" cy="117" r="7" fill="#2E6BE6"/>
-            <circle cx="528" cy="117" r="14" fill="none" stroke="#2E6BE6" stroke-opacity=".4"/>
-            <!-- Malaysia ECRL (Kuala Lumpur 101.7E, 3.1N) -->
-            <circle cx="783" cy="282" r="7" fill="#2BB3A3"/>
-            <circle cx="783" cy="282" r="14" fill="none" stroke="#2BB3A3" stroke-opacity=".4"/>
-            <!-- Indonesia Jakarta-Bandung (106.8E, 6.2S) -->
-            <circle cx="797" cy="314" r="7" fill="#2BB3A3"/>
-            <circle cx="797" cy="314" r="14" fill="none" stroke="#2BB3A3" stroke-opacity=".4"/>
-            <!-- Tianshan tunnel (Urumqi 87.6E, 43.8N) -->
-            <circle cx="743" cy="142" r="4.5" fill="#F5A623"/>
-            <!-- Beijing (116.4E, 39.9N) -->
-            <circle cx="823" cy="156" r="4.5" fill="#F5A623"/>
-            <!-- Nanjing (118.8E, 32.1N) -->
-            <circle cx="830" cy="183" r="4.5" fill="#F5A623"/>
-          </g>
-          <g font-family="'Barlow',Arial,sans-serif" font-size="13" font-weight="600">
-            <text x="838" y="225" fill="#FFC46B" text-anchor="middle" data-i18n="fp_china">CHINA</text>
-            <text x="528" y="95" fill="#8FB3FF" text-anchor="middle" data-i18n="fp_europe">EUROPE · PARTNERSHIP</text>
-            <text x="783" y="305" fill="#7FD8CC" text-anchor="middle" data-i18n="fp_malaysia">MALAYSIA · ECRL</text>
-            <text x="797" y="338" fill="#7FD8CC" text-anchor="middle" data-i18n="fp_indonesia">INDONESIA · JAKARTA–BANDUNG HSR</text>
-          </g>
-        </svg>
+          <div style="position:relative; clip-path: inset(10% 5% 38% 40%); border-radius:0; overflow:hidden;">
+          <img src="assets/world-map.png" alt="World map" style="width:100%;display:block;filter:grayscale(.4) brightness(.5) contrast(1.4) saturate(.25);">
+          <svg viewBox="0 0 1280 640" style="position:absolute;top:0;left:0;width:100%;height:100%;" role="img" aria-label="Project locations across Eurasia and SE Asia">
+            <g>
+              <!-- Europe (Germany 10E, 51N) -->
+              <circle cx="676" cy="139" r="7" fill="#2E6BE6"/>
+              <circle cx="676" cy="139" r="14" fill="none" stroke="#2E6BE6" stroke-opacity=".45"/>
+              <!-- Tianshan (Urumqi 87.6E, 43.8N) -->
+              <circle cx="952" cy="165" r="4.5" fill="#F5A623"/>
+              <!-- Beijing (116.4E, 39.9N) -->
+              <circle cx="1055" cy="178" r="4.5" fill="#F5A623"/>
+              <!-- Shanghai HQ (121.5E, 31.2N) -->
+              <circle cx="1073" cy="209" r="10" fill="#F5A623"/>
+              <circle cx="1073" cy="209" r="20" fill="none" stroke="#F5A623" stroke-opacity=".4" stroke-width="1.5"/>
+              <!-- Kuala Lumpur (101.7E, 3.1N) -->
+              <circle cx="1003" cy="309" r="7" fill="#2BB3A3"/>
+              <circle cx="1003" cy="309" r="14" fill="none" stroke="#2BB3A3" stroke-opacity=".45"/>
+              <!-- Jakarta (106.8E, 6.2S) -->
+              <circle cx="1021" cy="342" r="7" fill="#2BB3A3"/>
+              <circle cx="1021" cy="342" r="14" fill="none" stroke="#2BB3A3" stroke-opacity=".45"/>
+            </g>
+            <g font-family="'Barlow',Arial,sans-serif" font-size="13" font-weight="600">
+              <text x="676" y="120" fill="#8FB3FF" text-anchor="middle" data-i18n="fp_europe">EUROPE · PARTNERSHIP</text>
+              <text x="1073" y="245" fill="#FFC46B" text-anchor="middle" data-i18n="fp_china">CHINA</text>
+              <text x="1003" y="295" fill="#7FD8CC" text-anchor="middle" data-i18n="fp_malaysia">MALAYSIA · ECRL</text>
+              <text x="1021" y="368" fill="#7FD8CC" text-anchor="middle" data-i18n="fp_indonesia">INDONESIA · JAKARTA–BANDUNG HSR</text>
+            </g>
+          </svg>
+        </div>
           <p style="font-size:12px;color:var(--muted);margin-top:6px" data-i18n="fp_note">Schematic illustration — project locations are indicative.</p>
         </div>
         <div>
