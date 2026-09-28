@@ -293,9 +293,7 @@ body{font-family:var(--font-sans);letter-spacing:.01em}
 .foot-wrap.foot-responsive .footmap > div{height:auto !important;}
 @media(max-width:860px){
   .foot-wrap.foot-responsive{grid-template-columns:1fr !important;gap:18px;}
-  .foot-wrap.foot-responsive .footmap > div{height:auto !important;overflow:hidden;}
-  .foot-wrap.foot-responsive .footmap img{width:135% !important;margin-left:-28% !important;height:auto !important;display:block;}
-  .foot-wrap.foot-responsive .footmap svg{left:-28% !important;width:135% !important;position:absolute;top:0;height:100% !important;}
+  .foot-wrap.foot-responsive .footmap > div{height:220px !important;}
 }
 </style>
 </head>
@@ -392,23 +390,17 @@ body{font-family:var(--font-sans);letter-spacing:.01em}
       <div class="foot-wrap foot-responsive">
         <div class="footmap card" style="padding:14px">
           <div style="position:relative; border-radius:0; overflow:hidden; height:340px; background:#0F1E2E;">
-          <img src="assets/world-map.png" alt="World map" style="width:135%;max-width:none;display:block;margin-left:-32%;filter:grayscale(.4) brightness(.5) contrast(1.4) saturate(.25);">
-          <svg viewBox="0 0 1280 640" preserveAspectRatio="xMidYMid meet" style="position:absolute;top:0;left:-32%;width:135%;height:100%;" role="img" aria-label="Project locations across Eurasia and SE Asia">
+          <svg viewBox="0 0 1280 640" preserveAspectRatio="xMidYMid slice" style="position:absolute;top:0;left:0;width:100%;height:100%;" role="img" aria-label="Project locations across Eurasia and SE Asia">
+            <image href="assets/world-map.png" x="0" y="0" width="1280" height="640" preserveAspectRatio="xMidYMid slice" style="filter:grayscale(.4) brightness(.5) contrast(1.4) saturate(.25);"/>
             <g>
-              <!-- Europe (Germany 10E, 51N) -->
               <circle cx="676" cy="139" r="7" fill="#2E6BE6"/>
               <circle cx="676" cy="139" r="14" fill="none" stroke="#2E6BE6" stroke-opacity=".45"/>
-              <!-- Tianshan (Urumqi 87.6E, 43.8N) -->
               <circle cx="952" cy="165" r="4.5" fill="#F5A623"/>
-              <!-- Beijing (116.4E, 39.9N) -->
               <circle cx="1055" cy="178" r="4.5" fill="#F5A623"/>
-              <!-- Shanghai HQ (121.5E, 31.2N) -->
               <circle cx="1073" cy="209" r="10" fill="#F5A623"/>
               <circle cx="1073" cy="209" r="20" fill="none" stroke="#F5A623" stroke-opacity=".4" stroke-width="1.5"/>
-              <!-- Kuala Lumpur (101.7E, 3.1N) -->
               <circle cx="1003" cy="309" r="7" fill="#2BB3A3"/>
               <circle cx="1003" cy="309" r="14" fill="none" stroke="#2BB3A3" stroke-opacity=".45"/>
-              <!-- Jakarta (106.8E, 6.2S) -->
               <circle cx="1021" cy="342" r="7" fill="#2BB3A3"/>
               <circle cx="1021" cy="342" r="14" fill="none" stroke="#2BB3A3" stroke-opacity=".45"/>
             </g>
