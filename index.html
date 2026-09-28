@@ -284,6 +284,19 @@ body{font-family:var(--font-sans);letter-spacing:.01em}
 .nav-cta{font-size:12px;padding:8px 12px}
 .hero h1{margin-top:14px}
 .hero .sub{font-weight:400;color:#C6D2E0;max-width:680px}
+
+/* ===== Responsive footprint ===== */
+.foot-wrap.foot-responsive{grid-template-columns:1.2fr 1fr;gap:30px;align-items:start;}
+.foot-wrap.foot-responsive .footmap{height:auto;}
+.foot-wrap.foot-responsive .footmap img,
+.foot-wrap.foot-responsive .footmap svg{width:100%;max-width:100%;margin-left:0;left:0;height:auto;}
+.foot-wrap.foot-responsive .footmap > div{height:auto !important;}
+@media(max-width:860px){
+  .foot-wrap.foot-responsive{grid-template-columns:1fr !important;gap:18px;}
+  .foot-wrap.foot-responsive .footmap > div{height:260px !important;}
+  .foot-wrap.foot-responsive .footmap img{width:100%;margin-left:0 !important;}
+  .foot-wrap.foot-responsive .footmap svg{left:0 !important;width:100% !important;}
+}
 </style>
 </head>
 <body>
@@ -376,7 +389,7 @@ body{font-family:var(--font-sans);letter-spacing:.01em}
   <div class="section tight" style="padding-top:0">
     <div class="wrap">
       <div class="sec-head"><span class="no">02</span><h2 data-i18n="foot_title">Global Footprint</h2><span class="sub" data-i18n="foot_sub">From Chinese mega-projects to international rail corridors</span></div>
-      <div class="foot-wrap" style="grid-template-columns:1.2fr 1fr;gap:30px;align-items:start;">
+      <div class="foot-wrap foot-responsive">
         <div class="footmap card" style="padding:14px">
           <div style="position:relative; border-radius:0; overflow:hidden; height:340px; background:#0F1E2E;">
           <img src="assets/world-map.png" alt="World map" style="width:135%;max-width:none;display:block;margin-left:-32%;filter:grayscale(.4) brightness(.5) contrast(1.4) saturate(.25);">
