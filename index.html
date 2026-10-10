@@ -89,8 +89,11 @@ img{display:block;max-width:100%}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:transform .2s,border-color .2s}
 .card:hover{border-color:var(--line2)}
 .card .imgbox{position:relative;overflow:hidden;aspect-ratio:16/10;background:#0d1a2b}
+.card .imgbox.flow{aspect-ratio:auto}
+.card .imgbox.flow img{width:100%;height:auto;object-fit:contain;display:block}
 .card .imgbox img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
 .card:hover .imgbox img{transform:scale(1.03)}
+.card:hover .imgbox.flow img{transform:none;filter:none}
 .card .body{padding:18px 20px 20px}
 .card h3{font-family:'Barlow Condensed';font-weight:600;font-size:22px;letter-spacing:.3px;color:#fff;margin-bottom:6px}
 .card p{font-size:14.5px;color:var(--muted)}
@@ -1198,7 +1201,7 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
           </div>
         </div>
         <div class="card">
-          <div class="imgbox"><img src="assets/kmks/kmks-conditioning.jpg" alt="KMKS ZTJ slurry preparation and conditioning flow"></div>
+          <div class="imgbox flow"><img src="assets/kmks/kmks-conditioning.jpg" alt="KMKS ZTJ slurry preparation and conditioning flow"></div>
           <div class="body">
             <span class="tag teal" data-i18n="sp2_tag">Conditioning</span>
             <h3 data-i18n="sp2_t">Preparation &amp; Conditioning Systems</h3>
