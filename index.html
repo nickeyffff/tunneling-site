@@ -54,8 +54,11 @@ img{display:block;max-width:100%}
   .nav-links.open{display:flex}
   .nav-links a{padding:12px 10px;border-radius:6px;font-size:15px}
   .nav-cta{display:none}
+  .nav-inner{position:relative;gap:10px}
   .lang-sw{margin-left:auto}
-  .lang-sw button{min-width:44px;min-height:44px;padding:10px 12px;font-size:13px}
+  .lang-sw button{min-width:34px;min-height:38px;padding:6px 7px;font-size:12px}
+  .logo{font-size:16px;gap:8px}
+  .nav-burger{position:absolute;right:12px;top:50%;transform:translateY(-50%);width:42px;height:40px}
 }
 
 /* ===== Shared layout ===== */
@@ -373,7 +376,7 @@ footer h4{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.16em;tex
 .card .body{padding:20px 22px 22px}
 
 /* ---- Pillars: numbered index, hairline panel ---- */
-.grid.g3{counter-reset:pillar}
+.grid.g3,.grid.g2{counter-reset:pillar}
 .pillar{
   counter-increment:pillar;
   position:relative;border-radius:0;border:1px solid var(--hair);
@@ -514,6 +517,26 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
   .card h3,.pillar h3{font-size:19px}
 }
 
+
+/* ===== KMKS SLURRY MODULE ===== */
+.stp-flow{display:flex;align-items:stretch;gap:0;margin-top:26px}
+.stp-flow .step{flex:1;border:1px solid var(--hair);background:var(--ink2);padding:22px 20px;position:relative;transition:border-color .25s,background .25s}
+.stp-flow .step:hover{border-color:rgba(43,179,163,.45);background:#0d2133}
+.stp-flow .st-n{font-family:var(--font-mono);font-size:11px;color:var(--teal,#5FD9C8);letter-spacing:.14em;margin-bottom:12px;text-transform:uppercase}
+.stp-flow h4{font-family:var(--font-disp);font-weight:600;font-size:16.5px;color:#fff;margin-bottom:8px;line-height:1.2}
+.stp-flow p{font-size:13.5px;color:var(--muted);line-height:1.55;margin:0}
+.stp-flow .arr{flex:none;width:36px;display:flex;align-items:center;justify-content:center;color:rgba(245,166,35,.6);font-size:15px}
+@media(max-width:960px){.stp-flow{flex-direction:column}.stp-flow .arr{width:auto;height:24px;transform:rotate(90deg)}}
+.kmks-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:26px}
+.kmks-stats .ks{background:var(--ink2);padding:26px 20px;text-align:left}
+.kmks-stats .num{font-family:var(--font-disp);font-size:38px;font-weight:700;color:#fff;line-height:1}
+.kmks-stats .num em{font-style:normal;color:var(--teal,#5FD9C8)}
+.kmks-stats .lbl{font-size:13px;color:var(--muted);margin-top:8px;letter-spacing:.3px;line-height:1.4}
+.km-note{font-size:13.5px;color:var(--muted);margin-top:18px;max-width:760px}
+.cs-meta{font-size:12.5px;color:var(--muted);margin:6px 0 0;font-family:var(--font-mono);letter-spacing:.02em}
+@media(max-width:960px){.kmks-stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.kmks-stats{grid-template-columns:1fr 1fr}.kmks-stats .num{font-size:30px}}
+/* ===== END KMKS SLURRY MODULE ===== */
 </style>
 </head>
 <body>
@@ -530,6 +553,7 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
       <a href="#machinery" data-nav="machinery" data-i18n="nav_machinery">Machinery</a>
       <a href="#probing" data-nav="probing" data-i18n="nav_probing">Probing &amp; Drilling</a>
       <a href="#cutters" data-nav="cutters" data-i18n="nav_cutters">Cutters &amp; Seals</a>
+      <a href="#slurry" data-nav="slurry" data-i18n="nav_slurry">Slurry Treatment</a>
       <a href="#services" data-nav="services" data-i18n="nav_services">Services</a>
       <a href="#contact" data-nav="contact" data-i18n="nav_contact">Contact</a>
       <a href="#contact" class="nav-cta" data-i18n="nav_quote">Request a Quote</a>
@@ -579,8 +603,8 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
 
   <div class="section">
     <div class="wrap">
-      <div class="sec-head"><span class="no">01</span><h2 data-i18n="pillars_title">Three Product Pillars, One Partner</h2><span class="sub" data-i18n="pillars_sub">Machines · Intelligent probing · Consumables</span></div>
-      <div class="grid g3">
+      <div class="sec-head"><span class="no">01</span><h2 data-i18n="pillars_title">Four Product Pillars, One Partner</h2><span class="sub" data-i18n="pillars_sub">Machines · Probing · Cutters · Slurry treatment</span></div>
+      <div class="grid g2">
         <a class="pillar" href="#machinery">
           <div class="ic blue"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6E9BFF" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg></div>
           <h3 data-i18n="p1_t">Heavy Tunneling Machinery</h3>
@@ -598,6 +622,12 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
           <h3 data-i18n="p3_t">Engineered Cutters &amp; High-Pressure Seals</h3>
           <p data-i18n="p3_d">7–21 inch roller cutters, premium metallurgy, tailskin wire brushes &amp; seals and containerized on-site tool workshops from Shandong Tianyou — engineered to the strata, delivered to your jobsite.</p>
           <span class="go" data-i18n="p3_go">Explore cutters</span>
+        </a>
+        <a class="pillar" href="#slurry">
+          <div class="ic teal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5FD9C8" stroke-width="1.7"><path d="M3 12a9 9 0 0 1 18 0"/><path d="M21 12a9 9 0 0 1-18 0"/><path d="M12 3v3M12 18v3"/><path d="M12 10.5l3 1.5-3 1.5-3-1.5z" fill="#5FD9C8" stroke="none"/></svg></div>
+          <h3 data-i18n="p4_t">Slurry Treatment &amp; Separation</h3>
+          <p data-i18n="p4_d">From KMKS — European-grade mud circulation for Hydroshield &amp; EPB projects. Separation stations, conditioning systems and filter presses that keep the mud circuit running.</p>
+          <span class="go" data-i18n="p4_go">Explore slurry systems</span>
         </a>
       </div>
     </div>
@@ -654,7 +684,7 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
     <div class="shade"></div>
     <div class="inner">
       <div>
-        <h2 data-i18n="cta_title">One Partner. Three Manufacturing Pillars. Zero Compromise.</h2>
+        <h2 data-i18n="cta_title">One Partner. Four Manufacturing Pillars. Zero Compromise.</h2>
         <p data-i18n="cta_sub">Get a single technical interface for TBMs, advance probing equipment and cutter consumables — with European-based support behind every delivery.</p>
       </div>
       <div class="cta-row" style="margin:0">
@@ -1107,13 +1137,181 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
   </div>
 </section>
 
+
+<!-- ===== VIEW: SLURRY ===== -->
+<section class="view" id="view-slurry">
+  <div class="page-hero">
+    <img class="bg" src="assets/kmks/kmks-hero.jpg" alt="KMKS slurry separation station on a river-crossing site">
+    <div class="shade"></div>
+    <div class="inner">
+      <span class="kicker" data-i18n="sl_kicker">04 · Slurry Treatment &amp; Separation</span>
+      <h1 data-i18n-html="sl_title">Slurry Treatment &amp;<br>Separation Systems</h1>
+      <p class="lead" data-i18n="sl_lead">The surface side of every Hydroshield drive — separation, conditioning and filter-pressing that keep the mud circuit running and the jobsite clean.</p>
+      <div class="brand-strip">
+        <span class="who">KMKS 康明克斯</span>
+        <span class="role" data-i18n="sl_brand">KMKS (Beijing) Mechanical &amp; Electrical Equipment Co., Ltd. — solid-liquid separation specialist with 40+ years of European core technology and 200+ tunneling projects served since 2003.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">4.1</span><h2 data-i18n="sl41_title">The Mud Circuit, Closed</h2><span class="sub" data-i18n="sl41_sub">One integrated slurry treatment plant per drive</span></div>
+      <div class="stp-flow">
+        <div class="step">
+          <div class="st-n">S1</div>
+          <h4 data-i18n="stp1_t">Separation Station</h4>
+          <p data-i18n="stp1_d">Blocky-clay separator, double-deck screens and HC-700 cyclones remove muck from the shield return line by particle size.</p>
+        </div>
+        <div class="arr">→</div>
+        <div class="step">
+          <div class="st-n">S2</div>
+          <h4 data-i18n="stp2_t">Preparation &amp; Conditioning</h4>
+          <p data-i18n="stp2_d">ZTJ systems mix bentonite and polymers to restore density and viscosity before slurry returns to the face.</p>
+        </div>
+        <div class="arr">→</div>
+        <div class="step">
+          <div class="st-n">S3</div>
+          <h4 data-i18n="stp3_t">Filter Pressing</h4>
+          <p data-i18n="stp3_d">APN and COMC diaphragm filter presses separate fine solids — filter cake at ≈30% moisture for clean export.</p>
+        </div>
+        <div class="arr">→</div>
+        <div class="step">
+          <div class="st-n">S4</div>
+          <h4 data-i18n="stp4_t">Closed-Loop Return</h4>
+          <p data-i18n="stp4_d">Filtrate and conditioned slurry are pumped back into the shield — less water, less waste, lower carbon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tight" style="background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">4.2</span><h2 data-i18n="sl42_title">Separation &amp; Conditioning Equipment</h2><span class="sub" data-i18n="sl42_sub">Model 300 – 3000 separation stations, matched to your TBM</span></div>
+      <div class="grid g2">
+        <div class="card">
+          <div class="imgbox"><img src="assets/kmks/kmks-station.jpg" alt="KMKS Model slurry separation station"></div>
+          <div class="body">
+            <span class="tag teal" data-i18n="sp1_tag">STP Station</span>
+            <h3 data-i18n="sp1_t">Slurry Separation Stations</h3>
+            <p data-i18n="sp1_d">MTP / KMAZ / KMCZ series from Model 300 to Model 3000 — sized for TBMs from 1 m pipe jacking to 13 m+ super-large shields. Coarse, primary and secondary dewatering in one footprint.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/kmks/kmks-conditioning.jpg" alt="KMKS ZTJ slurry preparation and conditioning flow"></div>
+          <div class="body">
+            <span class="tag teal" data-i18n="sp2_tag">Conditioning</span>
+            <h3 data-i18n="sp2_t">Preparation &amp; Conditioning Systems</h3>
+            <p data-i18n="sp2_d">ZTJ / ZDZJ automatic bentonite slurry plants restore density, viscosity and low permeability — the stability core of every slurry balance shield drive.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/kmks/kmks-filterpress.jpg" alt="KMKS COMC filter press on site"></div>
+          <div class="body">
+            <span class="tag teal" data-i18n="sp3_tag">Filter Press</span>
+            <h3 data-i18n="sp3_t">APN &amp; COMC Filter Presses</h3>
+            <p data-i18n="sp3_d">Chamber diaphragm filter presses for shield mud, mine tailings and dredging sludge — filter cake at ≈30% moisture, filtrate returned to the circuit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/kmks/kmks-aux.jpg" alt="KMKS hydraulic piston diaphragm pump"></div>
+          <div class="body">
+            <span class="tag teal" data-i18n="sp4_tag">Auxiliaries</span>
+            <h3 data-i18n="sp4_t">Cyclones, Screens &amp; Pumps</h3>
+            <p data-i18n="sp4_d">HC-700 hydrocyclones (74 μm / 20 μm cut), vibrating screens, trommels, agitators and hydraulic piston-diaphragm pumps — one supply chain, fully matched.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">4.3</span><h2 data-i18n="sl43_title">Field-Proven at Scale</h2><span class="sub" data-i18n="sl43_sub">Numbers behind 200+ slurry projects</span></div>
+      <div class="kmks-stats">
+        <div class="ks"><div class="num">200<em>+</em></div><div class="lbl" data-i18n="km1_l">Projects completed by end of 2025</div></div>
+        <div class="ks"><div class="num">120<em>+</em></div><div class="lbl" data-i18n="km2_l">Slurry-shield projects in China</div></div>
+        <div class="ks"><div class="num">18<em></em></div><div class="lbl" data-i18n="km3_l">Overseas slurry-shield projects</div></div>
+        <div class="ks"><div class="num">30<em>%</em></div><div class="lbl" data-i18n="km4_l">Filter-cake moisture — export-ready</div></div>
+      </div>
+      <p class="km-note" data-i18n="sl43_note">Up to 40 m of tunnel per day with a single separation station — verified on river crossings, metro and high-speed rail drives.</p>
+    </div>
+  </div>
+
+  <div class="section tight" style="background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">4.4</span><h2 data-i18n="sl44_title">Selected International References</h2><span class="sub" data-i18n="sl44_sub">KMKS slurry systems shipped worldwide</span></div>
+      <div class="grid g4">
+        <div class="card">
+          <div class="imgbox"><img src="assets/kmks/kmks-case-01.jpg" alt="Karnaphuli River Tunnel site"></div>
+          <div class="body"><h3 data-i18n="cs1_t">Karnaphuli River Tunnel</h3><p class="cs-meta" data-i18n="cs1_d">Bangladesh · Φ12.18 m · soft silty sand</p></div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/kmks/kmks-case-02.jpg" alt="Jakarta–Bandung high-speed rail site"></div>
+          <div class="body"><h3 data-i18n="cs2_t">Jakarta–Bandung HSR</h3><p class="cs-meta" data-i18n="cs2_d">Indonesia · Φ13.24 m · volcanic gravel</p></div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/kmks/kmks-case-03.jpg" alt="CRCC Mumbai project site"></div>
+          <div class="body"><h3 data-i18n="cs3_t">CRCC Mumbai Metro</h3><p class="cs-meta" data-i18n="cs3_d">India · Φ12.19 m · basalt &amp; breccia</p></div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/kmks/kmks-case-04.jpg" alt="CRCC Bangalore project site"></div>
+          <div class="body"><h3 data-i18n="cs4_t">CRCC Bangalore Metro</h3><p class="cs-meta" data-i18n="cs4_d">India · Φ6.6 m · full-section hard rock</p></div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/kmks/kmks-case-05.jpg" alt="Seosan power utility tunnel, South Korea"></div>
+          <div class="body"><h3 data-i18n="cs5_t">Seosan Power Tunnel</h3><p class="cs-meta" data-i18n="cs5_d">South Korea · Φ3.15 m · sandstone &amp; hard rock</p></div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/kmks/kmks-case-06.jpg" alt="Cairo Metro Line 4 site, Egypt"></div>
+          <div class="body"><h3 data-i18n="cs6_t">Cairo Metro Line 4</h3><p class="cs-meta" data-i18n="cs6_d">Egypt · Φ6.73 m · aeolian &amp; coarse sand</p></div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/kmks/kmks-case-07.jpg" alt="Gyeonggi power utility tunnel, South Korea"></div>
+          <div class="body"><h3 data-i18n="cs7_t">Gyeonggi Power Tunnel</h3><p class="cs-meta" data-i18n="cs7_d">South Korea · Φ3.6 m · weathered rock</p></div>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="assets/kmks/kmks-case-08.jpg" alt="Larsen &amp; Toubro Mumbai project site"></div>
+          <div class="body"><h3 data-i18n="cs8_t">L&amp;T Mumbai</h3><p class="cs-meta" data-i18n="cs8_d">India · Φ12.19 m · hard rock &amp; sand</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">4.5</span><h2 data-i18n="sl45_title">Flexible Business Models</h2><span class="sub" data-i18n="sl45_sub">Own it, lease it, or let us operate it</span></div>
+      <div class="grid g3">
+        <div class="card"><div class="body"><span class="tag orange" data-i18n="bm1_tag">01 · Sales</span><h3 data-i18n="bm1_t">Purchase</h3><p data-i18n="bm1_d">Complete STP package delivered, installed and commissioned to your project parameters.</p></div></div>
+        <div class="card"><div class="body"><span class="tag orange" data-i18n="bm2_tag">02 · Leasing</span><h3 data-i18n="bm2_t">Rental</h3><p data-i18n="bm2_d">Time-based equipment rental — ideal for single-drive projects without long-term capital commitment.</p></div></div>
+        <div class="card"><div class="body"><span class="tag orange" data-i18n="bm3_tag">03 · Operation</span><h3 data-i18n="bm3_t">Managed Operation</h3><p data-i18n="bm3_d">We deploy equipment, technicians and operators; settlement is linked to project performance and revenue share.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-band">
+    <img class="bg" src="assets/kmks/kmks-station.jpg" alt="KMKS slurry separation station at work">
+    <div class="shade"></div>
+    <div class="inner">
+      <div>
+        <h2 data-i18n="sl46_title">Hydroshield, Complete</h2>
+        <p data-i18n="sl46_d">KMKS slurry treatment + our SPB / EPB machines = one integrated Hydroshield package. A single accountable partner for the mud circuit — from cutterhead to filter cake.</p>
+      </div>
+      <div class="cta-row" style="margin:0">
+        <a class="btn primary" href="#contact" data-i18n="sl_cta">Inquire About Slurry Systems</a>
+        <a class="btn ghost" href="#machinery" data-i18n="sl_cta2">Explore TBM Machinery</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== VIEW: SERVICES ===== -->
 <section class="view" id="view-services">
   <div class="page-hero">
     <img class="bg" src="assets/fleet-globe.jpg" alt="TBM fleet and global projects visual">
     <div class="shade"></div>
     <div class="inner">
-      <span class="kicker" data-i18n="sv_kicker">04 · Services &amp; Compliance</span>
+      <span class="kicker" data-i18n="sv_kicker">05 · Services &amp; Compliance</span>
       <h1 data-i18n-html="sv_title">European Localization,<br>Remanufacturing &amp; Compliance</h1>
       <p class="lead" data-i18n="sv_lead">Beyond hardware — lifecycle engineering, decarbonization through remanufacturing, 24/7 field support, and full compliance documentation for European projects.</p>
     </div>
@@ -1212,7 +1410,7 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
     <img class="bg" src="assets/tech-tunnel.jpg" alt="">
     <div class="shade"></div>
     <div class="inner">
-      <span class="kicker" data-i18n="ct_kicker">05 · Contact &amp; RFQ</span>
+      <span class="kicker" data-i18n="ct_kicker">06 · Contact &amp; RFQ</span>
       <h1 data-i18n-html="ct_title">Project Inquiry &amp;<br>Technical Quote Request</h1>
       <p class="lead" data-i18n="ct_lead">Tell us about your tunnel — we will route your inquiry to the right engineering team and come back with a structured technical response.</p>
     </div>
@@ -1272,6 +1470,7 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
               <option data-i18n="f_scope_opt3">Cutter Tooling Package</option>
               <option data-i18n="f_scope_opt4">Remanufacturing</option>
               <option data-i18n="f_scope_opt5">Containerized Workshop Setup</option>
+              <option data-i18n="f_scope_opt6">Slurry Treatment Plant (STP)</option>
             </select>
           </div>
           <div><label for="f-ucs" data-i18n="f_ucs">Ground / UCS *</label><input id="f-ucs" name="ucs" required data-i18n-ph="f_ucs_ph" placeholder="e.g. granite, 150 MPa"></div>
@@ -1296,6 +1495,7 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
         <li data-i18n="ft_p1">CCCC Tianhe — TBM &amp; shaft machinery</li>
         <li data-i18n="ft_p2">China Railway Southwest Research Institute — probing &amp; drilling systems</li>
         <li data-i18n="ft_p3">Shandong Tianyou — cutters, seals &amp; workshops</li>
+        <li data-i18n="ft_p4">KMKS — slurry treatment plants (STP)</li>
       </ul>
     </div>
     <div>
@@ -1331,7 +1531,7 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
 
     hero_kicker:{en:'Turnkey Underground & TBM Solutions Provider',de:'Turnkey-Partner für den Untertagebau & TBM-Lösungen',zh:'全链条地下工程与TBM解决方案提供商'},
     hero_title:{en:'End-to-End Tunneling',de:'Tunnelbau aus einer Hand',zh:'端到端隧道掘进'},
-    hero_sub:{en:'From <span class="hl">Super-Diameter TBMs</span> to <span class="hl">Smart In-TBM Advance Probing</span> &amp; <span class="hl">Heavy-Duty Cutting Tools</span>.',de:'Von <span class="hl">Großdurchmesser-TBM</span> über <span class="hl">intelligente Vorauserkundung im Schild</span> bis zu <span class="hl">Hochleistungs-Meißeln</span>.',zh:'从<span class="hl">超大直径盾构机</span>到<span class="hl">机载智能超前探测</span>与<span class="hl">重型切削刀具</span>。'},
+    hero_sub:{en:'From <span class="hl">Super-Diameter TBMs</span> to <span class="hl">Smart In-TBM Advance Probing</span> & <span class="hl">Heavy-Duty Cutting Tools</span>.',de:'Von <span class="hl">Großdurchmesser-TBM</span> über <span class="hl">intelligente Vorauserkundung im Schild</span> bis zu <span class="hl">Hochleistungs-Meißeln</span>.',zh:'从<span class="hl">超大直径盾构机</span>到<span class="hl">机载智能超前探测</span>与<span class="hl">重型切削刀具</span>。'},
     hero_pos1:{en:'European Partner',de:'Europäischer Partner',zh:'欧洲合作伙伴'},
     hero_pos2:{en:'CE Marking',de:'CE-Kennzeichnung',zh:'CE认证'},
     hero_pos3:{en:'ISO 9001 · 14001 · 45001',de:'ISO 9001 · 14001 · 45001',zh:'ISO 9001 · 14001 · 45001'},
@@ -1376,13 +1576,13 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
     f6_t:{en:'Europe',de:'Europa',zh:'欧洲'},
     f6_d:{en:'Channel & local partner network for sales, spares and service',de:'Vertriebs- & Partner-Netzwerk für Verkauf, Ersatzteile und Service',zh:'销售、备件与服务的渠道及本地伙伴网络'},
 
-    cta_title:{en:'One Partner. Three Manufacturing Pillars. Zero Compromise.',de:'Ein Partner. Drei Fertigungssäulen. Null Kompromisse.',zh:'一个合作伙伴。三大制造支柱。零妥协。'},
-    cta_sub:{en:'Get a single technical interface for TBMs, advance probing equipment and cutter consumables — with European-based support behind every delivery.',de:'Eine einzige technische Schnittstelle für TBM, Vorauserkundungsausrüstung und Meißel-Verschleißteile — mit Support aus Europa hinter jeder Lieferung.',zh:'为盾构机、超前探测设备和刀具耗材提供统一技术接口——每次交付都有欧洲本地支持。'},
+    cta_title:{en:'One Partner. Four Manufacturing Pillars. Zero Compromise.',de:'Ein Partner. Vier Fertigungssäulen. Null Kompromisse.',zh:'一个合作伙伴。四大制造支柱。零妥协。'},
+    cta_sub:{en:'Get a single technical interface for TBMs, advance probing, cutter consumables and slurry treatment plants — with European-based support behind every delivery.',de:'Eine einzige technische Schnittstelle für TBM, Vorauserkundung, Meißel-Verschleißteile und Schlammaufbereitungsanlagen — mit Support aus Europa hinter jeder Lieferung.',zh:'为盾构整机、超前探测、刀具耗材与泥浆处理系统提供统一技术接口——每次交付都有欧洲本地支持。'},
     cta_btn1:{en:'Start a Project Inquiry',de:'Projektanfrage starten',zh:'发起项目咨询'},
     cta_btn2:{en:'See Services & Compliance',de:'Services & Compliance ansehen',zh:'查看服务与合规'},
 
     ma_kicker:{en:'01 · Heavy Tunneling Machinery',de:'01 · Schwere Tunnelbaumaschinen',zh:'01 · 重型隧道掘进装备'},
-    ma_title:{en:'TBM &amp; Specialized<br>Engineering Equipment',de:'Vortriebstechnik &amp;<br>Großmaschinen',zh:'TBM与特种<br>工程装备'},
+    ma_title:{en:'TBM & Specialized<br>Engineering Equipment',de:'Vortriebstechnik &<br>Großmaschinen',zh:'TBM与特种<br>工程装备'},
     ma_lead:{en:'Full-face tunnel boring machines from 0.8 m to 18.4 m — slurry pressure balance, earth pressure balance, hard-rock, dual-mode, vertical shaft and offshore drilling systems.',de:'Vollschnitt-Tunnelbohrmaschinen von 0,8 m bis 18,4 m — Flüssigkeits- und Erddruckschilde, Hartgesteins-, Dual-Mode-, Vertikalschacht- und Offshore-Bohrsysteme.',zh:'0.8m至18.4m全断面掘进机——泥水盾构（SPB）、土压平衡盾构（EPB）、硬岩掘进机（TBM）、双模式、竖井掘进与海上钻探系统。'},
     ma_brand:{en:'CCCC Tianhe Mechanical Equipment Manufacturing Co., Ltd. — a subsidiary of China Communications Construction (CCCC), one of the world\u2019s largest infrastructure groups. Full-chain: R&D, design, manufacturing, consulting, tunneling, maintenance.',de:'CCCC Tianhe Mechanical Equipment Manufacturing Co., Ltd. — Tochtergesellschaft der China Communications Construction (CCCC), einer der größten Infrastruktur-Konzerne der Welt. Komplette Kette: F&E, Design, Fertigung, Beratung, Tunnelbau, Wartung.',zh:'中交天和机械设备制造有限公司——中国交通建设集团（CCCC）旗下子公司，全球最大基础设施集团之一。定位：超大直径盾构整机、复杂硬岩双模TBM及深立井掘进装备研发智造基地。全链条能力：研发、设计、制造、咨询、施工、维保。'},
     ma21_title:{en:'Super-Large-Diameter SPB & EPB TBMs',de:'Großdurchmesser-Mixschilde (SPB) & Erddruckschilde (EPB)',zh:'超大直径泥水/土压盾构机'},
@@ -1493,7 +1693,7 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
     pr34_btn2:{en:'Back to TBM Machinery',de:'Zurück zu TBM-Maschinen',zh:'返回TBM装备'},
 
     cu_kicker:{en:'03 · Cutters & Consumables',de:'03 · Meißel & Verschleißteile',zh:'03 · 刀具与耗材'},
-    cu_title:{en:'Disc Cutters, Metallurgy<br>&amp; High-Pressure Seals',de:'Rollenmeißel, Metallurgie<br>&amp; Hochdruck-Dichtungen',zh:'滚刀刀具、冶金材料<br>与高压密封'},
+    cu_title:{en:'Disc Cutters, Metallurgy<br>& High-Pressure Seals',de:'Rollenmeißel, Metallurgie<br>& Hochdruck-Dichtungen',zh:'滚刀刀具、冶金材料<br>与高压密封'},
     cu_lead:{en:'Nothing can stop our TBM cutters — every kind of drilling cutter and brush seal, engineered to the strata and backed by on-site containerized tool workshops.',de:'Nichts hält unsere TBM-Meißel auf — jede Art von Bohrmeißel und Bürstendichtung, abgestimmt auf das Gebirge und gestützt durch containerisierte Vor-Ort-Werkstätten.',zh:'我们的TBM刀具无往不利——全系列切削刀具与刷式密封，针对地层定制，并有现场集装箱式刀具维保工坊支撑。'},
     cu_brand:{en:'Shandong Tianyou Tunnel Engineering Equipment Co., Ltd. — manufacturing TBM cutters and tailskin brushes since 2008, 159 staff, 22 patents, ISO 9001 / 14001 / 45001, joint R&D with Nankai University.',de:'Shandong Tianyou Tunnel Engineering Equipment Co., Ltd. — fertigt TBM-Meißel und Schildschwanzbürsten seit 2008, 159 Mitarbeiter, 22 Patente, ISO 9001 / 14001 / 45001, gemeinsame F&E mit der Nankai-Universität.',zh:'山东天佑隧道工程设备有限公司——自2008年起制造TBM滚刀与盾尾刷。定位：7~21英寸全系列滚刀、电渣重熔（ESR）模具钢冶金工艺与移动集装箱式刀具维保体系。159名员工，22项专利，ISO 9001/14001/45001认证，与南开大学联合研发。'},
     cu41_title:{en:'Heavy-Duty Disc Cutters · 7 – 21 inch',de:'Hochleistungs-Rollenmeißel · 7 – 21 Zoll',zh:'重型滚刀 · 7–21英寸'},
@@ -1549,8 +1749,8 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
     cu44_btn1:{en:'Request a Cutter Proposal',de:'Meißel-Angebot anfordern',zh:'索取刀具方案'},
     cu44_btn2:{en:'Consumables & Spare Parts Service',de:'Verschleiß- & Ersatzteilservice',zh:'耗材与备件服务'},
 
-    sv_kicker:{en:'04 · Services &amp; Compliance',de:'04 · Lifecycle-Services &amp; Refurbishment',zh:'04 · 服务与合规'},
-    sv_title:{en:'European Localization,<br>Remanufacturing &amp; Compliance',de:'Europa-Lokalisierung,<br>Remanufacturing &amp; Compliance',zh:'欧洲本地化、<br>再制造与合规认证'},
+    sv_kicker:{en:'04 · Services & Compliance',de:'04 · Lifecycle-Services & Refurbishment',zh:'04 · 服务与合规'},
+    sv_title:{en:'European Localization,<br>Remanufacturing & Compliance',de:'Europa-Lokalisierung,<br>Remanufacturing & Compliance',zh:'欧洲本地化、<br>再制造与合规认证'},
     sv_lead:{en:'Beyond hardware — lifecycle engineering, decarbonization through remanufacturing, 24/7 field support, and full compliance documentation for European projects.',de:'Mehr als Hardware — Lebenszyklus-Engineering, Dekarbonisierung durch Remanufacturing, 24/7-Vor-Ort-Support und vollständige Compliance-Dokumentation für europäische Projekte.',zh:'超越硬件本身——全生命周期工程、再制造减碳、24/7现场支持，以及面向欧洲项目的完整合规文件。'},
     sv51_title:{en:'Remanufacturing & Decarbonization',de:'Remanufacturing & Dekarbonisierung',zh:'再制造与减碳'},
     sv51_sub:{en:'Second-life TBMs, first-life performance',de:'TBM mit zweitem Leben, Leistung wie beim ersten',zh:'二手TBM焕新，性能如初'},
@@ -1603,14 +1803,88 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
     st5_h:{en:'Field Support & Consumables',de:'Vor-Ort-Support & Verschleißteile',zh:'现场支持与耗材'},
     st5_d:{en:'24/7 support, training, spare cutters and brushes stocked for rapid European dispatch.',de:'24/7-Support, Training, Ersatzmeißel und -bürsten auf Lager für schnellen Versand in Europa.',zh:'24/7支持、培训，备有滚刀与刷件库存，可实现欧洲快速发货。'},
 
+    nav_slurry:{en:'Slurry Treatment',de:'Schlammaufbereitung',zh:'泥浆处理'},
+    pillars_title:{en:'Four Product Pillars, One Partner',de:'Vier Produktpfeiler, ein Partner',zh:'四大产品支柱，同一合作伙伴'},
+    pillars_sub:{en:'Machines · Probing · Cutters · Slurry treatment',de:'Maschinen · Erkundung · Meißel · Schlammaufbereitung',zh:'整机 · 探测 · 刀具 · 泥浆处理'},
+    p4_t:{en:'Slurry Treatment & Separation',de:'Schlammaufbereitung & Feststofftrennung',zh:'泥浆处理与固液分离'},
+    p4_d:{en:'From KMKS — European-grade mud circulation for Hydroshield & EPB projects. Separation stations, conditioning systems and filter presses that keep the mud circuit running.',de:'Von KMKS — europäische Schlammkreislaufsysteme für Hydro- und Erddruckschilde: Trennstationen, Konditionierung und Filterpressen, die den Kreislauf stabil halten.',zh:'源自康明克斯——面向泥水盾构与土压盾构的欧标级泥浆循环系统：分离站、调质系统与压滤机，保障泥浆回路稳定运转。'},
+    p4_go:{en:'Explore slurry systems',de:'Schlammaufbereitung ansehen',zh:'了解泥浆处理系统'},
+    sl_kicker:{en:'04 · Slurry Treatment & Separation',de:'04 · Schlammaufbereitung & Feststofftrennung',zh:'04 · 泥浆处理与固液分离'},
+    sl_title:{en:'Slurry Treatment &amp;<br>Separation Systems',de:'Schlammaufbereitung &amp;<br>Feststofftrennungssysteme',zh:'泥浆处理与<br>固液分离系统'},
+    sl_lead:{en:'The surface side of every Hydroshield drive — separation, conditioning and filter-pressing that keep the mud circuit running and the jobsite clean.',de:'Die Tagesoberfläche jeder Hydroshield-Fahrt: Trennung, Konditionierung und Filterpressen, die den Schlammkreislauf am Laufen und die Baustelle sauber halten.',zh:'每一条泥水盾构隧道的“地面心脏”——分离、调质与压滤，让泥浆循环稳定运转、工地保持整洁。'},
+    sl_brand:{en:'KMKS (Beijing) Mechanical & Electrical Equipment Co., Ltd. — solid-liquid separation specialist with 40+ years of European core technology and 200+ tunneling projects served since 2003.',de:'KMKS (Beijing) Mechanical & Electrical Equipment Co., Ltd. — Spezialist für Fest-Flüssig-Trennung mit über 40 Jahren europäischer Kerntechnologie und mehr als 200 Tunnelprojekten seit 2003.',zh:'康明克斯（北京）机电设备有限公司——固液分离专家，40 余年欧洲核心技术积淀，2003 年成立以来已服务 200+ 隧道项目。'},
+    sl41_title:{en:'The Mud Circuit, Closed',de:'Der geschlossene Schlammkreislauf',zh:'闭环泥浆循环'},
+    sl41_sub:{en:'One integrated slurry treatment plant per drive',de:'Eine integrierte Schlammaufbereitungsanlage pro Vortrieb',zh:'每台盾构配套一座一体化泥浆处理站'},
+    stp1_t:{en:'Separation Station',de:'Trennstation',zh:'泥浆分离站'},
+    stp1_d:{en:'Blocky-clay separator, double-deck screens and HC-700 cyclones remove muck from the shield return line by particle size.',de:'Tonklotz-Separator, Doppelsiebe und HC-700-Zyklone trennen den Aushub aus der Schild-Rücklaufleitung nach Korngröße.',zh:'黏土块分离器、双层筛与 HC-700 旋流器按粒径将渣土从盾构回浆管路中分离。'},
+    stp2_t:{en:'Preparation & Conditioning',de:'Aufbereitung & Konditionierung',zh:'制备与调质'},
+    stp2_d:{en:'ZTJ systems mix bentonite and polymers to restore density and viscosity before slurry returns to the face.',de:'ZTJ-Systeme mischen Bentonit und Polymere, um Dichte und Viskosität vor der Rückförderung an die Ortsbrust wiederherzustellen.',zh:'ZTJ 系统调配膨润土与聚合物，在泥浆返回掌子面前恢复密度与黏度。'},
+    stp3_t:{en:'Filter Pressing',de:'Filterpressen',zh:'压滤脱水'},
+    stp3_d:{en:'APN and COMC diaphragm filter presses separate fine solids — filter cake at ≈30% moisture for clean export.',de:'APN- und COMC-Membranfilterpressen trennen Feinststoffe — Filterkuchen mit ≈30% Restfeuchte für den sauberen Abtransport.',zh:'APN 与 COMC 隔膜压滤机分离细颗粒——滤饼含水率约 30%，可直接外运。'},
+    stp4_t:{en:'Closed-Loop Return',de:'Rückführung im Kreislauf',zh:'闭环回用'},
+    stp4_d:{en:'Filtrate and conditioned slurry are pumped back into the shield — less water, less waste, lower carbon.',de:'Filtrat und konditionierter Schlamm werden zurück in den Schild gepumpt — weniger Wasser, weniger Abfall, geringerer CO₂-Fußabdruck.',zh:'滤液与调配合格泥浆泵回盾构——更省水、更少废渣、更低碳。'},
+    sl42_title:{en:'Separation & Conditioning Equipment',de:'Trenn- & Konditionierungsanlagen',zh:'分离与调质设备'},
+    sl42_sub:{en:'Model 300 – 3000 separation stations, matched to your TBM',de:'Trennstationen der Modelle 300 – 3000, abgestimmt auf Ihre TBM',zh:'Model 300–3000 分离站，与您的盾构机精确匹配'},
+    sp1_tag:{en:'STP Station',de:'STP-Trennstation',zh:'STP 分离站'},
+    sp1_t:{en:'Slurry Separation Stations',de:'Schlammtrennstationen',zh:'泥浆分离站'},
+    sp1_d:{en:'MTP / KMAZ / KMCZ series from Model 300 to Model 3000 — sized for TBMs from 1 m pipe jacking to 13 m+ super-large shields. Coarse, primary and secondary dewatering in one footprint.',de:'Baureihen MTP / KMAZ / KMCZ von Modell 300 bis 3000 — ausgelegt für TBMs vom 1-m-Rohrvortrieb bis zu 13-m+-Übergrößen-Schilden. Grob-, Haupt- und Feinentwässerung in einer Anlage.',zh:'MTP / KMAZ / KMCZ 系列，覆盖 Model 300–3000——适配 1m 顶管到 13m+ 超大直径盾构；粗分离、一级与二级脱水集成于一套系统。'},
+    sp2_tag:{en:'Conditioning',de:'Konditionierung',zh:'调质系统'},
+    sp2_t:{en:'Preparation & Conditioning Systems',de:'Aufbereitungs- & Konditionierungssysteme',zh:'泥浆制备与调质系统'},
+    sp2_d:{en:'ZTJ / ZDZJ automatic bentonite slurry plants restore density, viscosity and low permeability — the stability core of every slurry balance shield drive.',de:'Automatische Bentonit-Schlammaufbereitungsanlagen ZTJ / ZDZJ stellen Dichte, Viskosität und geringe Durchlässigkeit wieder her — das Stabilitätskernstück jedes Schlammschild-Vortriebs.',zh:'ZTJ / ZDZJ 膨润土自动制浆系统恢复泥浆密度、黏度与低渗透性——泥水平衡盾构掘进稳定的核心。'},
+    sp3_tag:{en:'Filter Press',de:'Filterpresse',zh:'压滤机'},
+    sp3_t:{en:'APN & COMC Filter Presses',de:'APN- & COMC-Filterpressen',zh:'APN 与 COMC 压滤机'},
+    sp3_d:{en:'Chamber diaphragm filter presses for shield mud, mine tailings and dredging sludge — filter cake at ≈30% moisture, filtrate returned to the circuit.',de:'Kammer-Membranfilterpressen für Schildschlamm, Bergematerial und Baggergut — Filterkuchen mit ≈30% Restfeuchte, Filtrat zurück in den Kreislauf.',zh:'腔室隔膜压滤机，适用于盾构泥浆、矿山尾矿与疏浚污泥——滤饼含水率约 30%，滤液回用于循环系统。'},
+    sp4_tag:{en:'Auxiliaries',de:'Zusatzausrüstung',zh:'配套设备'},
+    sp4_t:{en:'Cyclones, Screens & Pumps',de:'Zyklohe, Siebe & Pumpen',zh:'旋流器、筛分与泵送'},
+    sp4_d:{en:'HC-700 hydrocyclones (74 μm / 20 μm cut), vibrating screens, trommels, agitators and hydraulic piston-diaphragm pumps — one supply chain, fully matched.',de:'HC-700-Hydrozyklone (Trennkorngröße 74 μm / 20 μm), Schwingsiebe, Trommelsiebe, Rührwerke und hydraulische Kolben-Membranpumpen — eine Lieferkette, vollständig aufeinander abgestimmt.',zh:'HC-700 旋流器（74μm/20μm 分级）、振动筛、滚筒筛、搅拌器与液压活塞隔膜泵——单一供应链，全套匹配。'},
+    sl43_title:{en:'Field-Proven at Scale',de:'In großem Maßstab bewährt',zh:'规模化工程验证'},
+    sl43_sub:{en:'Numbers behind 200+ slurry projects',de:'Zahlen hinter 200+ Schlammprojekten',zh:'200+ 泥浆项目背后的数字'},
+    km1_l:{en:'Projects completed by end of 2025',de:'Projekte bis Ende 2025 abgeschlossen',zh:'截至 2025 年底完成项目'},
+    km2_l:{en:'Slurry-shield projects in China',de:'Schlammschild-Projekte in China',zh:'国内泥水盾构项目'},
+    km3_l:{en:'Overseas slurry-shield projects',de:'Schlammschild-Projekte im Ausland',zh:'海外泥水盾构项目'},
+    km4_l:{en:'Filter-cake moisture — export-ready',de:'Filterkuchen-Restfeuchte — abtransportfertig',zh:'滤饼含水率——可直接外运'},
+    sl43_note:{en:'Up to 40 m of tunnel per day with a single separation station — verified on river crossings, metro and high-speed rail drives.',de:'Bis zu 40 m Vortrieb pro Tag mit einer einzigen Trennstation — nachgewiesen bei Flussquerungen, U-Bahn- und Hochgeschwindigkeitsbahn-Vortrieben.',zh:'单套分离站日掘进配套能力最高 40m——已在江河穿越、地铁与高铁项目验证。'},
+    sl44_title:{en:'Selected International References',de:'Ausgewählte internationale Referenzen',zh:'精选国际案例'},
+    sl44_sub:{en:'KMKS slurry systems shipped worldwide',de:'KMKS-Schlammaufbereitung weltweit im Einsatz',zh:'康明克斯泥浆系统全球交付'},
+    cs1_t:{en:'Karnaphuli River Tunnel',de:'Karnaphuli River Tunnel',zh:'卡纳普里河隧道'},
+    cs1_d:{en:'Bangladesh · Φ12.18 m · soft silty sand',de:'Bangladesch · Φ12,18 m · weicher Feinsand',zh:'孟加拉 · Φ12.18 m · 软土粉砂'},
+    cs2_t:{en:'Jakarta–Bandung HSR',de:'HSR Jakarta–Bandung',zh:'雅万高铁'},
+    cs2_d:{en:'Indonesia · Φ13.24 m · volcanic gravel',de:'Indonesien · Φ13,24 m · vulkanischer Kies',zh:'印尼 · Φ13.24 m · 火山灰胶结砾石'},
+    cs3_t:{en:'CRCC Mumbai Metro',de:'CRCC-U-Bahn Mumbai',zh:'铁建重工孟买地铁'},
+    cs3_d:{en:'India · Φ12.19 m · basalt & breccia',de:'Indien · Φ12,19 m · Basalt & Brekzie',zh:'印度 · Φ12.19 m · 玄武岩与角砾岩'},
+    cs4_t:{en:'CRCC Bangalore Metro',de:'CRCC-U-Bahn Bangalore',zh:'铁建重工班加罗尔地铁'},
+    cs4_d:{en:'India · Φ6.6 m · full-section hard rock',de:'Indien · Φ6,6 m · vollflächiger Hartfels',zh:'印度 · Φ6.6 m · 全断面硬岩'},
+    cs5_t:{en:'Seosan Power Tunnel',de:'Kraftwerkstunnel Seosan',zh:'瑞山电力隧道'},
+    cs5_d:{en:'South Korea · Φ3.15 m · sandstone & hard rock',de:'Südkorea · Φ3,15 m · Sandstein & Hartfels',zh:'韩国 · Φ3.15 m · 砂岩与硬岩'},
+    cs6_t:{en:'Cairo Metro Line 4',de:'U-Bahn-Linie 4 Kairo',zh:'开罗地铁 4 号线'},
+    cs6_d:{en:'Egypt · Φ6.73 m · aeolian & coarse sand',de:'Ägypten · Φ6,73 m · Flugsand & Grobsand',zh:'埃及 · Φ6.73 m · 风积砂与中粗砂'},
+    cs7_t:{en:'Gyeonggi Power Tunnel',de:'Kraftwerkstunnel Gyeonggi',zh:'京畿道电力隧道'},
+    cs7_d:{en:'South Korea · Φ3.6 m · weathered rock',de:'Südkorea · Φ3,6 m · verwitterter Fels',zh:'韩国 · Φ3.6 m · 风化岩'},
+    cs8_t:{en:'L&T Mumbai',de:'L&T Mumbai',zh:'L&T 孟买'},
+    cs8_d:{en:'India · Φ12.19 m · hard rock & sand',de:'Indien · Φ12,19 m · Hartfels & Sand',zh:'印度 · Φ12.19 m · 硬岩与砂层'},
+    sl45_title:{en:'Flexible Business Models',de:'Flexible Geschäftsmodelle',zh:'灵活合作模式'},
+    sl45_sub:{en:'Own it, lease it, or let us operate it',de:'Kaufen, mieten oder von uns betreiben lassen',zh:'采购、租赁或委托运营'},
+    bm1_tag:{en:'01 · Sales',de:'01 · Verkauf',zh:'01 · 销售'},
+    bm1_t:{en:'Purchase',de:'Kauf',zh:'整机采购'},
+    bm1_d:{en:'Complete STP package delivered, installed and commissioned to your project parameters.',de:'Komplettes STP-Paket, geliefert, installiert und nach Ihren Projektparametern in Betrieb genommen.',zh:'整套 STP 系统按项目参数交付、安装并调试。'},
+    bm2_tag:{en:'02 · Leasing',de:'02 · Miete',zh:'02 · 租赁'},
+    bm2_t:{en:'Rental',de:'Miete',zh:'租赁服务'},
+    bm2_d:{en:'Time-based equipment rental — ideal for single-drive projects without long-term capital commitment.',de:'Zeitbasierte Gerätemiete — ideal für Einzelvortriebe ohne langfristige Kapitalbindung.',zh:'按时间计费的设备租赁——适合单一掘进项目，无需长期资本投入。'},
+    bm3_tag:{en:'03 · Operation',de:'03 · Betrieb',zh:'03 · 运营'},
+    bm3_t:{en:'Managed Operation',de:'Betrieb durch KMKS',zh:'委托运营'},
+    bm3_d:{en:'We deploy equipment, technicians and operators; settlement is linked to project performance and revenue share.',de:'Wir stellen Ausrüstung, Techniker und Bedienpersonal; die Abrechnung erfolgt projekt- und ergebnisabhängig mit Umsatzbeteiligung.',zh:'我方部署设备、技术与操作人员，按项目绩效与收益分成结算。'},
+    sl46_title:{en:'Hydroshield, Complete',de:'Hydroshield aus einer Hand',zh:'完整的泥水盾构方案'},
+    sl46_d:{en:'KMKS slurry treatment + our SPB / EPB machines = one integrated Hydroshield package. A single accountable partner for the mud circuit — from cutterhead to filter cake.',de:'KMKS-Schlammaufbereitung + unsere SPB-/EPB-Maschinen = ein integriertes Hydroshield-Paket. Ein verantwortlicher Partner für den gesamten Schlammkreislauf — vom Schneidrad bis zum Filterkuchen.',zh:'康明克斯泥浆处理 + 我们的泥水/土压盾构整机 = 一体化泥水盾构方案。泥浆回路全程单一责任伙伴——从刀盘到滤饼。'},
+    sl_cta:{en:'Inquire About Slurry Systems',de:'Schlammaufbereitung anfragen',zh:'咨询泥浆处理系统'},
+    sl_cta2:{en:'Explore TBM Machinery',de:'TBM-Maschinen ansehen',zh:'查看 TBM 整机'},
     ct_kicker:{en:'05 · Contact & RFQ',de:'05 · Kontakt & Angebotsanfrage',zh:'05 · 联系与询价'},
-    ct_title:{en:'Project Inquiry &amp;<br>Technical Quote Request',de:'Projektanfrage &amp;<br>Technische Angebotsanforderung',zh:'项目咨询与<br>技术报价请求'},
+    ct_title:{en:'Project Inquiry &<br>Technical Quote Request',de:'Projektanfrage &<br>Technische Angebotsanforderung',zh:'项目咨询与<br>技术报价请求'},
     ct_lead:{en:'Tell us about your tunnel — we will route your inquiry to the right engineering team and come back with a structured technical response.',de:'Beschreiben Sie Ihren Tunnel — wir leiten Ihre Anfrage an das richtige Engineering-Team weiter und antworten mit einer strukturierten technischen Rückmeldung.',zh:'告诉我们您的隧道项目——我们将把咨询转给对口工程团队，并给出结构化的技术回复。'},
     ct_box_t:{en:'TunnelTech Europe',de:'TunnelTech Europe',zh:'TunnelTech Europe'},
     ct_r1k:{en:'Coverage',de:'Abdeckung',zh:'业务范围'},
-    ct_r1v:{en:'TBMs & shaft machines · advance probing & grouting · roller cutters & seals · remanufacturing & field service',de:'TBM & Schachtmaschinen · Vorauserkundung & Injektion im Schild · Rollenmeißel & Dichtungen · Remanufacturing & Vor-Ort-Service',zh:'TBM与竖井机 · 机载超前钻注探 · 滚刀与密封 · 再制造与现场服务'},
+    ct_r1v:{en:'TBMs & shaft machines · advance probing & grouting · roller cutters & seals · slurry treatment plants (STP) · remanufacturing & field service',de:'TBM & Schachtmaschinen · Vorauserkundung & Injektion im Schild · Rollenmeißel & Dichtungen · Schlammaufbereitungsanlagen (STP) · Remanufacturing & Vor-Ort-Service',zh:'TBM与竖井机 · 机载超前钻注探 · 滚刀与密封 · 泥浆处理系统（STP） · 再制造与现场服务'},
     ct_r2k:{en:'Manufacturers',de:'Hersteller',zh:'制造商'},
-    ct_r2v:{en:'CCCC Tianhe · China Railway Southwest Research Institute · Shandong Tianyou',de:'CCCC Tianhe · China Railway Southwest Research Institute · Shandong Tianyou',zh:'中交天和 · 中铁西南院 · 山东天佑'},
+    ct_r2v:{en:'CCCC Tianhe · China Railway Southwest Research Institute · Shandong Tianyou · KMKS',de:'CCCC Tianhe · China Railway Southwest Research Institute · Shandong Tianyou · KMKS',zh:'中交天和 · 中铁西南院 · 山东天佑 · 康明克斯'},
     ct_r3k:{en:'Base',de:'Standort',zh:'服务基地'},
     ct_r3v:{en:'European partner network with direct factory access in China',de:'Europäisches Partnernetzwerk mit direktem Fabrikzugang in China',zh:'欧洲伙伴网络，直连中国工厂'},
     ct_r4k:{en:'Response',de:'Reaktionszeit',zh:'响应时间'},
@@ -1649,6 +1923,7 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
     f_scope_opt3:{en:'Cutter Tooling Package',de:'Meißel-Ausrüstungspaket',zh:'刀具包'},
     f_scope_opt4:{en:'Remanufacturing',de:'Remanufacturing',zh:'再制造'},
     f_scope_opt5:{en:'Containerized Workshop Setup',de:'Containerwerkstatt-Aufbau',zh:'集装箱式工坊搭建'},
+    f_scope_opt6:{en:'Slurry Treatment Plant (STP)',de:'Schlammaufbereitungsanlage (STP)',zh:'泥浆处理系统（STP）'},
     f_ucs:{en:'Ground / UCS *',de:'Gebirge / UCS *',zh:'地层 / UCS *'},
     f_ucs_ph:{en:'e.g. granite, 150 MPa',de:'z. B. Granit, 150 MPa',zh:'例如：花岗岩，150 MPa'},
     f_msg:{en:'Project Notes',de:'Projektnotizen',zh:'项目说明'},
@@ -1656,11 +1931,12 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
     f_submit:{en:'Submit Inquiry',de:'Anfrage senden',zh:'提交咨询'},
 
     ft_h1:{en:'TunnelTech Europe',de:'TunnelTech Europe',zh:'TunnelTech Europe'},
-    ft_d1:{en:'Turnkey underground & TBM solutions provider — European partner for advanced tunneling engineering. One interface for machines, probing systems, consumables and lifecycle services.',de:'Turnkey-Partner für den Untertagebau & TBM-Lösungen — europäischer Partner für modernes Tunnel-Engineering. Eine Schnittstelle für Maschinen, Erkundungssysteme, Verschleißteile und Lebenszyklus-Services.',zh:'全链条地下工程与TBM解决方案提供商——欧洲先进的隧道工程技术合作伙伴。整机、探测系统、耗材与生命周期服务统一对接。'},
+    ft_d1:{en:'Turnkey underground & TBM solutions provider — European partner for advanced tunneling engineering. One interface for machines, probing systems, cutters, slurry plants and lifecycle services.',de:'Turnkey-Partner für den Untertagebau & TBM-Lösungen — europäischer Partner für modernes Tunnel-Engineering. Eine Schnittstelle für Maschinen, Erkundungssysteme, Meißel, Schlammaufbereitungsanlagen und Lebenszyklus-Services.',zh:'全链条地下工程与TBM解决方案提供商——欧洲先进的隧道工程技术合作伙伴。整机、探测系统、刀具、泥浆处理与生命周期服务统一对接。'},
     ft_h2:{en:'Manufacturing Partners',de:'Fertigungspartner',zh:'制造合作伙伴'},
     ft_p1:{en:'CCCC Tianhe — TBM & shaft machinery',de:'CCCC Tianhe — TBM- & Schachtmaschinen',zh:'中交天和——TBM与竖井装备'},
     ft_p2:{en:'China Railway Southwest Research Institute — probing & drilling systems',de:'China Railway Southwest Research Institute — Erkundungs- & Bohrsysteme',zh:'中铁西南院——探测与钻探系统'},
     ft_p3:{en:'Shandong Tianyou — cutters, seals & workshops',de:'Shandong Tianyou — Meißel, Dichtungen & Werkstätten',zh:'山东天佑——刀具、密封与工坊'},
+    ft_p4:{en:'KMKS — slurry treatment plants (STP)',de:'KMKS — Schlammaufbereitungsanlagen (STP)',zh:'康明克斯——泥浆处理系统（STP）'},
     ft_h3:{en:'Quick Links',de:'Schnellzugriff',zh:'快速链接'},
     ft_l1:{en:'TBM Machinery',de:'TBM-Maschinen',zh:'TBM装备'},
     ft_l2:{en:'Probing & Drilling',de:'Erkundung & Bohren',zh:'探测与钻探'},
@@ -1674,7 +1950,7 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
     t_copied:{en:'Request captured — details copied to clipboard. Open your mail client and paste to send.',de:'Anfrage erfasst — Details in die Zwischenablage kopiert. Öffnen Sie Ihr Mailprogramm und fügen Sie sie zum Senden ein.',zh:'咨询已记录——详情已复制到剪贴板，打开邮件客户端粘贴即可发送。'},
     t_manual:{en:'Request captured — please send the composed request via your mail client.',de:'Anfrage erfasst — bitte senden Sie die zusammengestellte Anfrage über Ihr Mailprogramm.',zh:'咨询已记录——请通过邮件客户端发送已生成的请求。'}
   };
-  var views = ['home','machinery','probing','cutters','services','contact'];
+  var views = ['home','machinery','probing','cutters','slurry','services','contact'];
   var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[data-nav]'));
 
   function show(name){
