@@ -564,6 +564,16 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
 .metric .num em{color:var(--accent)}
 .metric .lbl{color:#5A6B7D}
 
+/* ---- Nav burger & mobile panel: visible on white theme ---- */
+.nav-burger{color:#16233A;border-color:rgba(22,40,64,.22);background:rgba(22,40,64,.04)}
+.nav-burger:hover{background:rgba(22,40,64,.09)}
+@media(max-width:1100px){
+  .nav-links{background:#FFFFFF;border-bottom:1px solid rgba(22,40,64,.12);box-shadow:0 12px 30px rgba(22,40,64,.14);padding:12px 16px 18px}
+  .nav-links a{font-weight:600;color:#16233A;border-radius:8px;margin-bottom:2px}
+  .nav-drop>.drop-head{font-weight:700;color:#16233A}
+  .nav-drop .submenu{border-left:1px solid rgba(22,40,64,.16)}
+}
+
 /* ---- CTA band & footer: light on white theme ---- */
 .cta-band{background:#F4F6F8;border-top:1px solid rgba(22,40,64,.08)}
 .cta-band .shade,.cta-band img.bg{display:none}
