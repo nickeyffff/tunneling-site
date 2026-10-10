@@ -555,6 +555,21 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
 @media(max-width:960px){.kmks-stats{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.kmks-stats{grid-template-columns:1fr 1fr}.kmks-stats .num{font-size:30px}}
 /* ===== END KMKS SLURRY MODULE ===== */
+
+/* ---- White-theme card system (CREG-inspired) ---- */
+.card,.pillar,.info-box,.qc-item,.form{background:#FFFFFF;border:1px solid rgba(22,40,64,.09);box-shadow:0 1px 2px rgba(22,40,64,.03),0 10px 26px rgba(22,40,64,.05)}
+.pillar{background:#FFFFFF}
+.card:hover,.pillar:hover{border-color:var(--steel);box-shadow:0 2px 4px rgba(22,40,64,.04),0 18px 40px rgba(46,107,230,.14)}
+.pillar::before{color:rgba(22,40,64,.22)}
+.pillar .ic{background:rgba(46,107,230,.09);border-radius:8px}
+.pillar .ic svg{stroke-width:1.9}
+.stp-flow .step{background:#FFFFFF;border-color:rgba(22,40,64,.09);box-shadow:0 1px 2px rgba(22,40,64,.03),0 8px 20px rgba(22,40,64,.04)}
+.stp-flow .step:hover{border-color:rgba(43,179,163,.5);background:rgba(43,179,163,.05)}
+.kmks-stats{background:transparent;border:none;gap:14px}
+.kmks-stats .ks{background:#FFFFFF;border:1px solid rgba(22,40,64,.09);box-shadow:0 1px 2px rgba(22,40,64,.03),0 8px 20px rgba(22,40,64,.04)}
+.form input,.form select,.form textarea{background:#F4F6F8;border-color:rgba(22,40,64,.12)}
+.form input:focus,.form select:focus,.form textarea:focus{background:#fff;border-color:var(--steel)}
+
 </style>
 </head>
 <body>
@@ -563,7 +578,7 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="#home" class="logo" data-nav="home">
-      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="24" fill="none" stroke="#2E6BE6" stroke-width="6"/><circle cx="32" cy="32" r="11" fill="none" stroke="#F5A623" stroke-width="5"/><circle cx="32" cy="32" r="3.5" fill="#E8EDF4"/></svg>
+      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="24" fill="none" stroke="#1D4FBF" stroke-width="6"/><circle cx="32" cy="32" r="11" fill="none" stroke="#C77D00" stroke-width="5"/><circle cx="32" cy="32" r="3.5" fill="#E8EDF4"/></svg>
       <span>TUNNELTECH <b>EUROPE</b></span>
     </a>
     <div class="nav-links" id="navLinks">
@@ -628,25 +643,25 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
       <div class="sec-head"><span class="no">01</span><h2 data-i18n="pillars_title">Four Product Pillars, One Partner</h2><span class="sub" data-i18n="pillars_sub">Machines · Probing · Cutters · Slurry treatment</span></div>
       <div class="grid g2">
         <a class="pillar" href="#machinery">
-          <div class="ic blue"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6E9BFF" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg></div>
+          <div class="ic blue"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D4FBF" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg></div>
           <h3 data-i18n="p1_t">Heavy Tunneling Machinery</h3>
           <p data-i18n="p1_d">Super-diameter SPB &amp; EPB TBMs, hard-rock dual-mode systems and vertical shaft boring machines — from CCCC Tianhe, a subsidiary of China Communications Construction.</p>
           <span class="go" data-i18n="p1_go">Explore machinery</span>
         </a>
         <a class="pillar" href="#probing">
-          <div class="ic teal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5FD9C8" stroke-width="1.7"><path d="M4 20l4-9 4 3 4-8"/><path d="M3 3h18"/><path d="M3 21h18"/></svg></div>
+          <div class="ic teal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1F8A7D" stroke-width="1.7"><path d="M4 20l4-9 4 3 4-8"/><path d="M3 3h18"/><path d="M3 21h18"/></svg></div>
           <h3 data-i18n="p2_t">In-TBM Probing &amp; Drilling-Grouting</h3>
           <p data-i18n="p2_d">TBM-mounted advance drilling, water-hammer probing, bolting and MWD geological prediction from China Railway Southwest Research Institute — CE-certified rigs for European rock conditions.</p>
           <span class="go" data-i18n="p2_go">Explore probing systems</span>
         </a>
         <a class="pillar" href="#cutters">
-          <div class="ic orange"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFC46B" stroke-width="1.7"><path d="M12 3l2.6 7.2L22 12l-7.4 1.8L12 21l-2.6-7.2L2 12l7.4-1.8z"/></svg></div>
+          <div class="ic orange"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C77D00" stroke-width="1.7"><path d="M12 3l2.6 7.2L22 12l-7.4 1.8L12 21l-2.6-7.2L2 12l7.4-1.8z"/></svg></div>
           <h3 data-i18n="p3_t">Engineered Cutters &amp; High-Pressure Seals</h3>
           <p data-i18n="p3_d">7–21 inch roller cutters, premium metallurgy, tailskin wire brushes &amp; seals and containerized on-site tool workshops from Shandong Tianyou — engineered to the strata, delivered to your jobsite.</p>
           <span class="go" data-i18n="p3_go">Explore cutters</span>
         </a>
         <a class="pillar" href="#slurry">
-          <div class="ic teal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5FD9C8" stroke-width="1.7"><path d="M3 12a9 9 0 0 1 18 0"/><path d="M21 12a9 9 0 0 1-18 0"/><path d="M12 3v3M12 18v3"/><path d="M12 10.5l3 1.5-3 1.5-3-1.5z" fill="#5FD9C8" stroke="none"/></svg></div>
+          <div class="ic teal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1F8A7D" stroke-width="1.7"><path d="M3 12a9 9 0 0 1 18 0"/><path d="M21 12a9 9 0 0 1-18 0"/><path d="M12 3v3M12 18v3"/><path d="M12 10.5l3 1.5-3 1.5-3-1.5z" fill="#5FD9C8" stroke="none"/></svg></div>
           <h3 data-i18n="p4_t">Slurry Treatment &amp; Separation</h3>
           <p data-i18n="p4_d">From KMKS — European-grade mud circulation for Hydroshield &amp; EPB projects. Separation stations, conditioning systems and filter presses that keep the mud circuit running.</p>
           <span class="go" data-i18n="p4_go">Explore slurry systems</span>
@@ -666,15 +681,15 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
           <svg viewBox="0 0 1280 644" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;" role="img" aria-label="Project locations">
             <g>
               <circle cx="676" cy="139" r="7" fill="#2E6BE6"/>
-              <circle cx="676" cy="139" r="14" fill="none" stroke="#2E6BE6" stroke-opacity=".45"/>
+              <circle cx="676" cy="139" r="14" fill="none" stroke="#1D4FBF" stroke-opacity=".45"/>
               <circle cx="952" cy="165" r="4.5" fill="#F5A623"/>
               <circle cx="1055" cy="178" r="4.5" fill="#F5A623"/>
               <circle cx="1073" cy="209" r="10" fill="#F5A623"/>
-              <circle cx="1073" cy="209" r="20" fill="none" stroke="#F5A623" stroke-opacity=".4" stroke-width="1.5"/>
+              <circle cx="1073" cy="209" r="20" fill="none" stroke="#C77D00" stroke-opacity=".4" stroke-width="1.5"/>
               <circle cx="1003" cy="309" r="7" fill="#2BB3A3"/>
-              <circle cx="1003" cy="309" r="14" fill="none" stroke="#2BB3A3" stroke-opacity=".45"/>
+              <circle cx="1003" cy="309" r="14" fill="none" stroke="#1F8A7D" stroke-opacity=".45"/>
               <circle cx="1021" cy="342" r="7" fill="#2BB3A3"/>
-              <circle cx="1021" cy="342" r="14" fill="none" stroke="#2BB3A3" stroke-opacity=".45"/>
+              <circle cx="1021" cy="342" r="14" fill="none" stroke="#1F8A7D" stroke-opacity=".45"/>
             </g>
             <g font-family="'Barlow',Arial,sans-serif" font-size="13" font-weight="600">
               <text x="676" y="120" fill="#8FB3FF" text-anchor="middle" data-i18n="fp_europe">EUROPE · PARTNERSHIP</text>
