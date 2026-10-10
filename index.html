@@ -313,7 +313,7 @@ body{font-family:var(--font-sans);letter-spacing:.01em}
 .foot-wrap.foot-responsive .footmap{height:auto;}
 .foot-wrap.foot-responsive .footmap img,
 .foot-wrap.foot-responsive .footmap svg{width:100%;max-width:100%;margin-left:0;left:0;height:auto;}
-.foot-wrap.foot-responsive .footmap > div{height:auto !important;}
+.foot-wrap.foot-responsive .footmap > div{aspect-ratio:8/5;height:auto !important;overflow:hidden;}
 @media(max-width:860px){
   .foot-wrap.foot-responsive{grid-template-columns:1fr !important;gap:18px;}
   .foot-wrap.foot-responsive .map-zoom{width:210% !important;margin-left:-78% !important;}
@@ -687,7 +687,7 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
           <div style="position:relative; border-radius:0; overflow:hidden; background:#0F1E2E;">
           <div class="map-zoom" style="width:200%;margin-left:-72%;position:relative;">
           <img src="assets/world-map.png" alt="World map" style="display:block;width:100%;height:auto;filter:grayscale(.4) brightness(.5) contrast(1.4) saturate(.25);">
-          <svg viewBox="0 0 1280 644" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;" role="img" aria-label="Project locations">
+          <svg viewBox="0 0 1280 644" preserveAspectRatio="none" style="position:absolute;top:0;left:0;width:100%;height:auto;aspect-ratio:1280/644;display:block;" role="img" aria-label="Project locations">
             <g>
               <circle cx="676" cy="139" r="7" fill="#2E6BE6"/>
               <circle cx="676" cy="139" r="14" fill="none" stroke="#1D4FBF" stroke-opacity=".45"/>
