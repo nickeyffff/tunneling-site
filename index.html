@@ -556,6 +556,15 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
 @media(max-width:640px){.kmks-stats{grid-template-columns:1fr 1fr}.kmks-stats .num{font-size:30px}}
 /* ===== END KMKS SLURRY MODULE ===== */
 
+/* ---- Home metrics: light strip on white theme ---- */
+.metrics{background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-top:1px solid rgba(22,40,64,.08);--text:#16233A;--muted:#5A6B7D;--line:rgba(22,40,64,.08)}
+.metrics .inner{background:rgba(22,40,64,.08)}
+.metric{background:transparent;border-right:1px solid rgba(22,40,64,.08)}
+.metric:last-child{border-right:none}
+.metric .num{color:#16233A}
+.metric .num em{color:var(--accent)}
+.metric .lbl{color:#5A6B7D}
+
 /* ---- White-theme card system (CREG-inspired) ---- */
 .card,.pillar,.info-box,.qc-item,.form{background:#FFFFFF;border:1px solid rgba(22,40,64,.09);box-shadow:0 1px 2px rgba(22,40,64,.03),0 10px 26px rgba(22,40,64,.05)}
 .pillar{background:#FFFFFF}
