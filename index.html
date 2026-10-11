@@ -18,6 +18,8 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
+/* lock pinch-zoom on mobile — iOS Safari ignores user-scalable=no, this actually holds */
+html,body{touch-action:pan-x pan-y}
 body{font-family:'Barlow','Helvetica Neue','PingFang SC','Microsoft YaHei','Noto Sans CJK SC',Arial,sans-serif;background:var(--ink);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw;}
 .display{font-family:'Barlow Condensed','Barlow Condensed','Arial Narrow',Arial,sans-serif}
 a{color:inherit;text-decoration:none}
