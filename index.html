@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>TunnelTech Europe — End-to-End Tunneling Solutions | TBM, Probing & Cutting Tools</title>
 <meta name="description" content="Turnkey underground & TBM solutions provider for Europe. Super-diameter TBMs, in-TBM advance probe drilling & pre-excavation grouting systems, and heavy-duty cutters from China's leading manufacturers.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230A1420'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23F5A623' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='9' fill='none' stroke='%232E6BE6' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='3' fill='%23E8EDF4'/%3E%3C/svg%3E">
@@ -571,6 +571,49 @@ footer .foot-grid,footer .bottom{position:relative;z-index:1}
 .metric .num{color:#16233A}
 .metric .num em{color:var(--accent)}
 .metric .lbl{color:#5A6B7D}
+
+/* ===== Awards-grade polish v2 ===== */
+/* Hero: taller, centered, bolder display */
+.hero{min-height:min(80vh,720px);padding:150px 0 100px}
+.hero .inner{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:0}
+.hero h1{font-size:clamp(58px,8vw,110px);line-height:.96;max-width:14ch;letter-spacing:-.015em}
+.hero .sub{font-size:clamp(18px,2.4vw,23px);line-height:1.5;max-width:660px;margin-top:22px}
+.hero .pos{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.hero .pos span{font-family:'Barlow Condensed';font-size:13px;letter-spacing:1.6px;color:rgba(232,237,244,.9);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:7px 15px;background:rgba(255,255,255,.06)}
+/* Hero entry choreography */
+.hero .inner>*{opacity:0;transform:translateY(20px);animation:heroIn .75s cubic-bezier(.22,1,.36,1) forwards}
+.hero .inner>*:nth-child(1){animation-delay:.08s}
+.hero .inner>*:nth-child(2){animation-delay:.16s}
+.hero .inner>*:nth-child(3){animation-delay:.26s}
+.hero .inner>*:nth-child(4){animation-delay:.36s}
+.hero .inner>*:nth-child(5){animation-delay:.46s}
+@keyframes heroIn{to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.hero .inner>*{opacity:1;transform:none;animation:none}}
+/* Metrics: larger numerals, refined dividers, hover micro-feedback */
+.metrics .metric{padding:26px 22px;transition:background .25s}
+.metrics .metric:hover{background:rgba(22,40,64,.03)}
+.metric .num{font-size:clamp(40px,4.4vw,50px);font-family:'Barlow Condensed';font-weight:700;letter-spacing:.5px}
+.metric .lbl{font-size:13.5px;color:#5A6B7D;margin-top:6px;letter-spacing:.4px}
+/* Pillars: refined cards, natural-case links, arrow micro-interaction */
+.pillar{transition:border-color .3s,box-shadow .3s}
+.pillar:hover{box-shadow:0 16px 36px rgba(22,40,64,.08)}
+.pillar .ic{transition:transform .3s cubic-bezier(.22,1,.36,1),background .3s}
+.pillar:hover .ic{transform:scale(1.06)}
+.pillar .go{font-family:'Barlow Condensed';font-size:16px;letter-spacing:.4px;text-transform:none}
+.pillar .go::after{content:"\2192";margin-left:2px;display:inline-block;transition:transform .25s cubic-bezier(.22,1,.36,1)}
+.pillar:hover .go::after{transform:translateX(5px)}
+/* CTA band: stronger hierarchy, clearer buttons */
+.cta-band h2{max-width:720px}
+.cta-band .inner{padding:72px 0}
+.cta-band .btn.primary{padding:15px 30px;font-size:16px}
+.cta-band .btn.ghost{padding:15px 30px;font-size:16px}
+/* Footprint map: pin hover micro-interaction */
+.footmap circle{transition:r .2s,fill .2s;cursor:pointer}
+.footmap circle:hover{fill:#FFFFFF}
+.footmap text{transition:opacity .25s,fill .25s}
+.footmap circle:hover + text,.footmap g:hover text{opacity:1}
+/* Section eyebrows: quiet, no ·-joined all-caps string */
+.sec-head .sub{font-size:13px;letter-spacing:.4px;max-width:420px}
 
 /* ---- Nav burger & mobile panel: visible on white theme ---- */
 .nav-burger{color:#16233A;border-color:rgba(22,40,64,.22);background:rgba(22,40,64,.04)}
@@ -1880,7 +1923,7 @@ footer a:hover{color:var(--steel-deep)}
 
     nav_slurry:{en:'Slurry Treatment',de:'Schlammaufbereitung',zh:'泥浆处理'},
     pillars_title:{en:'Four Product Pillars, One Partner',de:'Vier Produktpfeiler, ein Partner',zh:'四大产品支柱，同一合作伙伴'},
-    pillars_sub:{en:'Machines · Probing · Cutters · Slurry treatment',de:'Maschinen · Erkundung · Meißel · Schlammaufbereitung',zh:'整机 · 探测 · 刀具 · 泥浆处理'},
+    pillars_sub:{en:'Machines, probing systems, cutter consumables and slurry treatment',de:'Maschinen, Erkundungssysteme, Verschleißteile und Schlammaufbereitung',zh:'整机装备、探测系统、刀具耗材与泥浆处理'},
     p4_t:{en:'Slurry Treatment & Separation',de:'Schlammaufbereitung & Feststofftrennung',zh:'泥浆处理与固液分离'},
     p4_d:{en:'From KMKS — European-grade mud circulation for Hydroshield & EPB projects. Separation stations, conditioning systems and filter presses that keep the mud circuit running.',de:'Von KMKS — europäische Schlammkreislaufsysteme für Hydro- und Erddruckschilde: Trennstationen, Konditionierung und Filterpressen, die den Kreislauf stabil halten.',zh:'源自康明克斯——面向泥水盾构与土压盾构的欧标级泥浆循环系统：分离站、调质系统与压滤机，保障泥浆回路稳定运转。'},
     p4_go:{en:'Explore slurry systems',de:'Schlammaufbereitung ansehen',zh:'了解泥浆处理系统'},
